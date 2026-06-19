@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "saas": "^1.0.0",
+    "sass-embedded": "^1.100.0",
+    "vite": "^8.0.16",
+    "vite-hotfile-plugin": "^1.0.2",
+    "vite-plugin-full-reload": "^1.2.0"
+  }
+}

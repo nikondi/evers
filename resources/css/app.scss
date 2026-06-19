@@ -1,0 +1,261 @@
+@forward "partials/normalize";
+@forward "partials/reset";
+
+$color-primary: #DE171A;
+$color-green: #568129;
+
+body {
+  font-family: "NT Somic", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  background-color: #FAF9F3;
+  border-radius: 8px;
+}
+
+.header-space {
+  flex: 1;
+}
+
+.header-logo {
+  margin-right: 20px;
+
+  > a {
+    display: block;
+    padding: 8px 0 8px 20px;
+  }
+}
+
+.header-menu > ul {
+  display: flex;
+  height: 100%;
+  column-gap: 20px;
+}
+
+.header-menu > ul > li {
+  position: relative;
+
+  > a, > span {
+    text-decoration: none;
+    color: #272727;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: {
+      duration: .2s;
+      property: font-weight, color;
+    };
+  }
+
+  > span {
+    cursor: pointer;
+  }
+}
+
+.header-submenu-trigger {
+  padding-right: 12px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: {
+      repeat: no-repeat;
+      position: center center;
+      image: url("/assets/img/icons/plus.svg");
+    };
+  }
+}
+
+.header-menu > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  width: 310px;
+  background-color: #F9F9F9;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: {
+    property: transform, visibility, opacity;
+    duration: .25s;
+  };
+  border-radius: 0 0 8px 8px;
+
+  > li > a {
+    display: block;
+    text-decoration: none;
+    color: #272727;
+    font-size: 14px;
+    line-height: 120%;
+    padding: 12px;
+    width: 100%;
+    border-top: 1px solid rgba(83, 90, 96, .2);
+    transition: {
+      duration: .2s;
+      property: font-weight, color;
+    };
+
+    &:hover {
+      font-weight: bold;
+      color: $color-primary;
+    }
+  }
+}
+
+.header-menu > ul > li:hover {
+  > a {
+    font-weight: bold;
+    color: $color-primary;
+
+    &.header-submenu-trigger:after {
+      background-image: url("/assets/img/icons/minus.svg");
+    }
+  }
+
+  > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.header-contacts {
+  display: flex;
+  column-gap: 30px;
+}
+
+.header-contacts-link {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  text-decoration: none;
+  color: #383B3D;
+  font-size: 13px;
+  font-weight: 500;
+  transition: .2s color;
+
+  svg {
+    font-size: 16px;
+    color: $color-green;
+  }
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.header-actions {
+  display: flex;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  column-gap: 2px;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  column-gap: 15px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #383B3D;
+  transition: background-color .2s;
+
+  > svg, > span {
+    display: block;
+    transition: color .2s;
+  }
+
+  > svg {
+    font-size: 20px;
+    color: #383B3D;
+  }
+
+  &:hover {
+    background-color: $color-green;
+
+    > svg, > span {
+      color: #ffffff;
+    }
+  }
+}
+
+.header-placeholder {
+  height: 120px;
+}
+
+.header.header--alt {
+  .header-inner {
+    background-color: #ffffff;
+  }
+  .header-action:not(:hover) {
+    background-color: #FAF9F3;
+  }
+  .header-placeholder {
+    display: none;
+  }
+}
+
+@media (max-width: 1359px) {
+  .header-contacts,
+  .header-menu {
+    display: none;
+  }
+  .header-space-mobile {
+    flex: 1;
+  }
+  .header-actions {
+    flex: 1;
+    margin-left: 0;
+  }
+  .header-logo {
+    margin-right: 8px;
+
+    img {
+      height: 40px;
+    }
+
+    > a {
+      padding-left: 8px;
+    }
+  }
+  .header-actions {
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header-burger {
+    display: none;
+  }
+  .header-space-desktop {
+    flex: 1;
+  }
+}
