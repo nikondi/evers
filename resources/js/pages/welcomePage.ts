@@ -3,6 +3,7 @@ import {Navigation, Pagination} from "swiper/modules";
 
 export default function welcomePage() {
   initProductsSlider();
+  initPartnersSlider();
 }
 
 function initProductsSlider() {
@@ -30,5 +31,27 @@ function initProductsSlider() {
       }
     });
   });
+}
 
+function initPartnersSlider() {
+  const partnersSlider = document.querySelector('.partners-slider') as HTMLElement;
+  if (!partnersSlider)
+    return;
+
+  const progressbar = partnersSlider.querySelector('.slider-progressbar') as HTMLElement;
+
+  new Swiper(partnersSlider, {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      1360: {
+        slidesPerView: 4
+      }
+    },
+    pagination: {
+      el: progressbar,
+      type: "progressbar"
+    }
+  })
 }

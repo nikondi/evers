@@ -215,3 +215,47 @@
         </div>
     </div>
 </section>
+
+<section class="welcome-partners">
+    <div class="container">
+        <div class="section-badge">Наши партнеры</div>
+        <div class="section-h2"><span>Эверс груп Рус сотрудничает</span> с крупнейшими федеральными аптечными сетями,
+            фармкомпаниями <span>и дистрибьюторами.</span></div>
+
+        <div class="swiper partners-slider">
+            <div class="swiper-wrapper">
+                <?php
+                $partners = [
+                    '/assets/img/partners/a-plus.png',
+                    '/assets/img/partners/avesta.png',
+                    '/assets/img/partners/bukaev.png',
+                    '/assets/img/partners/erka.png',
+                    '/assets/img/partners/fest.png',
+                    '/assets/img/partners/katren.png',
+                    '/assets/img/partners/komus.png',
+                    '/assets/img/partners/moy.png',
+                    '/assets/img/partners/nd.png',
+                    '/assets/img/partners/novaya.png',
+                    '/assets/img/partners/oms.png',
+                    '/assets/img/partners/osobaya.png',
+                    '/assets/img/partners/puls.png',
+                    '/assets/img/partners/rustest.png',
+                    '/assets/img/partners/septico.png',
+                    '/assets/img/partners/sistema.png',
+                    '/assets/img/partners/snab.png',
+                    '/assets/img/partners/sopka.png',
+                    '/assets/img/partners/vitta.png',
+                ];
+                ?>
+                <?php foreach ($partners as $partner): ?>
+                    <div class="swiper-slide">
+                        <div class="partner-card">
+                            <img src="<?= $partner ?>" alt=""/>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+    </div>
+</section>
