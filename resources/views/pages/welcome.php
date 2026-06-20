@@ -12,7 +12,7 @@
 <section class="welcome-about oversection">
     <div class="container">
         <div class="section-badge">О компании</div>
-        <h2 class="about-title">Эверс груп Рус&nbsp;— производитель <span>медицинских изделий</span>, ранозаживляющих
+        <h2 class="section-h1">Эверс груп Рус&nbsp;— производитель <span>медицинских изделий</span>, ранозаживляющих
             средств и&nbsp;уходовой косметики.</h2>
         <div class="about-info">
             <div class="about-metrics">
@@ -52,6 +52,36 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="welcome-production">
+    <div class="container">
+        <div class="section-badge">Продукция</div>
+        <div class="section-h2">
+            Продукция Эверс рус&nbsp;Груп предназначена для&nbsp;применения <span>специалистами в&nbsp;лечебных учреждениях</span>,
+            самостоятельной помощи и&nbsp;для&nbsp;ухода за&nbsp;пациентами на&nbsp;дому.
+        </div>
+
+        <div class="production-grid">
+            <?php
+            $production = [
+                ['image' => '/assets/img/production/1.png', "title" => 'Лечение ран, ожогов, пролежней, уход за лежачими пациентами'],
+                ['image' => '/assets/img/production/2.png', "title" => 'Средства для&nbsp;фиксации повязок, закрытия и&nbsp;защиты ран'],
+                ['image' => '/assets/img/production/3.jpg', "title" => 'Марлевые и&nbsp;нетканые медицинские изделия, вата'],
+                ['image' => '/assets/img/production/4.png', "title" => 'Защита операционного поля'],
+                ['image' => '/assets/img/production/5.png', "title" => 'Средства экспресс-диагностики'],
+                ['image' => '/assets/img/production/6.jpg', "title" => 'Оказание первой помощи'],
+                ['image' => '/assets/img/production/7.png', "title" => 'средства индивидуальной защиты (сиз)'],
+            ];
+            ?>
+            <?php foreach ($production as $good): ?>
+                <a href="#" class="production-card">
+                    <img src="<?= $good['image'] ?>" class="production-card__background"/>
+                    <div class="production-card__title"><?= $good['title'] ?></div>
+                </a>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
