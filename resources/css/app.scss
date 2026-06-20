@@ -824,9 +824,56 @@ body {
     line-height: 100%;
     margin-bottom: 14px;
   }
+
   &__text {
     font-size: 14px;
     line-height: 130%;
     max-width: 185px;
+  }
+}
+
+.welcome-coop {
+  background: {
+    image: url("/assets/img/welcome/coop.jpg");
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  };
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-radius: 24px 24px 0 0;
+}
+
+.welcome-coop-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 140px;
+}
+
+.welcome-coop-cards {
+  .welcome-coop-card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.welcome-coop-card {
+  border-radius: 8px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 395px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 130%;
   }
 }

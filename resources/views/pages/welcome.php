@@ -149,7 +149,7 @@
             <div class="manufacture-metrics">
                 <div class="manufacture-metric">
                     <div class="manufacture-metric__title">до 500 000</div>
-                    <div class="manufacture-metric__text">наименований медицинских изделий </div>
+                    <div class="manufacture-metric__text">наименований медицинских изделий</div>
                 </div>
                 <div class="manufacture-metric">
                     <div class="manufacture-metric__title">до 1 млн</div>
@@ -158,6 +158,30 @@
                 <div class="manufacture-metric">
                     <div class="manufacture-metric__title">200+</div>
                     <div class="manufacture-metric__text">повязок пластырного типа в сутки</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="welcome-coop">
+    <div class="container">
+        <div class="section-badge section-badge--white">преимущества сотрудничества</div>
+        <div class="welcome-coop-cards-wrapper">
+            <div class="welcome-coop-cards">
+                <div class="welcome-coop-card">
+                    <div class="welcome-coop-card__title">Безопасность и эффективность</div>
+                    <div class="welcome-coop-card__text">Все изделия зарегистрированы Федеральной службой по надзору в сфере здравохранения.</div>
+                </div>
+                <div class="welcome-coop-card">
+                    <div class="welcome-coop-card__title">Взаимовыгодное сотрудничество</div>
+                    <div class="welcome-coop-card__text">Сопровождение контракта командой профессионалов, индивидуальный подход к каждому партнеру.</div>
+                </div>
+            </div>
+            <div class="welcome-coop-cards">
+                <div class="welcome-coop-card">
+                    <div class="welcome-coop-card__title">Качество продукции</div>
+                    <div class="welcome-coop-card__text">Высокое качество продукции и современный дизайн упаковки, отвечающие тенденциям рынка.</div>
                 </div>
             </div>
         </div>
