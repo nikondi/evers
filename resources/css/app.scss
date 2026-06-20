@@ -6,6 +6,7 @@ $color-green: #568129;
 
 body {
   font-family: "NT Somic", sans-serif;
+  color: #272727;
 }
 
 .container {
@@ -359,6 +360,24 @@ body {
   }
 }
 
+.oversection {
+  margin-top: -24px;
+}
+
+.section-badge {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
 /// WELCOME
 .welcome-first {
   background: {
@@ -408,4 +427,111 @@ body {
   text-transform: uppercase;
   margin-top: 160px;
   max-width: 450px;
+}
+
+/// ABOUT
+.welcome-about {
+  padding-top: 94px;
+  border-radius: 24px 24px 0 0;
+  background-color: #ffffff;
+  padding-bottom: 120px;
+}
+
+.about-title {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+
+  span {
+    color: #7D7D7D;
+  }
+}
+
+.about-info {
+  background-color: #F0EDE6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 60px;
+}
+
+.about-metrics {
+  border-radius: 12px;
+  padding: 30px;
+  color: #ffffff;
+  background: {
+    image: url("/assets/img/welcome/about-metrics-background.png");
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  }
+}
+
+.about-metric {
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+  background-color: rgb(255 255 255 / 0.3);
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+
+  &:nth-child(even) {
+    margin-left: auto;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.about-info-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+    flex: 1;
+  }
+}
+
+.about-info-text-years {
+  display: flex;
+  column-gap: 17px;
+}
+
+.about-info-text-year {
+  padding-left: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-left: 2px solid #568129;
+  font-size: 14px;
+  line-height: 130%;
+
+  b {
+    font-weight: bold;
+  }
 }
