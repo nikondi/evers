@@ -171,19 +171,47 @@
             <div class="welcome-coop-cards">
                 <div class="welcome-coop-card">
                     <div class="welcome-coop-card__title">Безопасность и эффективность</div>
-                    <div class="welcome-coop-card__text">Все изделия зарегистрированы Федеральной службой по надзору в сфере здравохранения.</div>
+                    <div class="welcome-coop-card__text">Все изделия зарегистрированы Федеральной службой по надзору в
+                        сфере здравоохранения.
+                    </div>
                 </div>
                 <div class="welcome-coop-card">
                     <div class="welcome-coop-card__title">Взаимовыгодное сотрудничество</div>
-                    <div class="welcome-coop-card__text">Сопровождение контракта командой профессионалов, индивидуальный подход к каждому партнеру.</div>
+                    <div class="welcome-coop-card__text">Сопровождение контракта командой профессионалов, индивидуальный
+                        подход к каждому партнеру.
+                    </div>
                 </div>
             </div>
             <div class="welcome-coop-cards">
                 <div class="welcome-coop-card">
                     <div class="welcome-coop-card__title">Качество продукции</div>
-                    <div class="welcome-coop-card__text">Высокое качество продукции и современный дизайн упаковки, отвечающие тенденциям рынка.</div>
+                    <div class="welcome-coop-card__text">Высокое качество продукции и современный дизайн упаковки,
+                        отвечающие тенденциям рынка.
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="oversection welcome-news">
+    <div class="container">
+        <div class="welcome-news-top">
+            <div class="section-badge">Новости компании</div>
+            <a href="#" class="btn-link">Смотреть все</a>
+        </div>
+
+        <div class="welcome-news-grid">
+            <?php
+            $news = [
+                ['image' => '/assets/img/news/1.png', 'date' => '7 мая', 'title' => '«Уральская ватная компания» примет участие в Региональном конгрессе медицинских сестёр в Тюмени', 'description' => 'Тюмень, 2026 год. В преддверии Международного дня медицинской сестры состоится масштабное...'],
+                ['image' => '/assets/img/news/2.png', 'date' => '7 мая', 'title' => 'Масштабирование производства современных перевязочных средств EVERSMED как результат признания на рынке', 'description' => 'Группа компаний Эверс груп Рус в 2026 году нарастила объёмы производства современных перевязочных средств...'],
+                ['image' => '/assets/img/news/3.png', 'date' => '6 мая', 'title' => 'Укусы насекомых: как быстро снять зуд и предотвратить воспаление', 'description' => 'Лето — пора пикников, прогулок на природе и активного отдыха. Но вместе с приятными впечатлениями могут прийти...'],
+            ];
+            ?>
+            <?php foreach ($news as $i => $newsItem): ?>
+                <?php include VIEW_PATH . '/components/news-card.php'; ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

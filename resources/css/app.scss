@@ -373,6 +373,16 @@ body {
   width: calc(100% - 50px);
 }
 
+.btn-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: #272727;
+}
+
 .oversection {
   margin-top: -24px;
   background-color: #ffffff;
@@ -875,5 +885,81 @@ body {
   &__text {
     font-size: 14px;
     line-height: 130%;
+  }
+}
+
+.welcome-news {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.welcome-news-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.news-card {
+  background-color: #F9F9F9;
+  box-shadow: 10px 10px 20px 0 rgb(233 233 233 / 0.5);
+  border-radius: 12px;
+  padding: 16px 16px 20px 16px;
+  text-decoration: none;
+  color: #272727;
+  transition: .2s box-shadow;
+
+  &__image {
+    height: 165px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__date {
+    display: inline-block;
+    padding: 3px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 14px;
+    transition: .2s color;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    margin-top: 14px;
+  }
+
+  &:hover &__title {
+    color: $color-primary;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 20px 0 rgb(182 182 182 / 0.5);
   }
 }
