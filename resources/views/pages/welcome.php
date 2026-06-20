@@ -122,11 +122,8 @@
                         <div class="product-card">
                             <div class="product-card__image">
                                 <img src="<?= $product['image'] ?>" alt=""/>
-                                <button class="product-card__favorite">
-                                    <svg width="1em" height="1em">
-                                        <use xlink:href="/assets/img/icons.svg#heart"/>
-                                    </svg>
-                                </button>
+                                <button
+                                    class="product-card__favorite<?= $i % 2 == 0 ? ' product-card__favorite--active' : '' ?>"></button>
                             </div>
                             <div class="product-card__title">
                                 <?= $product['title'] ?>
@@ -140,6 +137,29 @@
             </div>
 
             <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+
+        <div class="welcome-manufacture">
+            <div class="section-badge section-badge--white">Производство</div>
+            <div class="welcome-manufacture__title">В основе производственного процесса - <span>технологии высочайшего уровня</span>,
+                все предприятия оснащены современным высокотехнологичным оборудованием.
+            </div>
+            <a href="#" class="btn btn-green">Узнать больше</a>
+
+            <div class="manufacture-metrics">
+                <div class="manufacture-metric">
+                    <div class="manufacture-metric__title">до 500 000</div>
+                    <div class="manufacture-metric__text">наименований медицинских изделий </div>
+                </div>
+                <div class="manufacture-metric">
+                    <div class="manufacture-metric__title">до 1 млн</div>
+                    <div class="manufacture-metric__text">салфеток с нашатырным спиртом в месяц</div>
+                </div>
+                <div class="manufacture-metric">
+                    <div class="manufacture-metric__title">200+</div>
+                    <div class="manufacture-metric__text">повязок пластырного типа в сутки</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
