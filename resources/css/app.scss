@@ -361,8 +361,18 @@ body {
   }
 }
 
+.btn-green {
+  --btn-color: #568129;
+}
+
+.btn-full {
+  width: calc(100% - 50px);
+}
+
 .oversection {
   margin-top: -24px;
+  background-color: #ffffff;
+  border-radius: 24px 24px 0 0;
 }
 
 .section-badge {
@@ -430,7 +440,6 @@ body {
   max-width: 450px;
 }
 
-/// ABOUT
 .welcome-about {
   padding-top: 94px;
   border-radius: 24px 24px 0 0;
@@ -551,6 +560,7 @@ body {
   border-radius: 24px 24px 0 0;
   background-color: $color-beige;
   padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .production-grid {
@@ -616,5 +626,119 @@ body {
 
   &:hover &__title {
     background-color: rgb(128 128 128 / 0.3);
+  }
+}
+
+.welcome-products {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.product-card {
+  box-shadow: 10px 10px 20px 0 rgb(233 233 233 / 0.5);
+  background-color: #f9f9f9;
+  padding: 12px 12px 15px 12px;
+  border-radius: 12px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    height: 291px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #383B3D;
+    background-color: transparent;
+    border: none;
+
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+
+.slider-arrows {
+  display: flex;
+  column-gap: 10px;
+}
+
+.slider-arrow {
+  width: 34px;
+  height: 34px;
+  border: 2px solid $color-green;
+  background-color: transparent;
+  display: block;
+  border-radius: 50%;
+  color: $color-green;
+  transition: {
+    property: background-color, color, opacity;
+    duration: .2s;
+  };
+  cursor: pointer;
+
+  svg {
+    position: relative;
+    top: 2px;
+  }
+
+  &:not(.swiper-button-disabled):hover {
+    background-color: $color-green;
+    color: #ffffff;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.products-slider.swiper {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 3px;
+}
+
+.welcome-products-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.slider-progressbar {
+  border-radius: 4px;
+  margin-top: 55px;
+  position: static;
+  --swiper-pagination-progressbar-size: 3px;
+  --swiper-pagination-progressbar-bg-color: #d7d8d8;
+  --swiper-pagination-color: #568129;
+
+  .swiper-pagination-progressbar-fill {
+    border-radius: 4px;
   }
 }
