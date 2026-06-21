@@ -259,3 +259,53 @@
         </div>
     </div>
 </section>
+
+<section class="welcome-contacts">
+    <div class="container">
+        <div class="welcome-contacts-wrapper">
+            <div class="welcome-contacts-left">
+                <div class="section-badge section-badge--white">Контакты</div>
+                <div class="section-contact section-contact--email">
+                    <div class="section-contact-label">Почта:</div>
+                    <a href="mailto:evers@evers.ru" class="section-contact__link">evers@evers.ru</a>
+                </div>
+                <div class="section-contact section-contact--phone">
+                    <div class="section-contact-label">Телефон:</div>
+                    <a href="mailto:evers@evers.ru" class="section-contact__link">+7 (499) 707-10-09</a>
+                </div>
+                <a href="#" class="btn btn-white btn-full">Оставить заявку на сотрудничество</a>
+            </div>
+            <div class="welcome-contacts-right">
+                <div class="social-buttons">
+                    <a href="#" class="social-button social-button--white">
+                        <svg height="1em">
+                            <use xlink:href="/assets/img/socials.svg#vk"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-button social-button--white">
+                        <svg height="1em" style="position: relative; top: -1px; right: -2px">
+                            <use xlink:href="/assets/img/socials.svg#rutube"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-button social-button--white">
+                        <svg height="1em">
+                            <use xlink:href="/assets/img/socials.svg#dzen"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="welcome-contacts-right__text welcome-contacts-right__text--address">
+                    <div class="section-contact-label">Офис:</div>
+                    <p>Москва, ул. Флотская,<br/> д. 5, кор. Б</p>
+                </div>
+                <div class="welcome-contacts-right__text welcome-contacts-right__text--worktime">
+                    <div class="section-contact-label">График работы:</div>
+                    Пн-Чт<br/>
+                    9:00 - 18:00<br/>
+                    <br/>
+                    Пт<br/>
+                    9:00 - 17:00<br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
