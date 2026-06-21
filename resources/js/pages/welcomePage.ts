@@ -44,10 +44,11 @@ function initPartnersSlider() {
     modules: [Pagination],
     slidesPerView: 1,
     spaceBetween: 20,
+    autoHeight: true,
     breakpoints: {
       1360: {
         slidesPerView: 4
-      }
+      },
     },
     pagination: {
       el: progressbar,

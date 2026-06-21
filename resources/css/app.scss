@@ -1374,7 +1374,7 @@ body {
   justify-content: space-between;
   min-height: 810px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   border-radius: 24px 24px 0 0;
   background: {
     position: center center;
@@ -1458,4 +1458,98 @@ body {
     duration: .6s;
   };
 
+}
+
+.manufacture-regions-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.manufacture-regions-container {
+  position: relative;
+}
+
+.manufacture-regions-slider {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 650px;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #F9F9F9;
+  padding: 40px;
+  border-radius: 12px;
+
+  .swiper-slide {
+    background-color: #F9F9F9;
+  }
+
+  .slider-arrows {
+    margin-top: 32px;
+  }
+}
+
+.manufacture-region-card {
+  &__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    color: $color-green;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 1%;
+
+    b {
+      font-weight: bold;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.manufacture-regions-map {
+  position: absolute;
+  left: 690px;
+  top: -266px;
+
+  img {
+    max-width: unset;
+  }
+}
+
+.manufacture-regions-point {
+  position: absolute;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 100%;
+  background-color: var(--point-background, #ffffff);
+  color: var(--point-color, #272727);
+  cursor: pointer;
+  transition: {
+    property: color, background-color;
+    duration: .2s;
+  };
+
+  svg {
+    color: var(--point-background, #ffffff);
+    transition: .2s color;
+    position: absolute;
+    top: 99.2%;
+    left: 14px;
+  }
+
+  &.active {
+    --point-background: #DE171A;
+    --point-color: #ffffff;
+    cursor: default;
+  }
 }

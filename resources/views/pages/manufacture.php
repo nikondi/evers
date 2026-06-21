@@ -99,3 +99,67 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="manufacture-regions-section oversection">
+    <div class="container manufacture-regions-container">
+        <div class="section-badge">Наши производственные площадки</div>
+        <div class="manufacture-regions">
+            <div class="manufacture-regions-slider swiper">
+                <div class="swiper-wrapper">
+                    <?php
+                    $regions = [
+                        [
+                            'title' => 'Московская обл. (ОЭЗ&nbsp;«Дубна»)', 'text' => '<p><b>Производство, расположенное в Московской области на территории ОЭЗ «Дубна», специализируется на выпуске сложных медицинских изделий с высокой степенью потенциального риска применения.</b></p> <p>Здесь же функционирует уникальная научно-исследовательская лаборатория, на базе которой проводятся передовые исследования в сотрудничестве с ведущими медицинскими, научными и образовательными учреждениями.</p><p>Отдел технического контроля полностью соответствует требованиям системы менеджмента качества, сертифицированной по стандарту ISO 13485. Благодаря комплексному оснащению отдел обеспечивает сквозной контроль качества по всей номенклатуре медицинских изделий — от входной проверки сырья до приемки готовой продукции.</p>',
+                            'points' => [
+                                [9.381, 56.966, 'Московская обл. (ОЭЗ «Дубна»)'], // Координаты в процентах от (1503 x 891)
+                            ]
+                        ],
+                        [
+                            'title' => 'Ивановская область', 'text' => '<p><b>Две производственные площадки ООО «ЭВТЕКС», входящие в группу компаний Эверс Груп Рус расположены в Ивановской области в г. Тейково и пос. Воскресенкое.</b></p> <p>Производство численностью свыше 100 сотрудников оснащено современным высокопроизводительным оборудованием и специализируется на производстве традиционных медицинских расходных материалов: продукция из марли, салфетки сорбционные нетканые, эластичные самофиксирующиеся и фиксирующие бинты, пластыри для фиксации катетеров и повязки пластырного типа, салфетки для стимуляции дыхания, стерильные спиртовые салфетки, одноразовые маски.</p>',
+                            'points' => [
+                                [11.643, 60.942, 'Ивановская обл. (г. Тейково)'], // Координаты в процентах от (1503 x 891)
+                                [10.379, 64.983, 'Ивановская обл. (с. Воскресенское)'] // Координаты в процентах от (1503 x 891)
+                            ]
+                        ],
+                    ];
+                    ?>
+                    <?php foreach ($regions as $region): ?>
+                        <div class="swiper-slide">
+                            <div class="manufacture-region-card">
+                                <div class="manufacture-region-card__title"><?= $region['title'] ?></div>
+                                <div class="manufacture-region-card__text"><?= $region['text'] ?></div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow-prev">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-arrow slider-arrow-next">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#right"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="manufacture-regions-map">
+                <img src="/assets/img/manufacture/map.svg" width="1503" alt="">
+                <?php foreach ($regions as $i => $region): ?>
+                    <?php foreach ($region['points'] as $point): ?>
+                        <div class="manufacture-regions-point"
+                             style="left: <?= $point[0] ?>%; top: <?= $point[1] ?>%" data-group="<?= $i ?>">
+                            <?= $point[2] ?>
+                            <svg width="15" height="10" viewBox="0 0 15 10">
+                                <path d="M8.03636 9.27273L0 0H14.2182L8.03636 9.27273Z" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</section>
