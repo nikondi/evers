@@ -46,3 +46,56 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<?php // TODO не нравится мне этот блок ?>
+<section class="manufacture-process-section">
+    <div class="container">
+        <div class="section-badge section-badge--white">Производственный процесс</div>
+    </div>
+    <div class="container">
+        <div class="manufacture-processes">
+            <div class="manufacture-process active">
+                <div class="manufacture-process-inner">
+                    <div class="manufacture-process__title">Инновационные идеи</div>
+                    <div class="manufacture-process__text">Сотрудничество с&nbsp;российскими медицинскими работниками
+                        из&nbsp;различных областей позволяет понять, какие проблемы стоят перед&nbsp;современной
+                        медициной. Совместная работа даёт нам&nbsp;актуальные идеи для&nbsp;разработки инновационных
+                        медицинских изделий, повышающих стандарты лечения.
+                    </div>
+                </div>
+            </div>
+            <div class="manufacture-process">
+                <div class="manufacture-process-inner">
+                    <div class="manufacture-process__title">Реализация проекта</div>
+                    <div class="manufacture-process__text">Разработка передовых медицинских изделий, ранозаживляющих
+                        решений и&nbsp;уходовой косметики осуществляется на&nbsp;базе собственной лаборатории совместно
+                        с&nbsp;ведущими российскими медицинскими ВУЗами. Проведение доклинических испытаний при&nbsp;участии
+                        медицинских учреждений РФ, имеющих государственную аккредитацию - необходимый этап проверки на&nbsp;эффективность
+                        и&nbsp;безопасность.
+                    </div>
+                </div>
+            </div>
+            <div class="manufacture-process">
+                <div class="manufacture-process-inner">
+                    <div class="manufacture-process__title">Сырье для производства</div>
+                    <div class="manufacture-process__text">Партнёрство с&nbsp;большим количеством российских и&nbsp;иностранных
+                        компаний-поставщиков сырья и&nbsp;компонентов для&nbsp;производства медицинских изделий
+                        позволяет выбирать самые качественные и&nbsp;современные материалы. Мы&nbsp;тщательно проверяем
+                        исходное сырьё, чтобы&nbsp;наша продукция отвечала самым высоким, в&nbsp;том&nbsp;числе
+                        международным стандартам.
+                    </div>
+                </div>
+            </div>
+            <div class="manufacture-process">
+                <div class="manufacture-process-inner">
+                    <div class="manufacture-process__title">Контроль качества изделий</div>
+                    <div class="manufacture-process__text">Главный критерий для организации любого производственного
+                        процесса - безопасность конечного продукта. Все медицинские изделия и уходовая косметика нашего
+                        производства проходят строгий контроль качества на различных этапах, подтверждающий их
+                        безопасность.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
