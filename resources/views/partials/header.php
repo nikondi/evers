@@ -30,7 +30,7 @@ $alt_header ??= false;
                         <ul class="header-submenu">
                             <li><a href="#">О компании</a></li>
                             <li><a href="#">Отдел R&D</a></li>
-                            <li><a href="#">Производство</a></li>
+                            <li><a href="/about/manufacture">Производство</a></li>
                             <li><a href="#">СМИ о нас</a></li>
                             <li><a href="#">Новости компании</a></li>
                             <li><a href="#">Реквизиты</a></li>
@@ -103,5 +103,5 @@ $alt_header ??= false;
 
         </div>
     </div>
-    <div class="header-placeholder"></div>
 </header>
+<div class="header-placeholder"></div>

@@ -223,11 +223,12 @@ body {
   .header-action:not(:hover) {
     background-color: #FAF9F3;
   }
-
-  .header-placeholder {
-    display: none;
-  }
 }
+
+.header--alt + .header-placeholder {
+  display: none;
+}
+
 
 @media (max-width: 1359px) {
   .header-contacts,
@@ -1246,4 +1247,122 @@ body {
 
 .footer-politics-use {
   grid-column: span 2;
+}
+
+.page-h1 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+}
+
+.section-breadcrumbs {
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  display: flex;
+  column-gap: .3em;
+
+  > li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+
+  > li > a {
+    color: #27272780;
+    text-decoration: none;
+    transition: .2s color;
+
+    &:hover {
+      color: #272727;
+    }
+
+    &:after {
+      content: ' >';
+    }
+  }
+}
+
+/// ABOUT/MANUFACTURE
+.manufacture-info-section {
+  padding-bottom: 120px;
+}
+
+.manufacture-info {
+  display: flex;
+  margin-top: 60px;
+  background: #F0EDE6;
+  overflow: hidden;
+  border-radius: 12px;
+  min-height: 485px;
+}
+
+.manufacture-info-text {
+  width: 100%;
+  max-width: 560px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+}
+
+.manufacture-info-metrics {
+  padding: 50px;
+  flex: 1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: {
+    image: url("/assets/img/manufacture/info.jpg");
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  };
+}
+
+.manufacture-info-metric {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+
+.manufacture-info-metric:last-child {
+  align-self: flex-end;
 }
