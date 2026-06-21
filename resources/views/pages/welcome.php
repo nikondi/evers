@@ -1,3 +1,6 @@
+<?php
+// TODO mobile
+?>
 <section class="welcome-first">
     <div class="container">
         <div class="welcome-first-content">

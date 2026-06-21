@@ -1,4 +1,5 @@
 <?php
+// TODO mobile
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/about/', 'О компании'],
