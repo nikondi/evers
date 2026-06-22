@@ -16,6 +16,8 @@ class Vite
 
     private function __construct(string $manifestPath, string $assetUrl, string $devServerUrl = null)
     {
+        if(defined('BUILD'))
+            return;
         $this->manifestPath = $manifestPath;
         $this->assetUrl = rtrim($assetUrl, '/') . '/';
         $this->devServerUrl = rtrim($devServerUrl, '/') . '/';
