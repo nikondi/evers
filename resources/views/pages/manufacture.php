@@ -190,3 +190,41 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+
+<section class="manufacture-samples-section">
+    <div class="container">
+        <div class="manufacture-samples">
+            <div class="manufacture-samples-left">
+                <div class="section-h2">Наше производство способно обеспечивать <span>стабильные поставки</span> в&nbsp;объёме:
+                </div>
+                <?php // TODO оставить заявку ?>
+                <button type="button" class="btn">Оставить заявку о сотрудничестве</button>
+            </div>
+            <div class="manufacture-samples-right">
+                <div class="manufacture-samples-items">
+                    <div class="manufacture-sample">
+                        <div class="manufacture-sample__image">
+                            <img src="/assets/img/manufacture/samples/1.png" alt="">
+                        </div>
+                        <div class="manufacture-sample__title">5 млн. метров</div>
+                        <div class="manufacture-sample__text">бинтов в месяц</div>
+                    </div>
+                    <div class="manufacture-sample">
+                        <div class="manufacture-sample__image">
+                            <img src="/assets/img/manufacture/samples/2.png" alt="">
+                        </div>
+                        <div class="manufacture-sample__title">600 000 ед.</div>
+                        <div class="manufacture-sample__text">инновационных продуктов в месяц</div>
+                    </div>
+                </div>
+                <?php // TODO ссылки ?>
+                <div class="note">
+                    Мы производим продукцию как под <a href="#">собственными брендами</a>, так и по контракту. Если для
+                    производства вашей <a href="#">собственной торговой марки</a> нужен надежный партнер, то мы готовы к
+                    сотрудничеству.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
