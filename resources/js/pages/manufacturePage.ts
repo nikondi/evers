@@ -4,6 +4,7 @@ import {EffectFade, Navigation} from "swiper/modules";
 export default function manufacturePage() {
   initProcesses();
   initRegions();
+  initVideo();
 }
 
 function initProcesses() {
@@ -57,7 +58,6 @@ function initRegions() {
   checkSlides(swpr.activeIndex)
 
   swpr.on('slideChange', (s) => {
-    console.log(s.realIndex)
     checkSlides(s.realIndex)
   });
 
@@ -65,5 +65,21 @@ function initRegions() {
     pointElem.addEventListener('click', () => {
       swpr.slideTo(parseInt(pointElem.dataset.group));
     })
+  })
+}
+
+function initVideo() {
+  const videoWrapper = document.querySelector('.manufacture-video') as HTMLElement;
+  if (!videoWrapper)
+    return;
+  const video = videoWrapper.querySelector('video') as HTMLVideoElement;
+  const button = videoWrapper.querySelector('.manufacture-play-button') as HTMLButtonElement;
+
+  video.addEventListener('play', () => {
+    videoWrapper.classList.add('played');
+    video.controls = true;
+  });
+  button.addEventListener('click', () => {
+    video.play();
   })
 }

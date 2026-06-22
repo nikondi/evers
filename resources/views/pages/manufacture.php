@@ -164,3 +164,29 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="manufacture-video-section">
+    <div class="container">
+        <div class="section-badge">Видео о производстве</div>
+        <div class="manufacture-video">
+            <video src="https://lorem.video/720p" poster="/assets/img/manufacture/video-preview.jpg"></video>
+            <button type="button" class="manufacture-play-button">
+                <svg width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <foreignObject x="-10" y="-10" width="115" height="115">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="backdrop-filter:blur(5px);clip-path:url(#bgblur_0_162_4351_clip_path);height:100%;width:100%"></div>
+                    </foreignObject>
+                    <path data-figma-bg-blur-radius="10"
+                          d="M47.5 0C21.3 0 0 21.3 0 47.5C0 73.7 21.3 95 47.5 95C73.7 95 95 73.7 95 47.5C95 21.3 73.7 0 47.5 0ZM62.8 49.9L40.4 64.8C38.5 66.1 35.9 64.7 35.9 62.4V32.6C35.9 30.3 38.5 28.9 40.4 30.2L62.8 45.1C64.5 46.2 64.5 48.8 62.8 49.9Z"
+                          fill="white" fill-opacity="0.6"/>
+                    <defs>
+                        <clipPath id="bgblur_0_162_4351_clip_path" transform="translate(10 10)">
+                            <path
+                                d="M47.5 0C21.3 0 0 21.3 0 47.5C0 73.7 21.3 95 47.5 95C73.7 95 95 73.7 95 47.5C95 21.3 73.7 0 47.5 0ZM62.8 49.9L40.4 64.8C38.5 66.1 35.9 64.7 35.9 62.4V32.6C35.9 30.3 38.5 28.9 40.4 30.2L62.8 45.1C64.5 46.2 64.5 48.8 62.8 49.9Z"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
