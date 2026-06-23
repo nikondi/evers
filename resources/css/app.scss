@@ -82,19 +82,20 @@ body.ohidden {
   padding-right: 12px;
   position: relative;
 
-  &:after {
-    content: "";
+  &:after,
+  &:before {
+    content: '';
     width: 8px;
-    height: 8px;
+    height: 2px;
+    background: $color-primary;
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
-    background: {
-      repeat: no-repeat;
-      position: center center;
-      image: url("/assets/img/icons/plus.svg");
-    };
+  }
+
+  &:before {
+    transform: rotate(-90deg);
+    transition: transform .2s;
   }
 }
 
@@ -139,8 +140,8 @@ body.ohidden {
     color: $color-primary;
   }
 
-  .header-submenu-trigger:after {
-    background-image: url("/assets/img/icons/minus.svg");
+  .header-submenu-trigger:before {
+    transform: rotate(0deg);
   }
 
 
