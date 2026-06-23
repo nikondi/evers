@@ -26,7 +26,7 @@ export default defineConfig({
     },
   },
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       input: resolve(__dirname, './resources/js/app.html'),
       output: {
         entryFileNames: 'assets/js/[name]-[hash].js',

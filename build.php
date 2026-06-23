@@ -24,7 +24,7 @@ passthru('npm run build');
 $scripts = preg_split('/\n\s*\n/', file_get_contents(DIST_PATH . '/resources/js/app.html'), 2, PREG_SPLIT_NO_EMPTY);
 
 $head_scripts = $scripts[0];
-$body_scripts = $scripts[1];
+$body_scripts = $scripts[1] ?? '';
 
 console_print('==== CLEAR FILES ====', 'yellow');
 
