@@ -30,8 +30,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             <p>Программа мероприятия разрабатывается индивидуально, и&nbsp;может быть организована как&nbsp;онлайн,
                 так&nbsp;и&nbsp;офлайн.</p>
         </div>
-        <?php // TODO button ?>
-        <button class="btn request-button" type="button">Оставить заявку на обучение</button>
+        <button class="btn popup-button" data-popup="request-popup" type="button">Оставить заявку на обучение</button>
     </div>
 </section>
 
@@ -48,8 +47,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             Пожалуйста, опишите ваш запрос через форму (или обратитесь к своему персональному менеджеру напрямую), мы
             обязательно с вами свяжемся, чтобы обсудить детали.
         </div>
-        <?php // TODO button ?>
-        <div class="btn btn-green question-button">Задать вопрос</div>
+        <div class="btn btn-green popup-button" data-popup="question-popup">Задать вопрос</div>
     </div>
 </section>
 

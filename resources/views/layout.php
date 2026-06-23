@@ -21,12 +21,15 @@
     <meta name="apple-mobile-web-app-title" content="Эверс Груп Рус"/>
     <link rel="manifest" href="/assets/favicon/site.webmanifest"/>
 </head>
-<body>
-<?php include 'partials/header.php'; ?>
+<body class="no-js">
+<?php include VIEW_PATH . 'partials/header.php'; ?>
 
 <?= $content ?>
 
-<?php include 'partials/footer.php'; ?>
+<?php include VIEW_PATH . 'partials/footer.php'; ?>
+
+<?php include VIEW_PATH . 'partials/popups/request.php'; ?>
+<?php include VIEW_PATH . 'partials/popups/question.php'; ?>
 
 
 <?php // TODO: Remove on production ?>
