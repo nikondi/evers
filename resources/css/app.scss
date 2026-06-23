@@ -90,11 +90,12 @@ body.ohidden {
     background: $color-primary;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     right: 0;
   }
 
   &:before {
-    transform: rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
     transition: transform .2s;
   }
 }
@@ -141,7 +142,7 @@ body.ohidden {
   }
 
   .header-submenu-trigger:before {
-    transform: rotate(0deg);
+    transform:  translateY(-50%) rotate(0deg);
   }
 
 
