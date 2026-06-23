@@ -81,7 +81,7 @@
             ?>
             <?php foreach ($production as $good): ?>
                 <a href="#" class="production-card">
-                    <img src="<?= $good['image'] ?>" class="production-card__background"/>
+                    <img src="<?= $good['image'] ?>" class="production-card__background" alt=""/>
                     <div class="production-card__title"><?= $good['title'] ?></div>
                 </a>
             <?php endforeach; ?>
@@ -92,7 +92,7 @@
 <section class="oversection welcome-products">
     <div class="container">
         <div class="swiper products-slider">
-            <div class="welcome-products-top">
+            <div class="slider-top">
                 <div class="section-badge">Новинки и бестселлеры</div>
                 <div class="slider-arrows">
                     <button type="button" class="slider-arrow slider-arrow-prev">
