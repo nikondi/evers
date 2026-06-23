@@ -30,6 +30,25 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             <p>Программа мероприятия разрабатывается индивидуально, и&nbsp;может быть организована как&nbsp;онлайн,
                 так&nbsp;и&nbsp;офлайн.</p>
         </div>
+        <?php // TODO button ?>
         <button class="btn request-button" type="button">Оставить заявку на обучение</button>
+    </div>
+</section>
+
+<section class="education-question oversection">
+    <div class="container">
+        <div class="section-badge">задать вопрос</div>
+        <div class="section-h3">
+            <span>Многие специалисты с&nbsp;большим удовольствием используют нашу продукцию в&nbsp;своей ежедневной
+                практике.</span> Если&nbsp;ваш&nbsp;вопрос относится к&nbsp;компетенции действующего медицинского
+            специалиста узкого
+            профиля, мы&nbsp;готовы пригласить такого спикера.
+        </div>
+        <div class="education-question-text">
+            Пожалуйста, опишите ваш запрос через форму (или обратитесь к своему персональному менеджеру напрямую), мы
+            обязательно с вами свяжемся, чтобы обсудить детали.
+        </div>
+        <?php // TODO button ?>
+        <div class="btn btn-green question-button">Задать вопрос</div>
     </div>
 </section>

@@ -1902,3 +1902,19 @@ body {
     margin-bottom: 1em;
   }
 }
+
+.education-question {
+  background-color: $color-beige;
+  padding-top: 80px;
+  padding-bottom: 104px;
+}
+
+.education-question-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 760px;
+
+}
