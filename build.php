@@ -1,7 +1,7 @@
 <?php
 
-use App\Attributes\NoBuild;
-use App\Router;
+use Engine\Attributes\NoBuild;
+use Engine\Router;
 
 require_once __DIR__ . '/vendor/autoload.php';
 

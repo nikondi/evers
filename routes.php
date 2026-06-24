@@ -4,7 +4,7 @@ use App\Controllers\AboutController;
 use App\Controllers\CatalogController;
 use App\Controllers\CoopController;
 use App\Controllers\WelcomeController;
-use App\Router;
+use Engine\Router;
 
 Router::get('/', WelcomeController::class);
 

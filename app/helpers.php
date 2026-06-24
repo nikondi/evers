@@ -1,6 +1,6 @@
 <?php
 
-use App\Facades\Vite;
+use Engine\Facades\Vite;
 
 function vite(string|array $asset): string
 {

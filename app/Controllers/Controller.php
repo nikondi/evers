@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Facades\Vite;
+use Engine\Facades\Vite;
 
 class Controller
 {
