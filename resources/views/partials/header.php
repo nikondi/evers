@@ -1,6 +1,7 @@
 <?php
 $alt_header ??= false;
 ?>
+<?php // TODO search ?>
 <header class="header<?= $alt_header ? ' header--alt' : '' ?>">
     <div class="container">
         <div class="header-inner">

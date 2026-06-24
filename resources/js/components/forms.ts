@@ -7,9 +7,11 @@ export default function initForms() {
     const formSuccess = f.querySelector('.form-success') as HTMLElement;
     const submits = formFields.querySelectorAll('[type=submit]') as NodeListOf<HTMLInputElement | HTMLButtonElement>;
 
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
+      hideToast();
       submits.forEach((s) => s.disabled = true);
 
       fetch(form.action, {
@@ -24,10 +26,18 @@ export default function initForms() {
         .finally(() => submits.forEach((s) => s.disabled = false))
     });
 
-    (formFields.querySelectorAll('input[type=tel]') as NodeListOf<HTMLElement>).forEach((el) => {
-      IMask(el, {
-        mask: '+7 (000) 000-00-00',
-      });
+    (formFields.querySelectorAll('.labeled-input input, .checkbox input') as NodeListOf<HTMLInputElement>).forEach((input) => {
+      if (input.type == 'tel') {
+        IMask(input, {
+          mask: '+7 (000) 000-00-00',
+        });
+      }
+      if (['tel', 'email', 'text', 'checkbox'].includes(input.type) && input.required) {
+        input.addEventListener('invalid', (e) => {
+          e.preventDefault();
+          showToast();
+        });
+      }
     })
   });
 
@@ -54,4 +64,14 @@ export default function initForms() {
       }
     })
   });
+
+  document.querySelector('#form-error-toast .form-error-toast__close')?.addEventListener('click', hideToast)
+}
+
+function showToast() {
+  document.getElementById('form-error-toast').classList.add('active');
+}
+
+function hideToast() {
+  document.getElementById('form-error-toast').classList.remove('active');
 }

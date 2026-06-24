@@ -31,6 +31,15 @@
 <?php include VIEW_PATH . 'partials/popups/request.php'; ?>
 <?php include VIEW_PATH . 'partials/popups/question.php'; ?>
 
+<div class="form-error-toast" id="form-error-toast">
+    Поля, отмеченные&nbsp;(*), обязательны для заполнения.
+    <button type="button" class="form-error-toast__close">
+        <svg width="1em" height="1em">
+            <use xlink:href="/assets/img/icons.svg#times"/>
+        </svg>
+    </button>
+</div>
+
 
 <?php // TODO: Remove on production ?>
 <?php if (!defined('BUILD')): ?>
