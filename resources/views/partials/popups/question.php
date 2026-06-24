@@ -1,4 +1,4 @@
-<div class="popup active" id="question-popup">
+<div class="popup" id="question-popup">
     <button type="button" class="popup-close">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
             <path d="M24.9922 1L1 25M25 25L1.00784 1.00003" stroke="currentColor" stroke-width="2"

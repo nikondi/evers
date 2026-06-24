@@ -36,10 +36,12 @@
                         </div>
                         <label class="checkbox">
                             <input type="checkbox" required/>
+                            <span class="checkbox__check"></span>
                             <span>Я согласен на <a href="#">обработку персональных данных</a> *</span>
                         </label>
                         <label class="checkbox">
                             <input type="checkbox" required/>
+                            <span class="checkbox__check"></span>
                             <span>Я согласен с условиями <a href="#">политики конфиденциальности</a> *</span>
                         </label>
                     </div>
