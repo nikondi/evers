@@ -10,4 +10,11 @@ class CoopController extends Controller
             'title' => 'Обучение для оптовых партнеров'
         ]);
     }
+
+    public function contract(): string
+    {
+        return $this->render("pages/coop/contract", [
+            'title' => 'Контрактное производство'
+        ]);
+    }
 }
