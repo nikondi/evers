@@ -66,8 +66,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
     <div class="container">
         <div class="section-badge section-badge--white">для кого</div>
         <div class="contract-for__title section-h2">Для&nbsp;аптечных и&nbsp;торговых сетей, клиник и&nbsp;госпиталей,
-            владельцев
-            брендов, маркетплейсов и&nbsp;e-commerce, стартапов в&nbsp;MedTech, медицинских специалистов.
+            владельцев брендов, маркетплейсов и&nbsp;e-commerce, стартапов в&nbsp;MedTech, медицинских специалистов.
         </div>
         <button type="button" class="btn btn-white popup-button" data-popup="request-popup">
             Оставить заявку
@@ -79,7 +78,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
     <div class="container">
         <div class="section-badge">ассортимент</div>
         <div class="section-h4">
-            Мы производим широйкий ассортимент товаров - <span>более 200 наименований в различных категориях.</span> Под
+            Мы производим широкий ассортимент товаров - <span>более 200 наименований в различных категориях.</span> Под
             вашей
             торговой маркой мы можем произвести любой продукт из нашего актуального ассортимента и предоставим все
             необходимые документы - РУ РЗН (Регистрационное удостоверение), декларации и сертификаты.
@@ -101,6 +100,66 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <?php endforeach; ?>
             </div>
             <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+    </div>
+</section>
+
+<section class="contract-request-section">
+    <div class="container">
+        <div class="contract-request">
+            <div class="contract-request-text">
+                <div class="section-badge section-badge--white">оставить заявку</div>
+                <div class="contract-request__text">Оставьте Ваши контакты и&nbsp;пожелания&nbsp;— мы&nbsp;свяжемся с&nbsp;Вами
+                    в&nbsp;самое
+                    ближайшее время, чтобы&nbsp;обсудить детали.
+                </div>
+                <div class="contract-request__note">Поля, отмеченные&nbsp;(*), обязательны для заполнения</div>
+                <div class="contract-request-contacts">
+                    <div class="contract-request-contact">
+                        <div class="contract-request-contact__label">Почта:</div>
+                        <a href="mailto:evers@evers.ru" class="contract-request-contact__text">evers@evers.ru</a>
+                    </div>
+                    <div class="contract-request-contact">
+                        <div class="contract-request-contact__label">Телефон:</div>
+                        <a href="tel:+7 (499) 707-10-09" class="contract-request-contact__text">+7 (499) 707-10-09</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contract-request-form form">
+                <div class="form-fields">
+                    <form action="/request.json">
+                        <div class="form-input-group">
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Ваше имя / название компании</div>
+                                <input type="text" name="name" required/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Контактный телефон</div>
+                                <input type="tel" name="phone" required/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">E-mail</div>
+                                <input type="email" name="email" required/>
+                            </div>
+                            <div class="labeled-input">
+                                <div class="labeled-input-label">Комментарий</div>
+                                <textarea name="comment"></textarea>
+                            </div>
+                            <label class="checkbox checkbox--white">
+                                <input type="checkbox" required/>
+                                <span class="checkbox__check"></span>
+                                <span>Я согласен на <a href="#">обработку персональных данных</a> и с условиями <a
+                                        href="#">политики конфиденциальности</a> *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-full">Оставить заявку</button>
+                    </form>
+                </div>
+                <div class="form-success">
+                    <?php // TODO верстка ?>
+                    Форма успешно отправлена
+                </div>
+            </div>
         </div>
     </div>
 </section>

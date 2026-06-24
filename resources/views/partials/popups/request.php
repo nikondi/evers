@@ -13,7 +13,7 @@
                     время. Поля, отмеченные&nbsp;(*), обязательны для заполнения.
                 </div>
                 <form action="/request.json" class="popup-form">
-                    <div class="popup-input-group">
+                    <div class="form-input-group">
                         <div class="labeled-input labeled-input--required">
                             <div class="labeled-input-label">Ваше имя</div>
                             <input type="text" name="name" required/>

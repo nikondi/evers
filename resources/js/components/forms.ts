@@ -36,6 +36,8 @@ export default function initForms() {
         input.addEventListener('invalid', (e) => {
           e.preventDefault();
           showToast();
+          input.classList.add('invalid');
+          input.addEventListener('input', () => input.classList.remove('invalid'))
         });
       }
     })
