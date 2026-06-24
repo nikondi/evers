@@ -65,11 +65,42 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 <section class="contract-for-section">
     <div class="container">
         <div class="section-badge section-badge--white">для кого</div>
-        <div class="contract-for__title section-h2">Для&nbsp;аптечных и&nbsp;торговых сетей, клиник и&nbsp;госпиталей, владельцев
+        <div class="contract-for__title section-h2">Для&nbsp;аптечных и&nbsp;торговых сетей, клиник и&nbsp;госпиталей,
+            владельцев
             брендов, маркетплейсов и&nbsp;e-commerce, стартапов в&nbsp;MedTech, медицинских специалистов.
         </div>
         <button type="button" class="btn btn-white popup-button" data-popup="request-popup">
             Оставить заявку
         </button>
+    </div>
+</section>
+
+<section class="contract-assortment-section oversection">
+    <div class="container">
+        <div class="section-badge">ассортимент</div>
+        <div class="section-h4">
+            Мы производим широйкий ассортимент товаров - <span>более 200 наименований в различных категориях.</span> Под
+            вашей
+            торговой маркой мы можем произвести любой продукт из нашего актуального ассортимента и предоставим все
+            необходимые документы - РУ РЗН (Регистрационное удостоверение), декларации и сертификаты.
+        </div>
+        <div class="swiper assortment-slider">
+            <div class="swiper-wrapper">
+                <?php
+                $goods = [
+                    ['image' => '/assets/img/coop/contract/assortment/1.png', 'title' => 'Лейкопластыри и повязки '],
+                    ['image' => '/assets/img/coop/contract/assortment/2.png', 'title' => 'Марля, вата, бинты'],
+                    ['image' => '/assets/img/coop/contract/assortment/3.png', 'title' => 'Средства индивидуальной защиты (маски, бахилы)'],
+                    ['image' => '/assets/img/coop/contract/assortment/4.png', 'title' => 'Средства экспресс-диагностики'],
+                ]
+                ?>
+                <?php foreach ($goods as $goodItem): ?>
+                    <div class="swiper-slide">
+                        <?php include VIEW_PATH . 'components/good-short-card.php'; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="swiper-pagination slider-progressbar"></div>
+        </div>
     </div>
 </section>
