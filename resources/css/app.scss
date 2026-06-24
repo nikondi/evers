@@ -2230,6 +2230,7 @@ body.no-js .popup {
   padding-bottom: 80px;
   padding-top: 40px;
 }
+
 .contract-first {
   display: flex;
   background: linear-gradient(129.33deg, #568129 0%, #F0EDE6 276.53%);
@@ -2317,4 +2318,26 @@ body.no-js .popup {
       margin-bottom: 1em;
     }
   }
+}
+
+.contract-partners-section {
+  padding-bottom: 80px;
+}
+
+.contract-for-section {
+  border-radius: 24px 24px 0 0;
+  background: {
+    image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/img/coop/contract/for-background.jpg');
+    position: right center;
+    repeat: no-repeat;
+    size: 130%;
+  }
+  padding-top: 80px;
+  padding-bottom: 149px;
+}
+
+.contract-for__title {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  line-height: 130%;
 }

@@ -52,3 +52,24 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="contract-partners-section">
+    <div class="container">
+        <div class="section-badge">наши партнеры</div>
+        <div class="section-h2">Эверс Груп Рус сотрудничает <span>с крупнейшими федеральными аптечными сетями и фармкомпаниями</span>,
+            в числе которых Ригла, Отрада, Эркафарм.
+        </div>
+    </div>
+</section>
+
+<section class="contract-for-section">
+    <div class="container">
+        <div class="section-badge section-badge--white">для кого</div>
+        <div class="contract-for__title section-h2">Для&nbsp;аптечных и&nbsp;торговых сетей, клиник и&nbsp;госпиталей, владельцев
+            брендов, маркетплейсов и&nbsp;e-commerce, стартапов в&nbsp;MedTech, медицинских специалистов.
+        </div>
+        <button type="button" class="btn btn-white popup-button" data-popup="request-popup">
+            Оставить заявку
+        </button>
+    </div>
+</section>
