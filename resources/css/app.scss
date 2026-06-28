@@ -279,7 +279,7 @@ body.ohidden {
 .btn {
   display: inline-block;
   text-align: center;
-  margin-right: 54px;
+  margin-right: 50px;
   position: relative;
   border: 2px solid var(--btn-background, #DE171A);
   background-color: var(--btn-background, #DE171A);
@@ -307,7 +307,7 @@ body.ohidden {
     position: absolute;
     width: 50px;
     height: 50px;
-    right: -56px;
+    right: -52px;
     top: 0;
     border-radius: 30px;
     border: 2px solid var(--btn-background, #DE171A);
@@ -318,9 +318,9 @@ body.ohidden {
   &:after {
     content: '';
     position: absolute;
-    width: 54px;
-    height: 54px;
-    right: -56px;
+    width: 50px;
+    height: 50px;
+    right: -52px;
     top: 0;
     border-radius: 30px;
     mask-image: url("/assets/img/icons/arrow-mask-rotated.svg");
@@ -3156,9 +3156,11 @@ body.no-js .popup {
     width: 30dvw;
     z-index: 4;
   }
+
   &:before {
     left: -33dvw;
   }
+
   &:after {
     right: -33dvw;
   }
@@ -3218,5 +3220,39 @@ body.no-js .popup {
 
   &__text {
     margin-top: 47px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+
+.about-brands-section {
+  padding-bottom: 120px;
+  .section-h3 {
+    margin-bottom: 40px;
+  }
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.brand-card {
+  padding: 12px;
+  background-color: #F0EDE6;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px 0 #E9E9E980;
+
+  > img {
+    height: 180px;
+    width: 100%;
+    background-color: #FFFFFF;
+    object-fit: contain;
+    padding: 40px;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 20px;
   }
 }

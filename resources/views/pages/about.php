@@ -164,3 +164,25 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="about-brands-section">
+    <div class="container">
+        <div class="section-badge">наш портфель</div>
+        <div class="section-h3">Ассортимент компании постоянно расширяется и совершенствуется, предлагая лучшие решения
+            для повышения уровня жизни населения.<br/> <span>Продукция представлена следующими брендами:</span>
+        </div>
+        <div class="brands-grid">
+            <?php
+            $brands = [
+                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/help.png'],
+                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/evers-med.png'],
+                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/angel.png'],
+                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/evers-life.png'],
+            ];
+            ?>
+            <?php foreach ($brands as $brand): ?>
+                <?php include VIEW_PATH . '/components/brand-card.php'; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
