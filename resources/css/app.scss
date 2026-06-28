@@ -2748,6 +2748,14 @@ body.no-js .popup {
   .section-badge {
     margin-bottom: 20px;
   }
+
+  &--white {
+    background-color: #fff;
+
+    .develop-our-text {
+      background-color: $color-beige;
+    }
+  }
 }
 
 .develop-our {

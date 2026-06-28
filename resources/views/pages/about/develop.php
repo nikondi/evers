@@ -130,7 +130,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                     <div class="doi-label-text">хитозан</div>
                 </div>
                 <div class="doi-label" style="bottom: 60px; right: 64px">
-                    <div class="doi-label-line doi-label-line-tl" style="width: 148px; height: 96px"></div>
+                    <div class="doi-label-line doi-label-line-tl" style="width: 138px; height: 96px"></div>
                     <div class="doi-label-text">анестетик</div>
                 </div>
                 <div class="doi-label" style="bottom: 35px; left: 17px">
@@ -143,6 +143,85 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         <div class="swiper products-slider" style="margin-top: 80px;">
             <div class="slider-top">
                 <div class="section-h4" style="font-weight: 500">Средства на основе Хитокола®</div>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow-prev">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-arrow slider-arrow-next">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#right"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <?php
+                $products = [
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                ];
+                ?>
+                <?php foreach ($products as $i => $goodItem): ?>
+                    <div class="swiper-slide">
+                        <?php include VIEW_PATH . 'components/good-card.php'; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="develop-our-section develop-our-section--white oversection">
+    <div class="container">
+        <div class="section-badge">наши разработки</div>
+        <div class="develop-our">
+            <div class="develop-our-text">
+                <div class="develop-our-tags">
+                    <div class="tag">лечение сложных ран</div>
+                    <div class="tag">аэрогель</div>
+                </div>
+                <div class="section-h2 develop-our__title">Повязка мазевая сетчатая</div>
+                <div class="develop-our__text">
+                    <p><b>Представляет собой полиэфирную сетку, пропитанную лечебной смесью.</b></p>
+                    <p><b>Мазевая основа из меди (Cu) и цинка (Zn)</b> является активной регенерирующей композицией,
+                        которая предотвращает развитие воспалений и способствует скорейшему заживлению.</p>
+                    <p>Её действие основано на <b>купировании процесса пролиферации бактерий при полном сохранении
+                            гидролипидной пленки</b> на поверхности поврежденной кожи.</p>
+                    <p>Полиэфирная сетка <b>не прилипает к ране</b> как классические перевязочные средства, поэтому
+                        смена повязки и обработка раны становится комфортной для пациента.</p>
+                </div>
+            </div>
+            <div class="develop-our-image">
+                <img src="/assets/img/about/develop/our-2.jpg" alt=""/>
+                <div class="doi-label" style="top: 80px; right: 153px">
+                    <div class="doi-label-line doi-label-line-bl" style="width: 50px;height: 136px;right: 100px"></div>
+                    <div class="doi-label-text">полиэфирная сетка</div>
+                </div>
+                <div class="doi-label" style="top: 183px; left: 33px">
+                    <div class="doi-label-line doi-label-line-br" style="width: 114px;height: 72px"></div>
+                    <div class="doi-label-text">медь (Cu)</div>
+                </div>
+                <div class="doi-label" style="bottom: 23px; right: 74px">
+                    <div class="doi-label-line doi-label-line-tl" style="width: 138px; height: 96px"></div>
+                    <div class="doi-label-text">цинк (Zn)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper products-slider" style="margin-top: 80px;">
+            <div class="slider-top">
+                <div class="section-h4" style="font-weight: 500">Повязки марлевые сетчатые</div>
                 <div class="slider-arrows">
                     <button type="button" class="slider-arrow slider-arrow-prev">
                         <svg width="1em" height="1em">
