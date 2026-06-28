@@ -2927,7 +2927,54 @@ body.no-js .popup {
     height: 100%;
     position: relative;
   }
+
   .metric-card {
     position: absolute;
   }
+}
+
+.about-tradition-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-traditions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+
+  .about-tradition {
+    &:nth-child(1) {
+      background: linear-gradient(135deg, #F0EDE6 19.1%, rgba(240, 237, 230, 0) 147.92%);
+      color: #568129;
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(135.61deg, #568129 16.01%, rgba(86, 129, 41, 0.3) 83.85%);
+      color: #FFFFFF;
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(135deg, #383B3D -2.95%, rgba(56, 59, 61, 0) 147.92%);
+      color: #FFFFFF;
+    }
+
+    &:not(:last-child) {
+      margin-right: -42px;
+    }
+  }
+}
+
+.about-tradition {
+  width: 356px;
+  height: 356px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 100%;
+  text-align: center;
+  backdrop-filter: blur(8px);
 }

@@ -48,3 +48,18 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="about-tradition-section oversection">
+    <div class="container">
+        <div class="section-h4">Объединяя
+            <span>традиции качества, возобновляемые виды сырья и&nbsp;современные технологии</span>,
+            мы&nbsp;намерены укрепить лидерство на&nbsp;отечественном рынке и&nbsp;выйти на&nbsp;международный уровень
+            как&nbsp;надёжный партнёр научного, фармацевтического и&nbsp;медицинского сообщества.
+        </div>
+        <div class="about-traditions">
+            <div class="about-tradition">традиции качества</div>
+            <div class="about-tradition">возобновляемые<br/>виды сырья</div>
+            <div class="about-tradition">современные<br/> технологии</div>
+        </div>
+    </div>
+</section>
