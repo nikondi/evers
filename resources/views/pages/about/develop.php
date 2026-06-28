@@ -54,3 +54,21 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="develop-target-section">
+    <div class="container">
+        <div class="section-badge section-badge--white">Наша цель</div>
+        <div class="section-h3">Мы убеждены, что инвестиции в науку критически важны для достижения нашей цели -
+            <span>повышения качества жизни в нашей стране</span> и создания прорывных технологий в медицине, доступных
+            как профессионалам, так и обычным людям.
+        </div>
+        <div class="develop-targets">
+            <div class="develop-target">Наличие собственной исследовательской базы в России позволяет изучать,
+                тестировать и оперативно внедрять самые современные разработки в каждый наш продукт.
+            </div>
+            <div class="develop-target">Мы привлекаем ведущих ученых, передовые знания, навыки и технологии, чтобы
+                создавать инновационные и улучшать традиционные медицинские продукты.
+            </div>
+        </div>
+    </div>
+</section>
