@@ -63,11 +63,15 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             как профессионалам, так и обычным людям.
         </div>
         <div class="develop-targets">
-            <div class="develop-target">Наличие собственной исследовательской базы в России позволяет изучать,
-                тестировать и оперативно внедрять самые современные разработки в каждый наш продукт.
+            <div class="metric-card">
+                <div class="metric-card__text">Наличие собственной исследовательской базы в России позволяет изучать,
+                    тестировать и оперативно внедрять самые современные разработки в каждый наш продукт.
+                </div>
             </div>
-            <div class="develop-target">Мы привлекаем ведущих ученых, передовые знания, навыки и технологии, чтобы
-                создавать инновационные и улучшать традиционные медицинские продукты.
+            <div class="metric-card">
+                <div class="metric-card__text">Мы привлекаем ведущих ученых, передовые знания, навыки и технологии,
+                    чтобы создавать инновационные и улучшать традиционные медицинские продукты.
+                </div>
             </div>
         </div>
     </div>
@@ -77,9 +81,9 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
     <div class="container">
         <div class="develop-iso">
             <div class="develop-iso-left">
-                <div class="develop-iso-card">
-                    <div class="develop-iso-card__title">3 класс риска</div>
-                    <div class="develop-iso-card__text">медицинских изделий</div>
+                <div class="metric-card">
+                    <div class="metric-card__title">3 класс риска</div>
+                    <div class="metric-card__text">медицинских изделий</div>
                 </div>
             </div>
             <div class="develop-iso-right">

@@ -29,7 +29,7 @@ $alt_header ??= false;
                     <li>
                         <span class="header-submenu-trigger">О компании</span>
                         <ul class="header-submenu">
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="/about">О компании</a></li>
                             <li><a href="/about/develop">Отдел R&D</a></li>
                             <li><a href="/about/manufacture">Производство</a></li>
                             <li><a href="#">СМИ о нас</a></li>

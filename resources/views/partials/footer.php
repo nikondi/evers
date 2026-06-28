@@ -12,7 +12,7 @@
             <div class="footer-menu">
                 <div class="footer-title">О компании</div>
                 <ul class="footer-menu__list">
-                    <li><a href="#">О компании</a></li>
+                    <li><a href="/about">О компании</a></li>
                     <li><a href="/about/develop">Отдел R&D</a></li>
                     <li><a href="/about/manufacture">Производство</a></li>
                     <li><a href="#">СМИ о нас</a></li>

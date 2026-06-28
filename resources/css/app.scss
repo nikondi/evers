@@ -2647,21 +2647,13 @@ body.no-js .popup {
   flex-direction: column;
   gap: 30px;
 
-  .develop-target:nth-child(even) {
-    margin-left: auto;
-  }
-}
+  .metric-card {
+    max-width: 538px;
 
-.develop-target {
-  max-width: 538px;
-  padding: 20px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  color: #FFFFFF;
-  border-radius: 8px;
-  background-color: #FFFFFF33;
-  backdrop-filter: blur(6px);
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
 }
 
 .develop-iso-section {
@@ -2717,8 +2709,7 @@ body.no-js .popup {
   }
 }
 
-.develop-iso-card {
-  position: absolute;
+.metric-card {
   border-radius: 8px;
   padding: 20px;
   color: #FFFFFF;
@@ -2734,8 +2725,10 @@ body.no-js .popup {
   &__text {
     font-size: 16px;
     line-height: 130%;
-    margin-top: 10px;
+  }
 
+  &__title + &__text {
+    margin-top: 10px;
   }
 }
 
@@ -2914,5 +2907,27 @@ body.no-js .popup {
 
   p:not(:last-child) {
     margin-bottom: 1em;
+  }
+}
+
+.about-mission-section {
+  border-radius: 24px 24px 0 0;
+  background: {
+    image: url("/assets/img/about/mission-background.jpg");
+    size: cover;
+    repeat: no-repeat;
+  };
+  padding-top: 80px;
+  padding-bottom: 114px;
+  margin-top: 80px;
+  color: #FFFFFF;
+  height: 870px;
+
+  .container {
+    height: 100%;
+    position: relative;
+  }
+  .metric-card {
+    position: absolute;
   }
 }

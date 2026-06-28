@@ -4,6 +4,13 @@ namespace App\Controllers;
 
 class AboutController extends Controller
 {
+    public function __invoke()
+    {
+        return $this->render("pages/about", [
+            'title' => 'О компании'
+        ]);
+    }
+
     public function manufacture(): string
     {
         return $this->render("pages/about/manufacture", [
