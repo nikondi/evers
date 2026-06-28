@@ -97,3 +97,87 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="develop-our-section">
+    <div class="container">
+        <div class="section-badge">наши разработки</div>
+        <div class="develop-our">
+            <div class="develop-our-text">
+                <div class="develop-our-tags">
+                    <div class="tag">лечение сложных ран</div>
+                    <div class="tag">аэрогель</div>
+                </div>
+                <div class="section-h2 develop-our__title">Хитокол<span>®</span></div>
+                <div class="develop-our__text">
+                    <p>Хитокол - это линейка <b>высокоэффективных инновационных средств на основе биологически активного
+                            хитозана</b> с иммобилизованными антимикробными препаратами, анестетиком и протеолитическим
+                        ферментом <b>для лечения сложных ран.</b></p>
+                    <p>Разработчиком ряда инновационных медицинских изделий на основе хитозана был известный ученый,
+                        кандидат химических наук, автор десятков патентов Фрончек Эдуард Валентинович.</p>
+                    <p><b>Уникальные формы продукта в виде аэрогеля и гидрогелевой пленки</b>, позволяет применять его
+                        прямо на открытые, в том числе инфицированные раны в самых разных областях медицины, включая
+                        стоматологию.</p>
+                </div>
+            </div>
+            <div class="develop-our-image">
+                <img src="/assets/img/about/develop/our-1.jpg" alt=""/>
+                <div class="doi-label" style="top: 50px; right: 30px">
+                    <div class="doi-label-line doi-label-line-bl" style="width: 50px;height: 136px;right: 100px"></div>
+                    <div class="doi-label-text">иммобилизованные антимикробные препараты</div>
+                </div>
+                <div class="doi-label" style="top: 116px; left: 46px">
+                    <div class="doi-label-line doi-label-line-br" style="width: 114px;height: 72px"></div>
+                    <div class="doi-label-text">хитозан</div>
+                </div>
+                <div class="doi-label" style="bottom: 60px; right: 64px">
+                    <div class="doi-label-line doi-label-line-tl" style="width: 148px; height: 96px"></div>
+                    <div class="doi-label-text">анестетик</div>
+                </div>
+                <div class="doi-label" style="bottom: 35px; left: 17px">
+                    <div class="doi-label-line doi-label-line-tr" style="width: 98px; height: 146px"></div>
+                    <div class="doi-label-text">протеолитический фермент</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper products-slider" style="margin-top: 80px;">
+            <div class="slider-top">
+                <div class="section-h4" style="font-weight: 500">Средства на основе Хитокола®</div>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow-prev">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-arrow slider-arrow-next">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#right"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <?php
+                $products = [
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                ];
+                ?>
+                <?php foreach ($products as $i => $goodItem): ?>
+                    <div class="swiper-slide">
+                        <?php include VIEW_PATH . 'components/good-card.php'; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+
+    </div>
+</section>

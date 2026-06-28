@@ -120,21 +120,9 @@
                     ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
                 ];
                 ?>
-                <?php foreach ($products as $i => $product): ?>
+                <?php foreach ($products as $i => $goodItem): ?>
                     <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-card__image">
-                                <img src="<?= $product['image'] ?>" alt=""/>
-                                <button
-                                    class="product-card__favorite<?= $i % 2 == 0 ? ' product-card__favorite--active' : '' ?>"></button>
-                            </div>
-                            <div class="product-card__title">
-                                <?= $product['title'] ?>
-                            </div>
-                            <a href="#" class="btn btn-green btn-full">
-                                Смотреть
-                            </a>
-                        </div>
+                        <?php include VIEW_PATH . 'components/good-card.php'; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
