@@ -72,3 +72,28 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="develop-iso-section oversection">
+    <div class="container">
+        <div class="develop-iso">
+            <div class="develop-iso-left">
+                <div class="develop-iso-card">
+                    <div class="develop-iso-card__title">3 класс риска</div>
+                    <div class="develop-iso-card__text">медицинских изделий</div>
+                </div>
+            </div>
+            <div class="develop-iso-right">
+                <div class="develop-iso__icon">
+                    <img src="/assets/img/icons/lab.svg" alt="">
+                </div>
+                <div class="section-h4">Современная лаборатория Эверс груп Рус полностью
+                    соответствует требованиям <span>системы менеджмента качества ISO 13485.</span>
+                </div>
+                <div class="develop-iso__text">Благодаря комплексному оснащению, она обеспечивает сквозной контроль
+                    качества — от входной проверки сырья до приемки готовой продукции — по всей номенклатуре медицинских
+                    изделий.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
