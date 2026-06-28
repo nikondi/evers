@@ -9,6 +9,7 @@ use Engine\Router;
 Router::get('/', WelcomeController::class);
 
 Router::get('/about/manufacture', [AboutController::class, 'manufacture']);
+Router::get('/about/develop', [AboutController::class, 'develop']);
 
 Router::get('/catalog/trademarks', [CatalogController::class, 'trademarks']);
 

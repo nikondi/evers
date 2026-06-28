@@ -2410,6 +2410,11 @@ body.no-js .popup {
     line-height: 120%;
     text-align: center;
     margin-top: 16px;
+    transition: .2s color;
+  }
+
+  &:hover &__title {
+    color: $color-primary;
   }
 }
 
@@ -2440,6 +2445,7 @@ body.no-js .popup {
 .contract-request-section {
   padding-bottom: 120px;
 }
+
 .contract-request-text {
   display: flex;
   flex-direction: column;
@@ -2477,13 +2483,129 @@ body.no-js .popup {
   --labeled-input-background: transparent;
   width: 50%;
   max-width: 570px;
+
   .labeled-input-label {
     margin-bottom: 10px;
   }
+
   .form-input-group {
     margin-bottom: 30px;
   }
+
   .checkbox {
     max-width: 500px;
+  }
+}
+
+///DEVELOP
+.develop-metrics-section {
+  margin-top: 40px;
+}
+
+.develop-metrics {
+  display: grid;
+  grid-template-columns: 538px 427px 315px;
+  gap: 20px;
+  align-items: end;
+
+  .develop-metric:nth-child(1) {
+    height: 315px;
+    justify-content: flex-end;
+    color: #FFFFFF;
+
+    .develop-metric__background {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: {
+        image: url("/assets/img/about/develop/metric-1.png");
+        repeat: no-repeat;
+        size: 100%;
+        position: top -420px center;
+      };
+
+      &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #0000004D;
+      }
+    }
+
+    .develop-metric__text {
+      max-width: 442px;
+    }
+  }
+
+  .develop-metric:nth-child(2) {
+    height: 223px;
+    color: #FFFFFF;
+
+    .develop-metric__background {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(129.33deg, #568129 0%, #F0EDE6 276.53%);
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -210px;
+        bottom: -160px;
+        width: 440px;
+        height: 311px;
+        background: {
+          image: url("/assets/img/about/develop/metric-2.png");
+          repeat: no-repeat;
+          size: 100%;
+        };
+        opacity: .2;
+      }
+    }
+
+    .develop-metric__text {
+      max-width: 233px;
+    }
+  }
+
+  .develop-metric:nth-child(3) {
+    height: 295px;
+    justify-content: flex-end;
+    background: {
+      color: #F0EDE6;
+      image: url("/assets/img/about/develop/metric-3.png");
+      repeat: no-repeat;
+      position: right top;
+    };
+  }
+}
+
+.develop-metric {
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__count {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 130%;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__background {
+    z-index: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
   }
 }

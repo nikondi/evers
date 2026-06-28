@@ -10,4 +10,11 @@ class AboutController extends Controller
             'title' => 'Производство'
         ]);
     }
+
+    public function develop(): string
+    {
+        return $this->render("pages/about/develop", [
+            'title' => 'Отдел исследований и разработок (R&D)'
+        ]);
+    }
 }
