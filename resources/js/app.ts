@@ -1,7 +1,7 @@
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import {manufacturePage, welcomePage} from "@/pages";
+import {aboutPage, manufacturePage, welcomePage} from "@/pages";
 import {initAssortmentSliders, initForms, initNewsSliders, initPopups} from "@/components";
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // pages
   welcomePage();
   manufacturePage();
+  aboutPage();
 
   // components
   initNewsSliders();
@@ -17,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function () {
   initForms();
   initPopups();
 });
+
