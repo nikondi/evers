@@ -3000,9 +3000,11 @@ body.no-js .popup {
     &:nth-child(3n + 1) .about-value-short {
       background-position: bottom -200px left -100px;
     }
+
     &:nth-child(3n + 2) .about-value-short {
       background-position: bottom -200px left -527px;
     }
+
     &:nth-child(3n) .about-value-short {
       background-position: bottom -200px left -954px;
     }
@@ -3106,6 +3108,7 @@ body.no-js .popup {
   .about-value-short {
     transform: rotateY(-180deg);
   }
+
   .about-value-full {
     transform: rotateY(0deg);
   }
@@ -3128,4 +3131,92 @@ body.no-js .popup {
 .about-value__icon {
   font-size: 60px;
   margin-bottom: 45px;
+}
+
+.about-history-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.about-history {
+  margin-top: 40px;
+  overflow: visible;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    height: 130%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    filter: blur(20px);
+    position: absolute;
+    width: 30dvw;
+    z-index: 4;
+  }
+  &:before {
+    left: -33dvw;
+  }
+  &:after {
+    right: -33dvw;
+  }
+
+  .swiper-slide {
+    width: 315px;
+    height: auto;
+    padding-top: 42px;
+    position: relative;
+
+    &:last-child .about-history-card:after {
+      width: 100%;
+    }
+  }
+}
+
+
+.about-history-card {
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 315px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px 0 #E9E9E980;
+
+  &:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    border: 6px solid #DE171A;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    border-top: 1px dashed #383B3D;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: calc(100% + 20px);
+  }
+
+  &__year {
+    color: #568129;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: auto;
+  }
+
+  &__text {
+    margin-top: 47px;
+  }
 }

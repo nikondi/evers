@@ -1,8 +1,9 @@
 import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
+import {FreeMode, Mousewheel, Navigation, Pagination} from "swiper/modules";
 
 export default function aboutPage() {
   initValuesSlider();
+  initHistorySlider();
 }
 
 function initValuesSlider() {
@@ -35,4 +36,24 @@ function initValuesSlider() {
       type: "progressbar"
     }
   });
+}
+
+function initHistorySlider() {
+  const el = document.querySelector(".about-history") as HTMLElement;
+  if (!el) return;
+
+  new Swiper(el, {
+    modules: [Mousewheel, FreeMode],
+    freeMode: {
+      enabled: true,
+      momentumBounce: true,
+
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    mousewheel: {
+      enabled: true,
+      releaseOnEdges: true
+    }
+  })
 }
