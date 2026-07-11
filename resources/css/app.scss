@@ -3352,6 +3352,11 @@ body.no-js .popup {
     a {
       color: inherit;
       text-decoration: none;
+      transition: .2s color;
+
+      &:hover {
+        color: $color-green;
+      }
     }
   }
 }
@@ -3373,6 +3378,7 @@ body.no-js .popup {
     b {
       font-weight: bold;
     }
+
     .btn {
       margin-top: 30px;
     }
@@ -3418,6 +3424,11 @@ body.no-js .popup {
       display: block;
       color: #272727;
       text-align: center;
+      transition: .2s color;
+
+      &:hover {
+        color: $color-green;
+      }
     }
   }
 }
@@ -3433,6 +3444,7 @@ body.no-js .popup {
 
 .brandbook-trademarks-section {
   padding-bottom: 120px;
+
   .section-h3 {
     margin-top: 0;
     margin-bottom: 40px;
@@ -3448,4 +3460,74 @@ body.no-js .popup {
 .brandbook-trademarks {
   border-top: 2px dashed #56812966;
   padding-top: 60px;
+}
+
+.spec-partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.spec-partner {
+  background: #F0EDE6;
+  box-shadow: 10px 10px 20px 0 #E9E9E980;
+  padding: 30px;
+  border-radius: 12px;
+
+  &__top {
+    display: flex;
+  }
+
+  &__text {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts {
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 160%;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: .2s color;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  &__logo {
+    min-height: 180px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+  }
+
+  &__description {
+    margin-top: 25px;
+    padding-top: 30px;
+    border-top: 2px dashed #56812966;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+.spec-partners-section {
+  padding-bottom: 120px;
 }

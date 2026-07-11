@@ -4,6 +4,7 @@ use App\Controllers\AboutController;
 use App\Controllers\CatalogController;
 use App\Controllers\CoopController;
 use App\Controllers\SitemapController;
+use App\Controllers\SpecialistsController;
 use App\Controllers\WelcomeController;
 use Engine\Router;
 
@@ -20,3 +21,5 @@ Router::get('/catalog/trademarks', [CatalogController::class, 'trademarks']);
 Router::get('/coop/education', [CoopController::class, 'education']);
 Router::get('/coop/contract', [CoopController::class, 'contract']);
 Router::get('/coop/brandbook', [CoopController::class, 'brandbook']);
+
+Router::get('/specialists/partners', [SpecialistsController::class, 'partners']);

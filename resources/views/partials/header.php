@@ -54,7 +54,7 @@ $alt_header ??= false;
                         <ul class="header-submenu">
                             <li><a href="#">Научные публикации</a></li>
                             <li><a href="#">Полезные материалы о продуктах</a></li>
-                            <li><a href="#">Наши партнерские организации</a></li>
+                            <li><a href="/specialists/partners">Наши партнерские организации</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Карьера</a></li>
