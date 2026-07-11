@@ -24,6 +24,7 @@ class AboutController extends Controller
             'title' => 'Отдел исследований и разработок (R&D)'
         ]);
     }
+
     public function sellers(): string
     {
         return $this->render("pages/about/sellers", [

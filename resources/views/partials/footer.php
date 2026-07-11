@@ -28,8 +28,8 @@
                     <li><a href="/coop/education">Обучение для партнеров</a></li>
                     <li><a href="#">Наши оптовые партнеры</a></li>
                     <li><a href="#">Отзывы партнеров</a></li>
-                    <li><a href="#">Где купить</a></li>
-                    <li><a href="#">Брендбук</a></li>
+                    <li><a href="/about/sellers">Где купить</a></li>
+                    <li><a href="/coop/brandbook">Брендбук</a></li>
                 </ul>
             </div>
             <div class="footer-space"></div>

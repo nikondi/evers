@@ -17,4 +17,11 @@ class CoopController extends Controller
             'title' => 'Контрактное производство'
         ]);
     }
+
+    public function brandbook()
+    {
+        return $this->render("pages/coop/brandbook", [
+            'title' => 'Брендбук'
+        ]);
+    }
 }
