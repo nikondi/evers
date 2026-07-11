@@ -3228,6 +3228,7 @@ body.no-js .popup {
 
 .about-brands-section {
   padding-bottom: 120px;
+
   .section-h3 {
     margin-bottom: 40px;
   }
@@ -3254,5 +3255,102 @@ body.no-js .popup {
     border-radius: 12px;
     display: block;
     margin-bottom: 20px;
+  }
+}
+
+.select-tabs {
+}
+
+.select-tabs__inner {
+  display: inline-flex;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 25px;
+  height: 50px;
+  background-color: $color-green;
+}
+
+.select-tab {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: {
+    duration: .2s;
+    property: background-color, color;
+  };
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  border-radius: 20px;
+
+  &:not(.active) {
+    cursor: pointer;
+    &:hover {
+      background-color: #ffffff22;
+    }
+  }
+
+  &.active {
+    background-color: #fff;
+    color: #272727;
+  }
+}
+
+@media (min-width: 1360px) {
+  .select-tabs {
+    .select-tab__current {
+      display: none;
+    }
+  }
+}
+
+.sellers-section {
+  padding-bottom: 120px;
+}
+
+.sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.foreign-card {
+  box-shadow: 10px 10px 20px 0 #E9E9E980;
+  border-radius: 12px;
+  background: #F0EDE6;
+  padding: 20px;
+
+  &__image {
+    display: flex;
+    border-radius: 12px;
+    background-color: #fff;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  &__description {
+    padding-top: 20px;
+    border-top: 2px dashed #56812966;
+    text-align: center;
+    line-height: 160%;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }
