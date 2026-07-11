@@ -12,6 +12,7 @@
         Каталог
         <ul>
             <li><a href="/catalog/trademarks">Наши торговые марки</a></li>
+            <li><a href="/catalog/product">Страница товара</a></li>
         </ul>
     </li>
     <li>
@@ -19,6 +20,13 @@
         <ul>
             <li><a href="/coop/education">Обучение для оптовых партнеров</a></li>
             <li><a href="/coop/contract">Контрактное производство</a></li>
+            <li><a href="/coop/brandbook">Брендбук</a></li>
+        </ul>
+    </li>
+    <li>
+        Специалистам
+        <ul>
+            <li><a href="/specialists/partners">Партнеры</a></li>
         </ul>
     </li>
 </ul>
@@ -31,3 +39,5 @@
         padding-left: 20px;
     }
 </style>
+
+<?= vite(['resources/js/app.ts']) ?>

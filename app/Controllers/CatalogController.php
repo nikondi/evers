@@ -10,4 +10,10 @@ class CatalogController extends Controller
             'title' => 'Наши торговые марки'
         ]);
     }
+    public function product(): string
+    {
+        return $this->render("pages/catalog/product", [
+            'title' => 'Хитокол®-ДА'
+        ]);
+    }
 }

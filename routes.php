@@ -17,6 +17,7 @@ Router::get('/about/develop', [AboutController::class, 'develop']);
 Router::get('/about/sellers', [AboutController::class, 'sellers']);
 
 Router::get('/catalog/trademarks', [CatalogController::class, 'trademarks']);
+Router::get('/catalog/product', [CatalogController::class, 'product']);
 
 Router::get('/coop/education', [CoopController::class, 'education']);
 Router::get('/coop/contract', [CoopController::class, 'contract']);
