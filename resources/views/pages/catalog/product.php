@@ -4,7 +4,8 @@
 $product = [
     'title' => 'Хитокол®-ДА',
     'images' => ['/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png',],
-    'art' => '123456'
+    'art' => '123456',
+    'short' => '<p>Высокоэффективное инновационное средство на основе биологически активного хитозана с иммобилизированными антимикробными препаратами, анестетиком и протеолитическим ферментом для лечения сложных ран.</p><h4>ОБЛАСТИ ПРИМЕНЕНИЯ:</h4><ul><li>медицинские стационары,</li><li>хирургия,</li> <li>амбулаторно-поликлинические учреждения,</li><li>травматология,</li><li>колопроктология,</li> <li>флебология,</li><li>пластическая и стоматологическая хирургия,</li> <li>комбустиология,</li> <li>домашнее применение.</li></ul>'
 ];
 $thumbnails = array_slice($product['images'], 0, 2);
 $additional_count = count($product['images']) - count($thumbnails);
@@ -81,6 +82,46 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                         <?= $product['title'] ?>
                     </div>
                     <div class="product-art">арт. <?= $product['art'] ?></div>
+                </div>
+                <div class="product-options">
+                    <div class="product-option">
+                        <div class="product-option__label">Выберите размер:</div>
+                        <label class="nice-select">
+                            <select name="">
+                                <option value="0">5х5х0,4см №2</option>
+                                <option value="1">5х5х0,4см №3</option>
+                                <option value="2">5х5х0,4см №4</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-cart">
+                    <div class="product-quantity">
+                        <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                        <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                            <svg width="18" height="2">
+                                <use xlink:href="/assets/img/icons/counter.svg#minus"/>
+                            </svg>
+                        </button>
+                        <div class="product-quantity__count">
+                            <span class="product-quantity__display" contenteditable="true">1</span>
+                            уп
+                        </div>
+                        <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                            <svg width="18" height="18">
+                                <use xlink:href="/assets/img/icons/counter.svg#plus"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="product-add btn">Добавить в оптовый заказ</button>
+                </div>
+
+                <div class="product-pricelist">
+                    <a href="#">Запросить прайс-лист</a>
+                </div>
+
+                <div class="product-short">
+                    <?= $product['short'] ?>
                 </div>
             </div>
         </div>

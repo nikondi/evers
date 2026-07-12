@@ -2,6 +2,7 @@ import Swiper from "swiper";
 
 export default function manufacturePage() {
   initImages();
+  initCounter();
 }
 
 function initImages() {
@@ -11,5 +12,35 @@ function initImages() {
 
   new Swiper(el, {
     spaceBetween: 20
+  });
+}
+
+function initCounter() {
+  const wrapper = document.querySelector(".product-quantity") as HTMLElement;
+  if (!wrapper)
+    return;
+
+  const input = wrapper.querySelector(".product-quantity__input") as HTMLInputElement;
+  const plus = wrapper.querySelector(".product-quantity__btn-plus") as HTMLButtonElement;
+  const minus = wrapper.querySelector(".product-quantity__btn-minus") as HTMLButtonElement;
+  const display = wrapper.querySelector(".product-quantity__display") as HTMLSpanElement;
+  const count = wrapper.querySelector(".product-quantity__count") as HTMLDivElement;
+
+  const changeValue = (v: string) => {
+    v = v.trim() ? v.replace(/\D/, '') : '1';
+    input.value = v;
+    display.innerText = v;
+  }
+
+  display.addEventListener('input', () => changeValue(display.innerText));
+  display.addEventListener('focus', () => count.classList.add('focused'));
+  display.addEventListener('blur', () => count.classList.remove('focused'));
+  count.addEventListener('click', () => display.focus());
+  plus.addEventListener('click', () => {
+    changeValue((parseInt(input.value) || 1) + 1 + '')
+  });
+  minus.addEventListener('click', () => {
+    const newValue = parseInt(input.value) - 1;
+    changeValue((newValue > 0 ? newValue : 1) + '')
   });
 }
