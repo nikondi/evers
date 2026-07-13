@@ -5,7 +5,9 @@ $product = [
     'title' => 'Хитокол®-ДА',
     'images' => ['/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png',],
     'art' => '123456',
-    'short' => '<p>Высокоэффективное инновационное средство на основе биологически активного хитозана с иммобилизированными антимикробными препаратами, анестетиком и протеолитическим ферментом для лечения сложных ран.</p><h4>ОБЛАСТИ ПРИМЕНЕНИЯ:</h4><ul><li>медицинские стационары,</li><li>хирургия,</li> <li>амбулаторно-поликлинические учреждения,</li><li>травматология,</li><li>колопроктология,</li> <li>флебология,</li><li>пластическая и стоматологическая хирургия,</li> <li>комбустиология,</li> <li>домашнее применение.</li></ul>'
+    'short' => '<p>Высокоэффективное инновационное средство на основе биологически активного хитозана с иммобилизированными антимикробными препаратами, анестетиком и протеолитическим ферментом для лечения сложных ран.</p><h4>ОБЛАСТИ ПРИМЕНЕНИЯ:</h4><ul><li>медицинские стационары,</li><li>хирургия,</li> <li>амбулаторно-поликлинические учреждения,</li><li>травматология,</li><li>колопроктология,</li> <li>флебология,</li><li>пластическая и стоматологическая хирургия,</li> <li>комбустиология,</li> <li>домашнее применение.</li></ul>',
+    'description' => '<p>Покрытие обладает высокими абсорбирующими свойствами – 20-30 гр./гр. При впитывании покрытия превращается в стабильный гидрогель, сохраняющий изначальную форму, при некотором увеличении объема. Гидрогелевое средство, при достаточной сорбционной способности, препятствует пересушиванию раны. И, после превращения в гель, позволяет эффективно доставлять лекарственные компоненты непосредственно в рану в течение длительного времени.</p><p>Материал покрытия - биоматериал на основе компонентов природного происхождения, не содержащий токсичных включений и примесей, способный к биодеградации при контакте с тканями организма (постепенному и медленному распаду под влиянием лизоцима и лизосомальных ферментов фагоцитов), который сопровождается образованием низкомолекулярных соединений, легко усваиваемых организмом.</p><ul><li>Быстро сворачивает кровь.</li><li>Останавливает кровотечение.</li><li>Является биодеградируемым (рассасывается в ране).</li></ul><p>Ранозаживляющее действие средства обеспечивается за счет его высокой сорбционной активности по раневому экссудату, сопровождающейся гелеобразованием. При этом создаются оптимальные условия заживления раны во влажной среде и её защита от вторичной контаминации. В такой среде хитозан ингибирует активность металлопротеаз, предотвращая разрушение протеинов эпидермиса и сохраняя уровень активности естественных факторов роста, что в итоге стимулирует миграцию и пролиферацию клеток кожи, значительно ускоряя процесс ранозаживления.</p>',
+    'usage' => '<ul><li>Повреждения кожи: ссадины, порезы, рваные и ушибленные раны.</li><li>Ожоги: термические ожоги легкой и средней степени тяжести (I-IIIa ст.).</li><li>Хронические раны: пролежни, трофические язвы и длительно незаживающие кожные эрозии.</li><li>Экссудативные раны: применяется для лечения сильно и умеренно мокнущих ран.</li></ul> ',
 ];
 $thumbnails = array_slice($product['images'], 0, 2);
 $additional_count = count($product['images']) - count($thumbnails);
@@ -122,6 +124,125 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
                 <div class="product-short">
                     <?= $product['short'] ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <div class="product-tab-triggers">
+                <button class="product-tab-trigger">Описание</button>
+                <button class="product-tab-trigger">Показания к применению</button>
+                <button class="product-tab-trigger">Преимущества</button>
+                <button class="product-tab-trigger">характеристики</button>
+                <button class="product-tab-trigger">Состав и форма выпуска</button>
+                <button class="product-tab-trigger">Полезные материалы о продукте</button>
+                <button class="product-tab-trigger">научные публикации о продукте</button>
+                <button class="product-tab-trigger">Документы</button>
+            </div>
+            <div class="product-tab-contents">
+                <div class="product-tab product-description"><?= $product['description'] ?></div>
+                <div class="product-tab product-usage"><?= $product['usage'] ?></div>
+
+                <div class="product-tab"></div>
+
+                <div class="product-tab product-chars active">
+                    <div class="product-char">
+                        <div>Стерильность</div>
+                        <div>Стерильно</div>
+                    </div>
+                    <div class="product-char">
+                        <div>Возможные побочные эффекты</div>
+                        <div>Возможно кратковременное покраснение, жжение, снижение чувствительности в момент нанесения
+                            повязки. Средство биологически безопасно.
+                        </div>
+                    </div>
+                    <div class="product-char">
+                        <div>срок годности</div>
+                        <div>5 лет</div>
+                    </div>
+                </div>
+
+                <div class="product-tab"></div>
+
+                <div class="product-tab product-publications">
+                    <div class="product-publications__title">Текстовые материалы</div>
+                    <div class="product-pubs-grid">
+                        <div class="product-pub product-pub--text">
+                            <div class="product-pub__image">
+                                <img src="/assets/img/product/pub-1.png" alt="">
+                            </div>
+                            <div class="product-pub-text__data">
+                                <div class="product-pub-tag">текстовый материал</div>
+                                <div class="product-pub-title">Принципы и методы лечения гнойно-некротических ран</div>
+                                <div class="product-pub-text">В 7 главе книги «Руководство по хирургии», посвящённой
+                                    лечению ран, рассматривается эффективность применения раневого покрытия Хитокол®,
+                                    мазевой сетчатой повязки и ранозаживляющего средства «ЭверсЛайф-Гель».
+                                </div>
+                                <a href="#" class="btn btn-full">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="product-pub product-pub--text">
+                            <div class="product-pub-text__image">
+                                <img src="/assets/img/product/pub-2.png" alt="">
+                            </div>
+                            <div class="product-pub-text__data">
+                                <div class="product-pub-tag">текстовый материал</div>
+                                <div class="product-pub-title">Возможности мониторинга и стимуляции длительно
+                                    незаживающих ран с применением комплексного подхода
+                                </div>
+                                <div class="product-pub-text">В представленной статье подробно рассмотрена методология
+                                    лечения хронических, долго не заживающих ран с использованием препарата Хитокол® в
+                                    составе комплексной терапии.
+                                </div>
+                                <a href="#" class="btn btn-full">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-publications__title">Видео материалы</div>
+                    <div class="product-pubs-grid">
+                        <div class="product-pub product-pub--video">
+                            <div class="product-pub__video">
+                                <video src="https://lorem.video/720p"></video>
+                            </div>
+                            <div class="product-pub-text__data">
+                                <div class="product-pub-tag">Видео материал</div>
+                                <div class="product-pub-title">Международная научно-практическая конференция «Частные
+                                    вопросы лечения ран и гнойно-некротических очагов у детей и взрослых»
+                                </div>
+                                <div class="product-pub-text">Доклад Врача-хирурга, доктора медицинских наук, профессора
+                                    СтГМУ Владимировой О.В. «Тактика консервативного ведения инфицированных ран». 20-21
+                                    мая 2025 года.
+                                </div>
+                                <a href="#" class="btn btn-full">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-tab">
+                    <div class="welcome-news-grid">
+                        <?php
+                        $news = [
+                            ['image' => '/assets/img/news/1.png', 'date' => 'СТАТЬЯ', 'title' => '«Уральская ватная компания» примет участие в Региональном конгрессе медицинских сестёр в Тюмени', 'description' => 'Тюмень, 2026 год. В преддверии Международного дня медицинской сестры состоится масштабное...'],
+                            ['image' => '/assets/img/news/2.png', 'date' => 'СТАТЬЯ', 'title' => 'Масштабирование производства современных перевязочных средств EVERSMED как результат признания на рынке', 'description' => 'Группа компаний Эверс груп Рус в 2026 году нарастила объёмы производства современных перевязочных средств...'],
+                            ['image' => '/assets/img/news/3.png', 'date' => 'СТАТЬЯ', 'title' => 'Укусы насекомых: как быстро снять зуд и предотвратить воспаление', 'description' => 'Лето — пора пикников, прогулок на природе и активного отдыха. Но вместе с приятными впечатлениями могут прийти...'],
+                        ];
+                        ?>
+                        <?php foreach ($news as $i => $newsItem): ?>
+                            <?php include VIEW_PATH . '/components/news-card.php'; ?>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="product-tab product-docs">
+                    <a href="#" class="icon-link">
+                        <img src="/assets/img/icons/download.svg">
+                        <span>Скачать регистрационное удостоверение</span>
+                    </a>
+                    <br/>
+                    <a href="#" class="icon-link">
+                        <img src="/assets/img/icons/link.svg">
+                        <span>Продукт в реестре Росздравнадзора</span>
+                    </a>
                 </div>
             </div>
         </div>

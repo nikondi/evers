@@ -3,6 +3,7 @@ import Swiper from "swiper";
 export default function manufacturePage() {
   initImages();
   initCounter();
+  initTabs();
 }
 
 function initImages() {
@@ -43,4 +44,20 @@ function initCounter() {
     const newValue = parseInt(input.value) - 1;
     changeValue((newValue > 0 ? newValue : 1) + '')
   });
+}
+
+function initTabs() {
+  const wrapper = document.querySelector(".product-tabs") as HTMLElement;
+  if (!wrapper)
+    return;
+
+  const triggers = wrapper.querySelectorAll<HTMLButtonElement>(".product-tab-trigger");
+  const contents = wrapper.querySelectorAll<HTMLButtonElement>(".product-tab");
+
+  triggers.forEach((trigger, index) => {
+    trigger.addEventListener('click', () => {
+      contents.forEach((content, i) => i == index ? content.classList.add('active') : content.classList.remove('active'))
+      triggers.forEach((t, i) => i == index ? t.classList.add('active') : t.classList.remove('active'))
+    })
+  })
 }
