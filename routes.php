@@ -22,5 +22,6 @@ Router::get('/catalog/product', [CatalogController::class, 'product']);
 Router::get('/coop/education', [CoopController::class, 'education']);
 Router::get('/coop/contract', [CoopController::class, 'contract']);
 Router::get('/coop/brandbook', [CoopController::class, 'brandbook']);
+Router::get('/coop/wholesale', [CoopController::class, 'wholesale']);
 
 Router::get('/specialists/partners', [SpecialistsController::class, 'partners']);

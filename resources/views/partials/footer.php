@@ -26,7 +26,7 @@
                     <li><a href="#">Оставить заявку</a></li>
                     <li><a href="/coop/contract">Контрактное производство</a></li>
                     <li><a href="/coop/education">Обучение для партнеров</a></li>
-                    <li><a href="#">Наши оптовые партнеры</a></li>
+                    <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
                     <li><a href="#">Отзывы партнеров</a></li>
                     <li><a href="/about/sellers">Где купить</a></li>
                     <li><a href="/coop/brandbook">Брендбук</a></li>

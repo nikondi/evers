@@ -21,6 +21,7 @@
             <li><a href="/coop/education">Обучение для оптовых партнеров</a></li>
             <li><a href="/coop/contract">Контрактное производство</a></li>
             <li><a href="/coop/brandbook">Брендбук</a></li>
+            <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
         </ul>
     </li>
     <li>

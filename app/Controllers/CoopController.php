@@ -24,4 +24,11 @@ class CoopController extends Controller
             'title' => 'Брендбук'
         ]);
     }
+
+    public function wholesale()
+    {
+        return $this->render("pages/coop/wholesale", [
+            'title' => 'Наши оптовые партнеры'
+        ]);
+    }
 }

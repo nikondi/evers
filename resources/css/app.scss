@@ -4094,3 +4094,81 @@ body.no-js .popup {
     flex-direction: column;
   }
 }
+
+///WHOLESALE
+.coop-wholesale-section {
+  padding-bottom: 120px;
+}
+
+.coop-wholesale-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.coop-wholesale {
+  background: #F0EDE6;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px 0px #E9E9E980;
+  padding: 20px;
+  min-height: 540px;
+
+  &__image {
+    height: 230px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__links {
+    line-height: 180%;
+    text-align: center;
+    margin-top: 30px;
+
+    a {
+      color: inherit;
+      transition: .2s color;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+
+  &__description {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px dashed #56812966;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1359px) {
+  .coop-wholesale-grid {
+    grid-template-columns: 1fr;
+  }
+  .coop-wholesale {
+    padding: 16px;
+    min-height: unset;
+    &__image {
+      height: 190px;
+    }
+  }
+}
