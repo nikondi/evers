@@ -130,7 +130,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
         <div class="product-tabs">
             <div class="product-tab-triggers">
-                <button class="product-tab-trigger">Описание</button>
+                <button class="product-tab-trigger active">Описание</button>
                 <button class="product-tab-trigger">Показания к применению</button>
                 <button class="product-tab-trigger">Преимущества</button>
                 <button class="product-tab-trigger">характеристики</button>
@@ -140,12 +140,12 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <button class="product-tab-trigger">Документы</button>
             </div>
             <div class="product-tab-contents">
-                <div class="product-tab product-description"><?= $product['description'] ?></div>
+                <div class="product-tab product-description active"><?= $product['description'] ?></div>
                 <div class="product-tab product-usage"><?= $product['usage'] ?></div>
 
                 <div class="product-tab"></div>
 
-                <div class="product-tab product-chars active">
+                <div class="product-tab product-chars">
                     <div class="product-char">
                         <div>Стерильность</div>
                         <div>Стерильно</div>
@@ -245,6 +245,92 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-recommendations">
+    <div class="container">
+        <div class="swiper products-slider">
+            <div class="slider-top">
+                <div class="section-badge">Используют вместе</div>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow-prev">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-arrow slider-arrow-next">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#right"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <?php
+                $products = [
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                ];
+                ?>
+                <?php foreach ($products as $i => $goodItem): ?>
+                    <div class="swiper-slide">
+                        <?php include VIEW_PATH . 'components/good-card.php'; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="swiper-pagination slider-progressbar"></div>
+        </div>
+    </div>
+</section>
+
+<section class="product-viewed">
+    <div class="container">
+        <div class="swiper products-slider">
+            <div class="slider-top">
+                <div class="section-badge">вы смотрели</div>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow-prev">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider-arrow slider-arrow-next">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons/slider-arrows.svg#right"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <?php
+                $products = [
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                ];
+                ?>
+                <?php foreach ($products as $i => $goodItem): ?>
+                    <div class="swiper-slide">
+                        <?php include VIEW_PATH . 'components/good-card.php'; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="swiper-pagination slider-progressbar"></div>
         </div>
     </div>
 </section>

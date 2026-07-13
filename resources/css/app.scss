@@ -4067,6 +4067,14 @@ body.no-js .popup {
   }
 }
 
+.product-recommendations {
+  padding-bottom: 80px;
+}
+
+.product-viewed {
+  padding-bottom: 120px;
+}
+
 @media (max-width: 1359px) {
   .product-tab-triggers {
     width: auto;
@@ -4080,7 +4088,7 @@ body.no-js .popup {
     align-items: center;
     flex-wrap: nowrap;
   }
-  
+
   .product-char {
     display: flex;
     flex-direction: column;
