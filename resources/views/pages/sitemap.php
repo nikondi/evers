@@ -23,6 +23,7 @@
             <li><a href="/coop/contract">Контрактное производство</a></li>
             <li><a href="/coop/brandbook">Брендбук</a></li>
             <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
+            <li><a href="/coop/reviews">Отзывы партнеров</a></li>
         </ul>
     </li>
     <li>

@@ -31,4 +31,10 @@ class CoopController extends Controller
             'title' => 'Наши оптовые партнеры'
         ]);
     }
+    public function reviews()
+    {
+        return $this->render("pages/coop/reviews", [
+            'title' => 'Отзывы партнеров'
+        ]);
+    }
 }

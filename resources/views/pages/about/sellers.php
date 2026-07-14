@@ -20,7 +20,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
     <?php // TODO фильтры ?>
     <div class="container sellers-wrapper">
         <div class="select-tabs">
-            <div class="select-tab__current">Смотреть все</div>
+            <button class="select-tab-current" type="button">Смотреть все</button>
             <div class="select-tabs__inner">
                 <div class="select-tab active">Смотреть все</div>
                 <div class="select-tab">Маркетплейсы</div>
