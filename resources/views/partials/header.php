@@ -33,7 +33,7 @@ $alt_header ??= false;
                             <li><a href="/about/develop">Отдел R&D</a></li>
                             <li><a href="/about/manufacture">Производство</a></li>
                             <li><a href="#">СМИ о нас</a></li>
-                            <li><a href="#">Новости компании</a></li>
+                            <li><a href="/about/news">Новости компании</a></li>
                             <li><a href="#">Реквизиты</a></li>
                         </ul>
                     </li>

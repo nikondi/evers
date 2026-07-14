@@ -6,7 +6,16 @@ export default function selectTabs() {
 
     const options = wrapper.querySelectorAll<HTMLElement>('.select-tab');
     options.forEach((option) => {
-      option.addEventListener('click', () => trigger.innerText = option.innerText);
+      option.addEventListener('click', () => {
+        trigger.innerText = option.innerText;
+        options.forEach((o) => {
+          if (o === option)
+            option.classList.add('active');
+          else
+            option.classList.remove('active');
+        })
+
+      });
       wrapper.classList.remove('active');
     })
   });

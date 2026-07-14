@@ -3363,6 +3363,10 @@ body.no-js .popup {
   }
 }
 
+.select-tabs {
+  width: 100%;
+}
+
 @media (min-width: 1360px) {
   .select-tabs {
     .select-tab-current {
@@ -4649,4 +4653,20 @@ body.no-js .popup {
     outline: none;
   }
 
+}
+
+.news-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1359px) {
+  .news-top {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+  .news-top .articles-search {
+    max-width: unset;
+  }
 }

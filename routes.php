@@ -17,6 +17,7 @@ Router::get('/about', AboutController::class);
 Router::get('/about/manufacture', [AboutController::class, 'manufacture']);
 Router::get('/about/develop', [AboutController::class, 'develop']);
 Router::get('/about/sellers', [AboutController::class, 'sellers']);
+Router::get('/about/news', [AboutController::class, 'news']);
 
 Router::get('/catalog/trademarks', [CatalogController::class, 'trademarks']);
 Router::get('/catalog/product', [CatalogController::class, 'product']);

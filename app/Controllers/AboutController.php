@@ -31,4 +31,11 @@ class AboutController extends Controller
             'title' => 'Где купить'
         ]);
     }
+
+    public function news(): string
+    {
+        return $this->render("pages/about/news", [
+            'title' => 'Новости и мероприятия'
+        ]);
+    }
 }
