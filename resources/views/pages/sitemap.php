@@ -8,6 +8,7 @@
             <li><a href="/about/develop">Отдел исследований и разработок (R&D)</a></li>
             <li><a href="/about/sellers">Где купить</a></li>
             <li><a href="/about/news">Новости и мероприятия</a></li>
+            <li><a href="/about/smi">СМИ о нас</a></li>
         </ul>
     </li>
     <li>

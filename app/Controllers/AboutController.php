@@ -38,4 +38,11 @@ class AboutController extends Controller
             'title' => 'Новости и мероприятия'
         ]);
     }
+
+    public function smi(): string
+    {
+        return $this->render("pages/about/smi", [
+            'title' => 'Новости и мероприятия'
+        ]);
+    }
 }
