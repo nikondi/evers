@@ -30,6 +30,7 @@
         Специалистам
         <ul>
             <li><a href="/specialists/partners">Партнеры</a></li>
+            <li><a href="/specialists/articles">Полезные материалы и статьи</a></li>
         </ul>
     </li>
 </ul>

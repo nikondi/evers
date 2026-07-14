@@ -220,7 +220,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                     </div>
                 </div>
                 <div class="product-tab">
-                    <div class="welcome-news-grid">
+                    <div class="news-grid">
                         <?php
                         $news = [
                             ['image' => '/assets/img/news/1.png', 'date' => 'СТАТЬЯ', 'title' => '«Уральская ватная компания» примет участие в Региональном конгрессе медицинских сестёр в Тюмени', 'description' => 'Тюмень, 2026 год. В преддверии Международного дня медицинской сестры состоится масштабное...'],

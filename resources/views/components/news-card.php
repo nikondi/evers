@@ -1,13 +1,20 @@
 <?php
 /**
- * @var $newsItem - карточка новости
+ * @var array $newsItem - карточка новости
  */
+$is_video = !empty($newsItem['video']);
 ?>
-<a href="#" class="news-card">
+<div class="news-card<?= $is_video ? ' news-card--video' : '' ?>">
     <div class="news-card__image">
-        <img src="<?= $newsItem['image'] ?>" alt=""/>
+        <?php if ($is_video): ?>
+            <?= $newsItem['video'] ?>
+        <?php else: ?>
+            <a href="<?= $newsItem['link'] ?>"><img src="<?= $newsItem['image'] ?>" alt=""/></a>
+        <?php endif; ?>
     </div>
-    <div class="news-card__date"><?= $newsItem['date'] ?></div>
-    <div class="news-card__title"><?= $newsItem['title'] ?></div>
-    <div class="news-card__description"><?= $newsItem['description'] ?></div>
-</a>
+    <a href="<?= $newsItem['link'] ?>" class="news-card__date"><?= $newsItem['date'] ?></a>
+    <a href="<?= $newsItem['link'] ?>" class="news-card__title"><?= $newsItem['title'] ?></a>
+    <?php if (!empty($newsItem['description'])): ?>
+        <a href="<?= $newsItem['link'] ?>" class="news-card__description"><?= $newsItem['description'] ?></a>
+    <?php endif; ?>
+</div>

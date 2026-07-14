@@ -10,4 +10,11 @@ class SpecialistsController extends Controller
             'title' => 'Наши партнерские организации'
         ]);
     }
+
+    public function articles()
+    {
+        return $this->render('pages/specialists/articles', [
+            'title' => 'Полезные материалы и статьи'
+        ]);
+    }
 }
