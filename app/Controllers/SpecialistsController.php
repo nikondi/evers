@@ -17,4 +17,11 @@ class SpecialistsController extends Controller
             'title' => 'Полезные материалы и статьи'
         ]);
     }
+
+    public function publications()
+    {
+        return $this->render('pages/specialists/publications', [
+            'title' => 'Полезные материалы и статьи'
+        ]);
+    }
 }

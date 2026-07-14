@@ -52,7 +52,7 @@ $alt_header ??= false;
                     <li>
                         <span class="header-submenu-trigger">Специалистам</span>
                         <ul class="header-submenu">
-                            <li><a href="#">Научные публикации</a></li>
+                            <li><a href="/specialists/publications">Научные публикации</a></li>
                             <li><a href="#">Полезные материалы о продуктах</a></li>
                             <li><a href="/specialists/partners">Наши партнерские организации</a></li>
                         </ul>

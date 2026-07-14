@@ -4079,18 +4079,19 @@ body.no-js .popup {
   }
 }
 
-.product-pubs-grid {
+.pubs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.product-pub {
+.pub-card {
   box-shadow: 10px 10px 20px 0 #E9E9E980;
   background-color: #F9F9F9;
   border-radius: 12px;
   padding: 20px;
   overflow: hidden;
+  transition: .2s box-shadow;
 
   &--text {
     display: grid;
@@ -4119,9 +4120,13 @@ body.no-js .popup {
       background-color: #FFFFFF;
     }
   }
+
+  &:hover {
+    box-shadow: 10px 10px 20px 0 rgb(182 182 182 / 0.5);
+  }
 }
 
-.product-pub-tag {
+.pub-card-tag {
   font-weight: bold;
   font-size: 12px;
   line-height: 100%;
@@ -4133,14 +4138,14 @@ body.no-js .popup {
   display: inline-block;
 }
 
-.product-pub-title {
+.pub-card-title {
   margin-top: 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
 }
 
-.product-pub-text {
+.pub-card-text {
   margin-top: 12px;
   font-size: 14px;
   line-height: 130%;
@@ -4668,5 +4673,13 @@ body.no-js .popup {
   }
   .news-top .articles-search {
     max-width: unset;
+  }
+}
+
+.publications-grid-section {
+  padding-bottom: 120px;
+
+  .pubs-grid {
+    margin-top: 40px;
   }
 }

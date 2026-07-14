@@ -164,61 +164,6 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
                 <div class="product-tab"></div>
 
-                <div class="product-tab product-publications">
-                    <div class="product-publications__title">Текстовые материалы</div>
-                    <div class="product-pubs-grid">
-                        <div class="product-pub product-pub--text">
-                            <div class="product-pub__image">
-                                <img src="/assets/img/product/pub-1.png" alt="">
-                            </div>
-                            <div class="product-pub-text__data">
-                                <div class="product-pub-tag">текстовый материал</div>
-                                <div class="product-pub-title">Принципы и методы лечения гнойно-некротических ран</div>
-                                <div class="product-pub-text">В 7 главе книги «Руководство по хирургии», посвящённой
-                                    лечению ран, рассматривается эффективность применения раневого покрытия Хитокол®,
-                                    мазевой сетчатой повязки и ранозаживляющего средства «ЭверсЛайф-Гель».
-                                </div>
-                                <a href="#" class="btn btn-full">Смотреть</a>
-                            </div>
-                        </div>
-                        <div class="product-pub product-pub--text">
-                            <div class="product-pub-text__image">
-                                <img src="/assets/img/product/pub-2.png" alt="">
-                            </div>
-                            <div class="product-pub-text__data">
-                                <div class="product-pub-tag">текстовый материал</div>
-                                <div class="product-pub-title">Возможности мониторинга и стимуляции длительно
-                                    незаживающих ран с применением комплексного подхода
-                                </div>
-                                <div class="product-pub-text">В представленной статье подробно рассмотрена методология
-                                    лечения хронических, долго не заживающих ран с использованием препарата Хитокол® в
-                                    составе комплексной терапии.
-                                </div>
-                                <a href="#" class="btn btn-full">Смотреть</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-publications__title">Видео материалы</div>
-                    <div class="product-pubs-grid">
-                        <div class="product-pub product-pub--video">
-                            <div class="product-pub__video">
-                                <video src="https://lorem.video/720p"></video>
-                            </div>
-                            <div class="product-pub-text__data">
-                                <div class="product-pub-tag">Видео материал</div>
-                                <div class="product-pub-title">Международная научно-практическая конференция «Частные
-                                    вопросы лечения ран и гнойно-некротических очагов у детей и взрослых»
-                                </div>
-                                <div class="product-pub-text">Доклад Врача-хирурга, доктора медицинских наук, профессора
-                                    СтГМУ Владимировой О.В. «Тактика консервативного ведения инфицированных ран». 20-21
-                                    мая 2025 года.
-                                </div>
-                                <a href="#" class="btn btn-full">Смотреть</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="product-tab">
                     <div class="news-grid">
                         <?php
@@ -230,6 +175,32 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                         ?>
                         <?php foreach ($news as $i => $newsItem): ?>
                             <?php include VIEW_PATH . '/components/news-card.php'; ?>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="product-tab product-publications">
+                    <div class="product-publications__title">Текстовые материалы</div>
+                    <div class="pubs-grid">
+                        <?php
+                        $publications = [
+                            ['type' => 'text', 'label' => 'текстовый материал', 'link' => '#', 'image' => '/assets/img/product/pub-1.png', 'title' => 'Принципы и методы лечения гнойно-некротических ран', 'text' => 'В 7 главе книги «Руководство по хирургии», посвящённой лечению ран, рассматривается эффективность применения раневого покрытия Хитокол®, мазевой сетчатой повязки и ранозаживляющего средства «ЭверсЛайф-Гель».'],
+                            ['type' => 'text', 'label' => 'текстовый материал', 'link' => '#', 'image' => '/assets/img/product/pub-2.png', 'title' => 'Возможности мониторинга и стимуляции длительно незаживающих ран с применением комплексного подхода', 'text' => 'В представленной статье подробно рассмотрена методология лечения хронических, долго не заживающих ран с использованием препарата Хитокол® в составе комплексной терапии. '],
+                        ];
+                        ?>
+                        <?php foreach ($publications as $publication): ?>
+                            <?php include VIEW_PATH . '/components/pub-card.php'; ?>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <div class="product-publications__title">Видео материалы</div>
+                    <div class="pubs-grid">
+                        <?php
+                        $publications = [
+                            ['type' => 'video', 'label' => 'видео материал', 'link' => '#', 'video' => 'https://lorem.video/720p', 'title' => 'Принципы и методы лечения гнойно-некротических ран', 'text' => 'В 7 главе книги «Руководство по хирургии», посвящённой лечению ран, рассматривается эффективность применения раневого покрытия Хитокол®, мазевой сетчатой повязки и ранозаживляющего средства «ЭверсЛайф-Гель».'],
+                        ];
+                        ?>
+                        <?php foreach ($publications as $publication): ?>
+                            <?php include VIEW_PATH . '/components/pub-card.php'; ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
