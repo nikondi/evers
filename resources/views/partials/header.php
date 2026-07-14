@@ -34,7 +34,7 @@ $alt_header ??= false;
                             <li><a href="/about/manufacture">Производство</a></li>
                             <li><a href="/about/smi">СМИ о нас</a></li>
                             <li><a href="/about/news">Новости компании</a></li>
-                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="/about/requisites">Реквизиты</a></li>
                         </ul>
                     </li>
                     <li>

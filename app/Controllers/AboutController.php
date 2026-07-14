@@ -42,7 +42,14 @@ class AboutController extends Controller
     public function smi(): string
     {
         return $this->render("pages/about/smi", [
-            'title' => 'Новости и мероприятия'
+            'title' => 'СМИ о нас'
+        ]);
+    }
+
+    public function requisites(): string
+    {
+        return $this->render("pages/about/requisites", [
+            'title' => 'Реквизиты'
         ]);
     }
 }
