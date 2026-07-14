@@ -24,7 +24,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <div class="contacts-data__address">ул. Флотская, дом 5, корп. Б</div>
                 <div class="contacts-data__label">График работы:</div>
                 <div class="contacts-data__worktime">Пн-Чт: 9:00 - 18:00</div>
-                <div class="contacts-data__woktime">Пт: 9:00 - 17:00</div>
+                <div class="contacts-data__woktime" style="margin-top: 10px;">Пт: 9:00 - 17:00</div>
                 <div class="contacts-data__warning"><b>Внимание!</b> Заказ пропусков для прохода/проезда на территорию
                     производится строго не менее, чем за 30 минут до прибытия в офис по телефонной заявке.
                 </div>
@@ -52,7 +52,9 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 </div>
                 <div class="contacts-data__label">График работы:</div>
                 <div class="contacts-data__worktime">Пн-Чт: 7:00 - 16:00 (въезд на территорию до 15:30)</div>
-                <div class="contacts-data__woktime">Пт: 7:00 - 15:00 (въезд на территорию до 14:30)</div>
+                <div class="contacts-data__woktime" style="margin-top: 10px;">Пт: 7:00 - 15:00 (въезд на территорию до
+                    14:30)
+                </div>
                 <div class="contacts-data__warning"><b>Внимание!</b> Заказ пропусков для прохода/проезда на территорию
                     производится строго не менее, чем за 30 минут до прибытия в офис по телефонной заявке.
                 </div>
@@ -73,31 +75,31 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
 <section class="contacts-socials-section">
     <div class="container contacts-socials">
-        <div class="contacts-socials-wrapper">
-            <div class="contacts-base">
-                <div class="section-badge">мы в соц. сетях</div>
-                <div class="social-buttons">
-                    <a href="#" class="social-button">
-                        <svg height="1em">
-                            <use xlink:href="/assets/img/socials.svg#vk"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-button">
-                        <svg height="1em" style="position: relative; top: -1px; right: -2px">
-                            <use xlink:href="/assets/img/socials.svg#rutube"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-button">
-                        <svg height="1em">
-                            <use xlink:href="/assets/img/socials.svg#dzen"/>
-                        </svg>
-                    </a>
-                </div>
+        <div class="contacts-base">
+            <div class="section-badge">мы в соц. сетях</div>
+            <div class="social-buttons">
+                <a href="#" class="social-button">
+                    <svg height="1em">
+                        <use xlink:href="/assets/img/socials.svg#vk"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-button">
+                    <svg height="1em" style="position: relative; top: -1px; right: -2px">
+                        <use xlink:href="/assets/img/socials.svg#rutube"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-button">
+                    <svg height="1em">
+                        <use xlink:href="/assets/img/socials.svg#dzen"/>
+                    </svg>
+                </a>
             </div>
-            <div class="contacts-smi">
-                <div class="section-badge">контакты для сми</div>
-                <button type="button" class="btn btn-green popup-button" data-popup="<?php // TODO попап ?>">Оставить заявку</button>
-            </div>
+        </div>
+        <div class="contacts-smi">
+            <div class="section-badge">контакты для сми</div>
+            <button type="button" class="btn btn-green popup-button" data-popup="<?php // TODO попап ?>">Оставить
+                заявку
+            </button>
         </div>
     </div>
 </section>
