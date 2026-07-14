@@ -58,7 +58,7 @@ $alt_header ??= false;
                         </ul>
                     </li>
                     <li><a href="#">Карьера</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-space-desktop"></div>

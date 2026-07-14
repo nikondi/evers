@@ -1,5 +1,6 @@
 <ul>
     <li><a href="/">Главная</a></li>
+    <li><a href="/contacts">Контакты</a></li>
     <li>
         <a href="/about">О компании</a>
         <ul>

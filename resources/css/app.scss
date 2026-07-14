@@ -1126,7 +1126,6 @@ body.ohidden {
 
 .footer-socials {
   grid-column: span 2;
-
 }
 
 .footer-title {
@@ -1245,6 +1244,13 @@ body.ohidden {
   font-size: 56px;
   line-height: 110%;
 }
+
+@media (max-width: 1359px) {
+  .page-h1 {
+    font-size: 36px;
+  }
+}
+
 
 .section-breadcrumbs {
   margin-bottom: 10px;
@@ -4109,7 +4115,7 @@ body.no-js .popup {
 .coop-wholesale {
   background: #F0EDE6;
   border-radius: 12px;
-  box-shadow: 10px 10px 20px 0px #E9E9E980;
+  box-shadow: 10px 10px 20px 0 #E9E9E980;
   padding: 20px;
   min-height: 540px;
 
@@ -4167,8 +4173,141 @@ body.no-js .popup {
   .coop-wholesale {
     padding: 16px;
     min-height: unset;
+
     &__image {
       height: 190px;
     }
+  }
+}
+
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: 538px 1fr;
+  gap: 20px;
+  border-radius: 12px;
+  background-color: #FAF9F3;
+
+  ymaps {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+}
+
+.contacts-data {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  min-height: 550px;
+  align-items: flex-start;
+
+  &__city {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    margin-top: 20px;
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__worktime {
+    margin-top: 16px;
+  }
+
+  &__worktime + &__worktime {
+    margin-top: 10px;
+  }
+
+  &__warning {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 25px;
+
+    b {
+      font-weight: bold;
+      margin-top: 25px;
+    }
+  }
+
+  &__bottom {
+    margin-top: auto;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    transition: .2s color;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  &__link + &__label {
+    margin-top: 20px;
+  }
+}
+
+.contacts-data-section {
+  margin-bottom: 20px;
+}
+
+.contacts-socials-section {
+  padding-bottom: 120px;
+
+}
+
+.contacts-socials-wrapper {
+  display: grid;
+  grid-template-columns: 538px 1fr;
+  gap: 20px;
+}
+
+.contacts-base {
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  background-color: #FAF9F3;
+  height: 267px;
+  padding: 30px;
+  display: flex;
+
+  .social-buttons {
+    margin-top: auto;
+  }
+
+}
+
+.contacts-smi {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #FAF9F3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: {
+    image: url("/assets/img/contacts/smi-background.svg");
+    repeat: no-repeat;
+    position: bottom right 29px;
+  };
+
+  .btn {
+    margin-top: auto;
   }
 }

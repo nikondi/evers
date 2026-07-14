@@ -2,6 +2,7 @@
 
 use App\Controllers\AboutController;
 use App\Controllers\CatalogController;
+use App\Controllers\ContactsController;
 use App\Controllers\CoopController;
 use App\Controllers\SitemapController;
 use App\Controllers\SpecialistsController;
@@ -9,6 +10,7 @@ use App\Controllers\WelcomeController;
 use Engine\Router;
 
 Router::get('/', WelcomeController::class);
+Router::get('/contacts', ContactsController::class);
 Router::get('/sitemap', SitemapController::class);
 
 Router::get('/about', AboutController::class);
