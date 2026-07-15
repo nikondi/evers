@@ -1266,6 +1266,33 @@ body.ohidden {
   grid-column: span 2;
 }
 
+@media (max-width: 1359px) {
+  .footer-top .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .footer-socials {
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+    .social-buttons {
+      justify-content: flex-end;
+    }
+
+    .social-button {
+      width: 28px;
+      height: 28px;
+      column-gap: 12px;
+
+      svg {
+        height: 14px;
+      }
+    }
+  }
+}
+
 .page-h1 {
   margin-bottom: 30px;
   font-weight: 500;
@@ -4791,5 +4818,15 @@ body.no-js .popup {
     &__text {
       font-size: 16px;
     }
+  }
+
+  .footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .footer-logo img {
+    width: 60px;
   }
 }

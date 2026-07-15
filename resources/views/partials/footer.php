@@ -17,7 +17,7 @@
                     <li><a href="/about/manufacture">Производство</a></li>
                     <li><a href="/about/smi">СМИ о нас</a></li>
                     <li><a href="/about/news">Новости компании</a></li>
-                    <li><a href="/about/requisites">Реквизиты</a></li>`
+                    <li><a href="/about/requisites">Реквизиты</a></li>
                 </ul>
             </div>
             <div class="footer-menu">
