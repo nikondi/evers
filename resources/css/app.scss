@@ -156,6 +156,10 @@ body.ohidden {
 .header-contacts {
   display: flex;
   column-gap: 30px;
+
+  &--mobile {
+    display: none;
+  }
 }
 
 .header-contacts-link {
