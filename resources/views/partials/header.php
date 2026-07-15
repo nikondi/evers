@@ -109,14 +109,18 @@ $alt_header ??= false;
                     </svg>
                     <span>0</span>
                 </a>
-                <a href="#" class="header-action header-burger">
-                    <svg width="1em" height="1em">
+                <button class="header-action header-burger">
+                    <svg width="1em" height="1em" class="header-burger__closed">
                         <use xlink:href="/assets/img/icons.svg#burger"/>
                     </svg>
-                </a>
+                    <svg width=".7em" height=".7em" class="header-burger__opened">
+                        <use xlink:href="/assets/img/icons.svg#times"/>
+                    </svg>
+                </button>
             </div>
 
         </div>
     </div>
 </header>
 <div class="header-placeholder"></div>
+<div class="burger-close"></div>
