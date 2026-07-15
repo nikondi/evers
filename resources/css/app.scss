@@ -1336,6 +1336,7 @@ body.ohidden {
 
 .footer {
   background-color: $color-beige;
+  border-radius: 12px 12px 0 0;
 }
 
 .footer-top {
@@ -1480,15 +1481,18 @@ body.ohidden {
 }
 
 @media (max-width: 1359px) {
-  .footer-top .container {
-    display: flex;
-    flex-direction: column;
+  .footer-top {
+    padding-bottom: 100px;
     position: relative;
+
+    .container {
+      display: block;
+    }
   }
   .footer-socials {
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 60px;
 
     .social-buttons {
       justify-content: flex-end;
@@ -1503,6 +1507,116 @@ body.ohidden {
         height: 14px;
       }
     }
+  }
+
+  .footer-copyright {
+    position: absolute;
+    left: 20px;
+    width: 100%;
+    bottom: 60px;
+    margin-top: 0;
+
+    br {
+      display: none;
+    }
+  }
+  .footer-bottom {
+    display: none;
+  }
+  .footer-title {
+    font-size: 12px;
+  }
+  .footer-socials .footer-title {
+    margin-bottom: 9px;
+  }
+  .footer-list {
+    border-top: 1px solid rgba(#272727, 0.1);
+
+    &.footer-credentials {
+      border-bottom: 1px solid rgba(#272727, 0.1);
+    }
+
+    .footer-title {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 0;
+      position: relative;
+      cursor: pointer;
+
+      &:after,
+      &:before {
+        content: '';
+        width: 12px;
+        height: 2px;
+        background: $color-primary;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+
+      &:before {
+        transform: translateY(-50%) rotate(-90deg);
+        transition: transform .2s;
+      }
+
+      &.active:before {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+
+    .footer-menu__list,
+    .footer-contacts__list {
+      overflow: hidden;
+      max-height: 0;
+      transition: {
+        duration: .3s;
+        property: padding, max-height;
+      };
+
+      &.active {
+        overflow: hidden;
+        max-height: unset;
+      }
+
+      &:not(.active) {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      > li:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-contacts__list {
+      padding: 10px 8px 20px;
+    }
+
+    ul > li {
+      padding: 0 8px;
+
+      > a {
+        display: block;
+        padding: 12px 0;
+        border-top: 1px solid rgba(#272727, .1);
+
+      }
+
+      &:first-child > a {
+        padding-top: 0;
+        border-top: 0;
+      }
+    }
+  }
+  .footer-info {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .footer-credentials {
+    display: none;
   }
 }
 

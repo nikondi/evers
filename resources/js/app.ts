@@ -56,12 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
     submenu.style.overflow = 'hidden';
     submenu.style.maxHeight = '0px';
     submenu.style.maxHeight = submenu.scrollHeight + 'px';
-    submenu.addEventListener('transitionend', function (e) {
-      if (e.target !== submenu)
-        return;
-      submenu.style.overflow = null;
-      submenu.style.maxHeight = null;
-    })
   }
   const closeSubmenu = (submenu: HTMLElement) => {
     if (!media.matches)
@@ -74,8 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
     submenu.classList.remove('active');
   }
 
-  const triggers = document.querySelectorAll<HTMLElement>('.header-submenu-trigger');
-  media.addEventListener('change', function (e) {
+  const triggers = [
+    ...document.querySelectorAll<HTMLElement>('.header-submenu-trigger'),
+    ...document.querySelectorAll<HTMLElement>('.footer-list .footer-title')
+  ];
+
+  media.addEventListener('change', function () {
     if (!media.matches)
       triggers.forEach((t) => {
         const submenu = t.nextElementSibling as HTMLElement;
@@ -86,6 +84,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   triggers.forEach((t) => {
     const submenu = t.nextElementSibling as HTMLElement;
+    submenu.addEventListener('transitionend', (e) => {
+      if (e.target !== submenu)
+        return;
+      if (submenu.classList.contains('active')) {
+        submenu.style.overflow = 'visible';
+        submenu.style.maxHeight = null;
+      } else {
+        submenu.style.overflow = null;
+        submenu.style.maxHeight = null;
+      }
+    });
+
     t.addEventListener('click', () => {
       if (submenu.classList.contains('active')) {
         closeSubmenu(submenu);
