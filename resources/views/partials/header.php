@@ -60,9 +60,23 @@ $alt_header ??= false;
                     <li><a href="#">Карьера</a></li>
                     <li><a href="/contacts">Контакты</a></li>
                 </ul>
+                <div class="header-contacts header-contacts--mobile">
+                    <a href="mailto:evers@evers.ru" class="header-contacts-link">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons.svg#envelope"/>
+                        </svg>
+                        <span>evers@evers.ru</span>
+                    </a>
+                    <a href="tel:+7 (499) 707-10-09" class="header-contacts-link">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="/assets/img/icons.svg#phone"/>
+                        </svg>
+                        <span>+7 (499) 707-10-09</span>
+                    </a>
+                </div>
             </nav>
             <div class="header-space-desktop"></div>
-            <div class="header-contacts">
+            <div class="header-contacts header-contacts--desktop">
                 <a href="mailto:evers@evers.ru" class="header-contacts-link">
                     <svg width="1em" height="1em">
                         <use xlink:href="/assets/img/icons.svg#envelope"/>

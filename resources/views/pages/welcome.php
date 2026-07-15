@@ -2,6 +2,8 @@
 // TODO mobile
 ?>
 <section class="welcome-first">
+    <video src="/assets/video/first-background.mp4" class="welcome-first__background" autoplay muted
+           playsinline></video>
     <div class="container">
         <div class="welcome-first-content">
             <h1 class="welcome-first-subtitle">Эверс груп рус</h1>

@@ -24,5 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
   initSelectTabs();
 
   Fancybox.bind("[data-fancybox]");
+
+  document.querySelector(".header-burger").addEventListener('click', (e) => {
+    document.querySelector('.header-menu').classList.toggle('active');
+  })
 });
 
