@@ -74,11 +74,11 @@
             $production = [
                 ['image' => '/assets/img/production/1.png', "title" => 'Лечение ран, ожогов, пролежней, уход за лежачими пациентами'],
                 ['image' => '/assets/img/production/2.png', "title" => 'Средства для&nbsp;фиксации повязок, закрытия и&nbsp;защиты ран'],
-                ['image' => '/assets/img/production/3.jpg', "title" => 'Марлевые и&nbsp;нетканые медицинские изделия, вата'],
+                ['image' => '/assets/img/production/3.png', "title" => 'Марлевые и&nbsp;нетканые медицинские изделия, вата'],
                 ['image' => '/assets/img/production/4.png', "title" => 'Защита операционного поля'],
-                ['image' => '/assets/img/production/5.png', "title" => 'Средства экспресс-диагностики'],
-                ['image' => '/assets/img/production/6.jpg', "title" => 'Оказание первой помощи'],
-                ['image' => '/assets/img/production/7.png', "title" => 'средства индивидуальной защиты (сиз)'],
+                ['image' => '/assets/img/production/5.png', "title" => 'Оказание первой помощи'],
+                ['image' => '/assets/img/production/6.png', "title" => 'средства индивидуальной защиты (сиз)'],
+                ['image' => '/assets/img/production/7.png', "title" => 'Средства экспресс-диагностики'],
             ];
             ?>
             <?php foreach ($production as $good): ?>
@@ -112,14 +112,14 @@
             <div class="swiper-wrapper">
                 <?php
                 $products = [
-                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
-                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
-                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
-                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
-                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '#'],
-                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '#'],
-                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '#'],
-                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '#'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/3.png', 'title' => 'Повязка пластырного типа с&nbsp;суперадсорбентом', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/2.png', 'title' => 'Повязки пластырного типа бактерицидные', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/1.png', 'title' => 'Бинт марлевый медицинский стерильный HELP', 'link' => '/catalog/product'],
+                    ['image' => '/assets/img/products/4.png', 'title' => 'Салфетки сорбционные марлевые HELP', 'link' => '/catalog/product'],
                 ];
                 ?>
                 <?php foreach ($products as $i => $goodItem): ?>
@@ -141,7 +141,7 @@
 
             <div class="manufacture-metrics">
                 <div class="manufacture-metric">
-                    <div class="manufacture-metric__title">до 500 000</div>
+                    <div class="manufacture-metric__title">200+</div>
                     <div class="manufacture-metric__text">наименований медицинских изделий</div>
                 </div>
                 <div class="manufacture-metric">
@@ -149,7 +149,7 @@
                     <div class="manufacture-metric__text">салфеток с нашатырным спиртом в месяц</div>
                 </div>
                 <div class="manufacture-metric">
-                    <div class="manufacture-metric__title">200+</div>
+                    <div class="manufacture-metric__title">от 500 000</div>
                     <div class="manufacture-metric__text">повязок пластырного типа в сутки</div>
                 </div>
             </div>
@@ -158,6 +158,9 @@
 </section>
 
 <section class="welcome-coop">
+    <div class="welcome-coop__background">
+        <img srcset="/assets/img/welcome/coop-mobile.png 1359w" src="/assets/img/welcome/coop.png">
+    </div>
     <div class="container">
         <div class="section-badge section-badge--white">преимущества сотрудничества</div>
         <div class="welcome-coop-cards-wrapper">

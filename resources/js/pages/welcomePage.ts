@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
+import {FreeMode, Navigation, Pagination} from "swiper/modules";
 
 export default function welcomePage() {
   initProductsSlider();
@@ -42,12 +42,12 @@ function initPartnersSlider() {
 
   new Swiper(partnersSlider, {
     modules: [Pagination],
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 20,
-    autoHeight: true,
+    centeredSlidesBounds: true,
     breakpoints: {
       1360: {
-        slidesPerView: 4
+        slidesPerView: 4,
       },
     },
     pagination: {
