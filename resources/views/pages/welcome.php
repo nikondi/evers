@@ -1,6 +1,3 @@
-<?php
-// TODO mobile
-?>
 <section class="welcome-first">
     <video src="/assets/video/first-background.mp4" class="welcome-first__background" autoplay muted
            playsinline></video>

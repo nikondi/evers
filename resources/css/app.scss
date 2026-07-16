@@ -5398,3 +5398,54 @@ body.no-js .popup {
     padding-bottom: 60px;
   }
 }
+
+.politics-warn {
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FAF9F3;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 40px);
+  max-width: 650px;
+  font-size: 14px;
+  line-height: 100%;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  &__btn {
+    border-radius: 4px;
+    padding: 11px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: #FFFFFF;
+    transition: .2s background-color;
+
+    &:hover {
+      background-color: rgba($color-primary, .8);
+    }
+  }
+
+}
+
+@media (max-width: 1359px) {
+  .politics-warn {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 16px;
+    transition: {
+      property: transform, opacity, visibility;
+    };
+    transform: translateY(0);
+
+    &:not(.active) {
+      transform: translateY(10px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

@@ -91,11 +91,12 @@ $alt_header ??= false;
                 </a>
             </div>
             <div class="header-actions">
-                <a href="#" class="header-action header-search">
+                <?php // TODO search ?>
+                <button type="button" class="header-action header-search">
                     <svg width="1em" height="1em">
                         <use xlink:href="/assets/img/icons.svg#search"/>
                     </svg>
-                </a>
+                </button>
                 <div class="header-space-mobile"></div>
                 <a href="#" class="header-action">
                     <svg width="1em" height="1em">

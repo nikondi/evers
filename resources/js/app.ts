@@ -7,6 +7,7 @@ import {aboutPage, manufacturePage, productPage, welcomePage} from "@/pages";
 import {initAssortmentSliders, initForms, initNewsSliders, initPopups, initSelectTabs} from "@/components";
 import {Fancybox} from "@fancyapps/ui";
 import {lockBody, unlockBody} from "@/helpers/popups";
+import Cookies from 'js-cookie';
 
 document.addEventListener('DOMContentLoaded', function () {
   document.body.classList.remove("no-js");
@@ -106,5 +107,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  if (!Cookies.get('politics')) {
+    const warn = document.querySelector<HTMLElement>('.politics-warn');
+    warn.classList.add('active');
+    warn.querySelector('.politics-warn__btn').addEventListener('click', (e) => {
+      Cookies.set('politics', '1', {expires: 365, path: '/'});
+      warn.remove();
+    });
+  }
 });
 

@@ -2,7 +2,7 @@
 /**
  * @var string $title
  * @var string $content
-*/
+ */
 ?>
 <!doctype html>
 <html lang="ru">
@@ -44,6 +44,13 @@
             <use xlink:href="/assets/img/icons.svg#times"/>
         </svg>
     </button>
+</div>
+<div class="politics-warn">
+    <div class="politics-warn__text">
+        Нажимая кнопку «Принимаю», вы даёте согласие на обработку ваших персональных данных
+        в соответствии с <a href="#">политикой</a> нашего сайта.
+    </div>
+    <button class="politics-warn__btn" type="button">Принимаю</button>
 </div>
 
 

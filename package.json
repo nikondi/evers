@@ -5,6 +5,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^25.9.3",
     "saas": "^1.0.0",
     "sass-embedded": "^1.100.0",
@@ -15,6 +16,7 @@
   "dependencies": {
     "@fancyapps/ui": "^6.1.14",
     "imask": "^7.6.1",
+    "js-cookie": "^3.0.8",
     "swiper": "^12.2.0"
   },
   "allowScripts": {
