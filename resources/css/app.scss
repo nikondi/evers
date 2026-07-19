@@ -4183,6 +4183,12 @@ body.no-js .popup {
   }
 }
 
+@media (max-width: 1359px) {
+  .spec-partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product-data {
   display: grid;
   grid-template-columns: 650px 1fr;
@@ -4808,6 +4814,18 @@ body.no-js .popup {
 
     &__image {
       height: 190px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__links {
+      margin-top: 24px;
     }
   }
 }
