@@ -4187,6 +4187,35 @@ body.no-js .popup {
   padding-top: 60px;
 }
 
+@media (max-width: 1359px) {
+  .brandbook-desktop {
+    display: block;
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__logos {
+      grid-template-columns: 1fr;
+    }
+  }
+  .brandbook-trademarks-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .brandbook-card__image {
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .brandbook-card__link {
+    margin-top: 8px;
+  }
+  .brandbook-trademarks-section {
+    padding-bottom: 80px;
+  }
+}
+
 .spec-partners-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

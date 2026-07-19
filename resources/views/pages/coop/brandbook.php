@@ -1,7 +1,4 @@
 <?php
-// TODO mobile
-?>
-<?php
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/coop/', 'Сотрудничество'],
