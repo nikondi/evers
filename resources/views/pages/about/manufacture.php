@@ -36,8 +36,8 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             </div>
             <div class="manufacture-info-metrics">
                 <div class="manufacture-info-metric">
-                    <div class="manufacture-info-metric__title">200+</div>
-                    <div class="manufacture-info-metric__text">наименований и вариантов исполнения<br/> медицинских
+                    <div class="manufacture-info-metric__title">3 класс</div>
+                    <div class="manufacture-info-metric__text">безопасности производства<br/> медицинских
                         изделий
                     </div>
                 </div>
@@ -50,7 +50,6 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
     </div>
 </section>
 
-<?php // TODO не нравится мне этот блок ?>
 <section class="manufacture-process-section">
     <div class="container">
         <div class="section-badge section-badge--white">Производственный процесс</div>
