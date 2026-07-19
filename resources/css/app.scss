@@ -4801,6 +4801,18 @@ body.no-js .popup {
   }
 }
 
+@media (max-width: 1359px) {
+  .pubs-grid {
+    grid-template-columns: 1fr;
+  }
+  .pub-card {
+    display: block;
+    &__image {
+      margin-bottom: 48px;
+    }
+  }
+}
+
 .product-page-top {
   padding-bottom: 80px;
 }
