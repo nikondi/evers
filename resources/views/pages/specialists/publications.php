@@ -1,7 +1,7 @@
 <?php
 $breadcrumbs = [
     ['/', 'Главная'],
-    ['/about', 'О компании'],
+    ['#', 'Специалистам'],
     ['Научные публикации']
 ];
 include VIEW_PATH . 'partials/breadcrumbs.php';
