@@ -1,7 +1,4 @@
 <?php
-// TODO mobile
-?>
-<?php
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/coop/', 'Сотрудничество'],
@@ -56,8 +53,8 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 <section class="contract-partners-section">
     <div class="container">
         <div class="section-badge">наши партнеры</div>
-        <div class="section-h2">Эверс Груп Рус сотрудничает <span>с крупнейшими федеральными аптечными сетями и фармкомпаниями</span>,
-            в числе которых Ригла, Отрада, Эркафарм.
+        <div class="section-h2">Контрактное производство Эверс груп Рус&nbsp;сотрудничает <span>с&nbsp;крупнейшими федеральными аптечными сетями и&nbsp;фармкомпаниями</span>,
+            в&nbsp;числе которых Ригла, Апрель, Эркафарм.
         </div>
     </div>
 </section>
@@ -87,10 +84,10 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             <div class="swiper-wrapper">
                 <?php
                 $goods = [
-                    ['image' => '/assets/img/coop/contract/assortment/1.png', 'title' => 'Лейкопластыри и повязки '],
-                    ['image' => '/assets/img/coop/contract/assortment/2.png', 'title' => 'Марля, вата, бинты'],
-                    ['image' => '/assets/img/coop/contract/assortment/3.png', 'title' => 'Средства индивидуальной защиты (маски, бахилы)'],
-                    ['image' => '/assets/img/coop/contract/assortment/4.png', 'title' => 'Средства экспресс-диагностики'],
+                    ['link' => '/catalog/product', 'image' => '/assets/img/coop/contract/assortment/1.png', 'title' => 'Лейкопластыри и повязки '],
+                    ['link' => '/catalog/product', 'image' => '/assets/img/coop/contract/assortment/2.png', 'title' => 'Марля, вата, бинты'],
+                    ['link' => '/catalog/product', 'image' => '/assets/img/coop/contract/assortment/3.png', 'title' => 'Средства индивидуальной защиты (маски, бахилы)'],
+                    ['link' => '/catalog/product', 'image' => '/assets/img/coop/contract/assortment/4.png', 'title' => 'Средства экспресс-диагностики'],
                 ]
                 ?>
                 <?php foreach ($goods as $goodItem): ?>
