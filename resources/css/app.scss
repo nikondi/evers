@@ -3642,24 +3642,102 @@ body.no-js .popup {
 
 .about-mission-section {
   border-radius: 24px 24px 0 0;
-  background: {
-    image: url("/assets/img/about/mission-background.jpg");
-    size: cover;
-    repeat: no-repeat;
-  };
   padding-top: 80px;
   padding-bottom: 114px;
   margin-top: 80px;
   color: #FFFFFF;
   height: 870px;
+  position: relative;
 
   .container {
     height: 100%;
     position: relative;
+    z-index: 2;
   }
 
   .metric-card {
     position: absolute;
+  }
+}
+
+.about-mission__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &:after {
+    position: absolute;
+    background-color: rgba(#272727, .4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1359px) {
+  .about-mission-section {
+    margin-top: 40px;
+    padding-top: 40px;
+    height: auto;
+    overflow: hidden;
+    background-position: center center;
+
+    .metric-card {
+      position: static;
+      max-width: unset;
+      padding: 16px;
+
+      &__title {
+        font-size: 24px;
+      }
+
+      &__title + .metric-card__text {
+        margin-top: 6px;
+      }
+
+      &:nth-child(1) {
+        width: 90%;
+        max-width: unset;
+        margin-left: auto;
+      }
+
+      &:nth-child(2) {
+        width: 95%;
+        margin-top: 20px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &:nth-child(4) {
+        margin-top: 20px;
+        margin-left: auto;
+      }
+    }
+  }
+  .about-mission__background {
+    img {
+      object-position: -1100px top;
+    }
+  }
+
+  .metric-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
   }
 }
 
@@ -3709,10 +3787,59 @@ body.no-js .popup {
   backdrop-filter: blur(8px);
 }
 
+@media (max-width: 1359px) {
+  .about-tradition-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    .section-h4 {
+      margin-top: 0;
+    }
+  }
+  .about-traditions {
+    flex-direction: column;
+
+    .about-tradition {
+      width: 220px;
+      height: 220px;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:last-child) {
+        margin-bottom: -80px;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
 .about-value-section {
   padding-top: 80px;
   padding-bottom: 80px;
+  border-radius: 18px 18px 0 0;
   background-color: $color-beige;
+}
+
+@media (max-width: 1359px) {
+  .about-value-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .slider-top {
+    margin-bottom: 30px;
+  }
+
+  .about-value {
+    &__icon {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    &__short {
+      font-size: 14px;
+    }
+  }
 }
 
 .about-value-slider {
@@ -3826,6 +3953,14 @@ body.no-js .popup {
     margin-top: 88px;
     align-self: flex-end;
   }
+
+  .about-value__top {
+    transition: {
+      property: backdrop-filter;
+      duration: .3s;
+      delay: .3s;
+    };
+  }
 }
 
 .about-value-short,
@@ -3836,11 +3971,16 @@ body.no-js .popup {
 
 .about-value.flip {
   .about-value-short {
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg) translateZ(-1px);
+  }
+
+  .about-value__top,
+  .about-value-flip {
+    backdrop-filter: none;
   }
 
   .about-value-full {
-    transform: rotateY(0deg);
+    transform: rotateY(0deg) translateZ(1px);
   }
 }
 
@@ -3861,6 +4001,10 @@ body.no-js .popup {
 .about-value__icon {
   font-size: 60px;
   margin-bottom: 45px;
+
+  svg {
+    display: block;
+  }
 }
 
 .about-history-section {
@@ -3956,6 +4100,26 @@ body.no-js .popup {
   }
 }
 
+@media (max-width: 1359px) {
+  .about-history-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .about-history .swiper-slide {
+    width: 230px;
+  }
+  .about-history-card {
+    width: 100%;
+    padding: 16px;
+  }
+  .about-history-card__year {
+    font-size: 34px;
+  }
+  .about-history-card__text {
+    margin-top: 27px;
+  }
+}
+
 .about-brands-section {
   padding-bottom: 120px;
 
@@ -3988,6 +4152,20 @@ body.no-js .popup {
   }
 }
 
+@media (max-width: 767px) {
+  .brands-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1359px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-brands-section {
+    padding-bottom: 80px;
+  }
+}
 
 .select-tabs__inner {
   display: inline-flex;
