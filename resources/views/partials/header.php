@@ -98,7 +98,7 @@ $alt_header ??= false;
                     </svg>
                 </button>
                 <div class="header-space-mobile"></div>
-                <a href="#" class="header-action">
+                <a href="/catalog/favorites" class="header-action">
                     <svg width="1em" height="1em">
                         <use xlink:href="/assets/img/icons.svg#heart"/>
                     </svg>

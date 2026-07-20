@@ -24,4 +24,11 @@ class CatalogController extends Controller
             'title' => 'Хитокол®-ДА'
         ]);
     }
+
+    public function favorites(): string
+    {
+        return $this->render("pages/catalog/favorites", [
+            'title' => 'Избранное'
+        ]);
+    }
 }

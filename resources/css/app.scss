@@ -1642,6 +1642,7 @@ body.ohidden {
   .footer-top {
     padding-bottom: 100px;
     position: relative;
+    border-bottom: 0;
 
     .container {
       display: block;
@@ -6415,8 +6416,6 @@ body.no-js .popup {
 }
 
 @media (max-width: 1359px) {
-
-
   .form-success {
     &__title {
       margin-top: 16px;
@@ -6426,5 +6425,14 @@ body.no-js .popup {
       font-size: 14px;
       margin-top: 12px;
     }
+  }
+}
+
+.catalog-favorites-section {
+  padding-bottom: 120px;
+}
+@media (max-width: 1359px) {
+  .catalog-favorites-section {
+    padding-bottom: 80px;
   }
 }
