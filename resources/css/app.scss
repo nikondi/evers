@@ -1835,11 +1835,11 @@ body.ohidden {
 /// ABOUT/MANUFACTURE
 .manufacture-info-section {
   padding-bottom: 120px;
+  padding-top: 60px;
 }
 
 .manufacture-info {
   display: flex;
-  margin-top: 60px;
   background: #F0EDE6;
   overflow: hidden;
   border-radius: 12px;
@@ -2107,6 +2107,7 @@ body.ohidden {
   }
   .manufacture-regions-section {
     padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2152,6 +2153,12 @@ body.ohidden {
     property: opacity, visibility;
     duration: .2s;
   };
+}
+
+@media (max-width: 1359px) {
+  .manufacture-video {
+    height: 170px;
+  }
 }
 
 .manufacture-samples-section {
@@ -2223,6 +2230,11 @@ body.ohidden {
 
 .manufacture-samples-right .note {
   margin-top: 20px;
+}
+
+.manufacture-samples-button--mobile {
+  display: none;
+  margin-top: 30px;
 }
 
 @media (max-width: 1359px) {
@@ -2300,6 +2312,81 @@ body.ohidden {
     min-height: 740px;
     background-size: 350%;
     background-position: right -400px center;
+  }
+  .manufacture-info-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .manufacture-regions-slider {
+    margin-top: 16px;
+    padding: 20px 16px;
+  }
+  .manufacture-region-card {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+  .manufacture-regions-slider .slider-arrows {
+    margin-top: 24px;
+  }
+  .manufacture-regions-container {
+    padding-bottom: 475px;
+  }
+  .manufacture-regions-map {
+    left: -20px;
+    top: auto;
+    bottom: 0;
+    transform: scale(.9);
+    transform-origin: 0 100%;
+  }
+  .manufacture-samples {
+    flex-direction: column;
+  }
+  .manufacture-samples-items {
+    flex-direction: column;
+    row-gap: 16px;
+
+    .manufacture-sample {
+      flex: auto;
+      padding: 20px 30px;
+
+      &__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      &:first-child {
+        height: 211px;
+      }
+
+      &:last-child {
+        height: 222px;
+
+        .manufacture-sample__image {
+          right: 20px;
+
+          img {
+            height: 128px;
+          }
+        }
+      }
+    }
+  }
+  .manufacture-samples-button--mobile {
+    display: inline-flex;
+  }
+
+  .manufacture-samples-button--desktop {
+    display: none;
+  }
+  .manufacture-samples-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 }
 
