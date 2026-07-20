@@ -1,6 +1,4 @@
 <?php
-// TODO mobile
-
 $product = [
     'title' => 'Хитокол®-ДА',
     'images' => ['/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png', '/assets/img/catalog/product.png',],

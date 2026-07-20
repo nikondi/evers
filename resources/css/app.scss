@@ -4940,7 +4940,7 @@ body.no-js .popup {
 
 @media (max-width: 1359px) {
   .product-tag {
-    padding: 10px 15px;
+    padding: 7px 15px;
     font-size: 12px;
     border-radius: 40px;
   }
@@ -5413,6 +5413,10 @@ body.no-js .popup {
   padding-bottom: 120px;
 }
 
+.product-info {
+  position: relative;
+}
+
 @media (max-width: 1359px) {
   .product-tab-triggers {
     width: auto;
@@ -5430,6 +5434,37 @@ body.no-js .popup {
   .product-char {
     display: flex;
     flex-direction: column;
+  }
+
+  .product-data {
+    display: block;
+  }
+  .product-images-thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+  .product-images {
+    margin-bottom: 24px;
+  }
+  .product-favorite-button {
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 14px;
+    }
+  }
+  .product-cart {
+    flex-direction: column;
+
+    .product-quantity {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .product-option {
+    width: 100%;
+    max-width: unset;
   }
 }
 
