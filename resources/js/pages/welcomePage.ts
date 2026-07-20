@@ -14,7 +14,7 @@ function initProductsSlider() {
 
     new Swiper(el as HTMLElement, {
       modules: [Navigation, Pagination],
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 20,
       breakpoints: {
         1360: {
