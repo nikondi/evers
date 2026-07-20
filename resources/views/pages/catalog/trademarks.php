@@ -1,7 +1,4 @@
 <?php
-// TODO mobile
-?>
-<?php
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/catalog/', 'Каталог'],
@@ -23,20 +20,24 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <div class="trademarks-item__logo">
                     <img src="/assets/img/catalog/trademarks/help.png" alt="">
                 </div>
+                <div class="product-tags trademarks-tags">
+                    <div class="product-tag">пластыри медицинские фиксирующие</div>
+                    <div class="product-tag">бинты марлевые ГОСТ</div>
+                    <div class="product-tag">пленка липкая операционная</div>
+                    <div class="product-tag">лейкопластыри бактерицидные стерильные</div>
+                </div>
+
                 <div class="trademarks-item__text">
-                    <p>HELP — это российская торговая марка высококачественных перевязочных средств.</p>
-                    <p>Это российское производство, оснащенное самым современным оборудованием, с полным циклом
-                        переработки хлопка в медицинскую марлю, вату и готовые перевязочные материалы.</p>
+                    <p>Торговая марка высококачественных медицинских перевязочных материалов, а также специализированных
+                        разрезаемых операционных покрытий.</p>
+                    <p>Под маркой <b>HELP®</b> Помогаем людям выпускаются марлевые бинты и салфетки (в том числе,
+                        отвечающие требованиям ГОСТ), отрезы, наборы пластырей стерильных, пластыри фиксирующие
+                        рулонные, пленка липкая операционная с повидон-йодом для защиты операционного поля.</p>
                 </div>
                 <a href="/catalog" class="btn">Все продукты</a>
             </div>
             <div class="trademarks-item-background">
                 <img src="/assets/img/catalog/trademarks/help-background.png" alt="">
-                <div class="trademarks-item-specs">
-                    <div class="trademarks-item-spec">медицинская марля</div>
-                    <div class="trademarks-item-spec">вата хирургическая</div>
-                    <div class="trademarks-item-spec">лейкопластыри</div>
-                </div>
             </div>
         </div>
         <div class="trademarks-item trademarks-item--white trademarks-item--evers-med">
@@ -44,21 +45,24 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <div class="trademarks-item__logo">
                     <img src="/assets/img/catalog/trademarks/evers-med.png" alt="">
                 </div>
+                <div class="product-tags trademarks-tags">
+                    <div class="product-tag">средства перевязочные гидрогелевые</div>
+                    <div class="product-tag">повязки мазевые сетчатые</div>
+                    <div class="product-tag">бинты фиксирующие и эластичные</div>
+                    <div class="product-tag">салфетки марлевые и нетканые</div>
+                </div>
                 <div class="trademarks-item__text">
-                    <p>EversMed — это новаторские перевязочные материалы, которые предназначены для индивидуального
-                        подхода к лечению ран.</p>
-                    <p>Каждая рана уникальна и требует особого внимания, поэтому правильный выбор перевязочного
-                        материала является крайне важным.</p>
+                    <p>Широкая линейка медицинских и косметических средств, которая включает как традиционные изделия,
+                        так и инновационные продукты с уникальными составами и разной формой выпуска для широкого круга
+                        потребителей.</p>
+                    <p>Под маркой <b>EVERSMED</b> выпускаются перевязочные гидрогелевые средства на основе хитозана,
+                        лосьон и салфетки для профилактики пролежней, расходные марлевые и нетканые материалы, изделия
+                        для фиксации повязок.</p>
                 </div>
                 <a href="/catalog" class="btn">Все продукты</a>
             </div>
             <div class="trademarks-item-background">
                 <img src="/assets/img/catalog/trademarks/evers-med-background.png" alt="">
-                <div class="trademarks-item-specs">
-                    <div class="trademarks-item-spec">лечебные спреи</div>
-                    <div class="trademarks-item-spec">салфетки с пропиткой</div>
-                    <div class="trademarks-item-spec">перевязочные средства</div>
-                </div>
             </div>
         </div>
         <div class="trademarks-item trademarks-item--angel">
@@ -66,21 +70,22 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <div class="trademarks-item__logo">
                     <img src="/assets/img/catalog/trademarks/angel.png" alt="">
                 </div>
+                <div class="product-tags trademarks-tags">
+                    <div class="product-tag">повязки пластырного типа</div>
+                </div>
                 <div class="trademarks-item__text">
-                    <p>Angel — это перевязочные материалы, которые значительно облегчают лечение ран, ожогов, травм и
-                        переломов.</p>
-                    <p>Каждая рана требует индивидуального подхода и очень важно правильно подобрать перевязочный
-                        материал.</p>
+                    <p>Линейка самоклеящихся стерильных повязок на рану, состоящих из основы и впитывающей подушки.
+                        Изделия обеспечивают надежную защиту послеоперационных швов, порезов и ссадин, ран с умеренным
+                        или обильным выделением экссудата. Гарантируют качественный уход как в медицинских учреждениях,
+                        так и в домашних условиях.</p>
+                    <p>Повязки пластырного типа под маркой <b>Angel Продукты для профессионального ухода за ранами</b>
+                        представлены в нескольких модификациях: бактерицидные и с суперадсорбентом. Производятся на
+                        нетканой или полиуретановой основе, доступны в широком размерном ряде.</p>
                 </div>
                 <a href="/catalog" class="btn">Все продукты</a>
             </div>
             <div class="trademarks-item-background">
                 <img src="/assets/img/catalog/trademarks/angel-background.png" alt="">
-                <div class="trademarks-item-specs">
-                    <div class="trademarks-item-spec">повязки пластырного типа</div>
-                    <div class="trademarks-item-spec">салфетки сорбционные</div>
-                    <div class="trademarks-item-spec">салфетки марлевые</div>
-                </div>
             </div>
         </div>
         <div class="trademarks-item trademarks-item--white trademarks-item--evers-life">
@@ -88,21 +93,19 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                 <div class="trademarks-item__logo">
                     <img src="/assets/img/catalog/trademarks/evers-life.png" alt="">
                 </div>
+                <div class="product-tags trademarks-tags">
+                    <div class="product-tag">маски медицинские детские</div>
+                    <div class="product-tag">бинты марлевые</div>
+                </div>
                 <div class="trademarks-item__text">
-                    <p>Angel — это перевязочные материалы, которые значительно облегчают лечение ран, ожогов, травм и
-                        переломов.</p>
-                    <p>Каждая рана требует индивидуального подхода и очень важно правильно подобрать перевязочный
-                        материал.</p>
+                    <p>Линейка доступных медицинских изделий для широкого круга потребителей с давней историей.</p>
+                    <p>Под маркой <b>Evers-Life Здоровье в основе жизни</b> в настоящее время производятся детские
+                        медицинские маски и марлевые бинты.</p>
                 </div>
                 <a href="/catalog" class="btn">Все продукты</a>
             </div>
             <div class="trademarks-item-background">
                 <img src="/assets/img/catalog/trademarks/evers-life-background.png" alt="">
-                <div class="trademarks-item-specs">
-                    <div class="trademarks-item-spec">марлевые отрезы</div>
-                    <div class="trademarks-item-spec">салфетки с пропиткой</div>
-                    <div class="trademarks-item-spec">салфетки марлевые</div>
-                </div>
             </div>
         </div>
     </div>

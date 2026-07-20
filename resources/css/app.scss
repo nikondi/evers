@@ -2336,10 +2336,19 @@ body.ohidden {
   background-color: #F0EDE6;
   border-radius: 12px;
   overflow: hidden;
-  padding: 50px;
-  height: 530px;
+  padding: 40px;
+  min-height: 580px;
   position: relative;
   display: flex;
+
+  &__logo {
+    margin-bottom: auto;
+  }
+}
+
+.trademarks-tags {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .trademarks-item-text {
@@ -2347,7 +2356,6 @@ body.ohidden {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100%;
   max-width: 590px;
 
   .trademarks-item__logo {
@@ -2361,6 +2369,10 @@ body.ohidden {
   font-size: 16px;
   line-height: 130%;
 
+  b {
+    font-weight: bold;
+  }
+
   p:not(:last-child) {
     margin-bottom: 1em;
   }
@@ -2371,35 +2383,6 @@ body.ohidden {
   right: 0;
   top: 0;
   width: 50%;
-}
-
-.trademarks-item-spec {
-  background: linear-gradient(129.33deg, rgba(86, 129, 41, 0.7) 0%, rgba(240, 237, 230, 0.7) 276.53%);
-  backdrop-filter: blur(4px);
-  position: absolute;
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 60px;
-  padding-right: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #fff;
-  border-radius: 25px;
-
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    background-color: #fff;
-    border-radius: 50%;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 }
 
 .trademarks-item-background {
@@ -2424,8 +2407,9 @@ body.ohidden {
 .trademarks-item--help {
   .trademarks-item-background {
     > img {
-      right: 94px;
-      top: 22px;
+      height: 580px;
+      right: 14px;
+      top: 14px;
     }
 
     .trademarks-item-spec {
@@ -2450,8 +2434,9 @@ body.ohidden {
 .trademarks-item--evers-med {
   .trademarks-item-background {
     > img {
-      top: 28px;
-      left: 52px;
+      top: 0;
+      left: 0;
+      height: 580px;
     }
 
     .trademarks-item-spec {
@@ -2477,8 +2462,9 @@ body.ohidden {
 .trademarks-item--angel {
   .trademarks-item-background {
     > img {
-      top: 22px;
-      right: 94px;
+      top: 0;
+      right: 0;
+      height: 580px;
     }
 
     .trademarks-item-spec {
@@ -2503,8 +2489,8 @@ body.ohidden {
 .trademarks-item--evers-life {
   .trademarks-item-background {
     > img {
-      top: 32px;
-      left: 57px;
+      top: 0;
+      left: 0;
     }
 
     .trademarks-item-spec {
@@ -2522,6 +2508,35 @@ body.ohidden {
         top: 395px;
         left: 95px;
       }
+    }
+  }
+}
+
+@media (max-width: 1359px) {
+  .trademarks-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+  }
+  .trademarks-item-text {
+    width: 100%;
+  }
+  .trademarks-item-background {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+
+    > img {
+      position: static;
+      height: auto !important;
+      width: 100%;
+    }
+  }
+  .trademarks-item__logo {
+    margin-bottom: 20px;
+
+    img {
+      width: 140px;
     }
   }
 }
@@ -4729,7 +4744,6 @@ body.no-js .popup {
 
     &__description {
       margin-top: 20px;
-      margin-bottom: 20px;
       font-size: 16px;
       margin-bottom: 0;
     }
@@ -4823,8 +4837,8 @@ body.no-js .popup {
 
 .product-tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  padding-right: 52px;
 }
 
 .product-tag {
@@ -4835,6 +4849,14 @@ body.no-js .popup {
   border: 2px solid $color-green;
   padding: 6px 24px;
   border-radius: 16px;
+}
+
+@media (max-width: 1359px) {
+  .product-tag {
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 40px;
+  }
 }
 
 .product-title {
