@@ -2833,7 +2833,8 @@ body.no-js .popup {
   }
 
   input,
-  textarea {
+  textarea,
+  select {
     border: 1px solid var(--labeled-input-border, #ADB8CC);
     background-color: var(--labeled-input-background, #ffffff);
     color: var(--labeled-input-color, #272727);
@@ -6238,6 +6239,10 @@ body.no-js .popup {
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 12px;
+
+  img {
+    margin: 0 auto;
+  }
 }
 
 .catalog-grid {
@@ -6267,6 +6272,7 @@ body.no-js .popup {
   }
   .catalog-top {
     flex-direction: column-reverse;
+    padding: 12px;
 
     .page-h1 {
       font-size: 24px;
@@ -6286,5 +6292,104 @@ body.no-js .popup {
 @media (max-width: 767px) {
   .catalog-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.coop-request-section {
+  padding-bottom: 120px;
+}
+
+.coop-request {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__caption {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 650px;
+    margin-bottom: 30px;
+  }
+}
+
+.coop-request-left {
+  width: 50%;
+  max-width: 650px;
+}
+
+.coop-request-left .form {
+  padding: 30px 40px 40px;
+  background-color: #FAF9F3;
+  border-radius: 12px;
+}
+
+.coop-request-contacts__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.coop-request-contacts__hr {
+  border-top: 2px dashed rgba($color-green, .4);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.coop-request-contact {
+  & + .coop-request-contact {
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 100%;
+
+    a {
+      color: inherit;
+      transition: .2s color;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+
+  &__label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1359px) {
+  .coop-request {
+    flex-direction: column;
+
+    &__caption {
+      font-size: 16px;
+    }
+  }
+  .coop-request-left {
+    width: 100%;
+
+    .form {
+      padding: 20px;
+    }
+  }
+  .coop-request-contacts {
+    margin-top: 60px;
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+  .coop-request-contacts__hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .coop-request-section {
+    padding-bottom: 80px;
   }
 }

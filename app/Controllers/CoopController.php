@@ -37,4 +37,10 @@ class CoopController extends Controller
             'title' => 'Отзывы партнеров'
         ]);
     }
+    public function request()
+    {
+        return $this->render("pages/coop/request", [
+            'title' => 'Заявка на сотрудничество'
+        ]);
+    }
 }

@@ -196,8 +196,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
             <div class="manufacture-samples-left">
                 <div class="section-h2">Наше производство способно обеспечивать <span>стабильные поставки</span> в&nbsp;объёме:
                 </div>
-                <?php // TODO оставить заявку ?>
-                <a href="#" class="btn manufacture-samples-button--desktop">Оставить заявку о сотрудничестве</a>
+                <a href="/coop/request" class="btn manufacture-samples-button--desktop">Оставить заявку о сотрудничестве</a>
             </div>
             <div class="manufacture-samples-right">
                 <div class="manufacture-samples-items">
@@ -216,8 +215,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
                         <div class="manufacture-sample__text">инновационных продуктов в месяц</div>
                     </div>
                 </div>
-                <?php // TODO ссылки ?>
-                <a href="#" class="btn manufacture-samples-button--mobile">Оставить заявку о сотрудничестве</a>
+                <a href="/coop/request" class="btn manufacture-samples-button--mobile">Оставить заявку о сотрудничестве</a>
 
                 <div class="note">
                     Мы производим продукцию как под <a href="/catalog/trademarks">собственными брендами</a>, так и по

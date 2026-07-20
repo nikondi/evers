@@ -30,7 +30,7 @@ Router::get('/coop/contract', [CoopController::class, 'contract']);
 Router::get('/coop/brandbook', [CoopController::class, 'brandbook']);
 Router::get('/coop/wholesale', [CoopController::class, 'wholesale']);
 Router::get('/coop/reviews', [CoopController::class, 'reviews']);
-Router::get('/coop/reviews', [CoopController::class, 'reviews']);
+Router::get('/coop/request', [CoopController::class, 'request']);
 
 Router::get('/specialists/partners', [SpecialistsController::class, 'partners']);
 Router::get('/specialists/articles', [SpecialistsController::class, 'articles']);
