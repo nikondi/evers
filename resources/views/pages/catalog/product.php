@@ -22,7 +22,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
 <section class="product-page-top">
     <div class="container">
-        <a href="#" class="product-back-button">
+        <a href="/catalog" class="product-back-button">
             <div class="slider-arrow">
                 <svg width="1em" height="1em">
                     <use xlink:href="/assets/img/icons/slider-arrows.svg#left"/>
