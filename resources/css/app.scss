@@ -2578,12 +2578,34 @@ body.ohidden {
 }
 
 .news-slider {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   .swiper-slide {
     height: auto;
 
     .news-card {
       height: 100%;
     }
+  }
+}
+
+@media (max-width: 1359px) {
+  .education-first {
+    border-radius: 18px 18px 0 0;
+    background-position: left -260px center;
+    background-size: 350%;
+    padding-bottom: 80px;
+  }
+  .education-question {
+    border-radius: 18px 18px 0 0;
+    padding-top: 40px;
+  }
+  .education-events-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 }
 

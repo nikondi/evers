@@ -1,7 +1,4 @@
 <?php
-// TODO mobile
-?>
-<?php
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/coop/', 'Сотрудничество'],
@@ -12,7 +9,7 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
 <section>
     <div class="container">
-        <h1 class="page-h1">Обучение для оптовых партнеров</h1>
+        <h1 class="page-h1">Обучение для оптовых партнеров по продуктам</h1>
     </div>
 </section>
 
