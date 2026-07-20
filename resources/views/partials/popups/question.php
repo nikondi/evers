@@ -6,9 +6,9 @@
         </svg>
     </button>
     <div class="popup-content">
-        <div class="popup-title">Задать вопрос</div>
         <div class="form">
             <div class="form-fields">
+                <div class="popup-title">Задать вопрос</div>
                 <div class="popup-description">Пожалуйста, заполните форму заявки и менеджер свяжется с вами в ближайшее
                     время. Поля, отмеченные&nbsp;(*), обязательны для заполнения.
                 </div>
@@ -52,8 +52,11 @@
                 </form>
             </div>
             <div class="form-success">
-                <?php // TODO верстка ?>
-                Форма успешно отправлена
+                <img src="/assets/img/icons/form-success.svg" alt="">
+                <div class="form-success__title">Спасибо, заявка отправлена!</div>
+                <div class="form-success__description">Менеджер свяжется с вами в ближайшее время. Режим работы:
+                    с 9 до 18 (ПН-ЧТ) и с 9 до 17 (ПТ) по московскому времени.
+                </div>
             </div>
         </div>
     </div>

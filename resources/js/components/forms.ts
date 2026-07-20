@@ -21,6 +21,8 @@ export default function initForms() {
         .then(() => {
           formFields.style.display = 'none';
           formSuccess.style.display = 'block';
+          if (!document.body.classList.contains('popup-opened'))
+            window.scrollTo({top: formSuccess.offsetTop - 150, behavior: 'smooth'});
         })
         .catch(() => alert('Что-то пошло не так'))
         .finally(() => submits.forEach((s) => s.disabled = false))
