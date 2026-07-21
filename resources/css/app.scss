@@ -2958,7 +2958,7 @@ body.no-js .popup {
   }
 
   svg {
-    color: $color-green;
+    color: var(--labeled-file-color, $color-green);
   }
 }
 
@@ -3310,6 +3310,7 @@ body.no-js .popup {
   --labeled-input-border: #ffffff;
   --labeled-input-color: #ffffff;
   --labeled-input-background: transparent;
+  --labeled-file-color: #ffffff;
   width: 50%;
   max-width: 570px;
 
@@ -6719,6 +6720,10 @@ body.no-js .popup {
   align-items: flex-start;
 }
 
+.career-request-section {
+  padding-bottom: 120px;
+}
+
 @media (max-width: 1359px) {
   .career-specialists-section {
     padding-top: 40px;
@@ -6727,6 +6732,7 @@ body.no-js .popup {
   .career-specialists {
     flex-direction: column-reverse;
     height: auto;
+
     &__title {
       margin-top: 20px;
     }
@@ -6737,5 +6743,11 @@ body.no-js .popup {
   }
   .career-specialists-text {
     padding: 20px;
+  }
+  .career-request-section {
+    padding-bottom: 80px;
+  }
+  .career-request {
+    padding-bottom: 128px;
   }
 }

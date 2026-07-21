@@ -48,6 +48,7 @@ export default function initForms() {
   document.querySelectorAll('.labeled-file').forEach((f) => {
     const input = f.querySelector('input') as HTMLInputElement;
     const text = f.querySelector('.labeled-file__text') as HTMLInputElement;
+    const old_text = text.innerText;
     input.addEventListener('change', () => {
       if (input.files[0]) {
         f.classList.add('selected');
@@ -63,7 +64,7 @@ export default function initForms() {
           e.preventDefault();
           input.value = null;
           f.classList.remove('selected');
-          text.innerText = 'Прикрепить файл'
+          text.innerText = old_text;
         });
       }
     })

@@ -168,3 +168,67 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+<section class="career-request-section">
+    <div class="container">
+        <div class="contract-request career-request">
+            <div class="contract-request-text">
+                <div class="section-badge section-badge--white">оставить заявку</div>
+                <div class="contract-request__text">Если вы хотите у нас работать, пожалуйста, заполните форму и приложите своё резюме. Если у нас появится подходящая вакансия, мы обязательно с вами свяжемся.
+                </div>
+                <div class="contract-request__note">Поля, отмеченные&nbsp;(*), обязательны для заполнения</div>
+                <div class="contract-request-contacts">
+                    <div class="contract-request-contact" style="max-width: 260px">
+                        <div class="contract-request-contact__label">Об открытых вакансиях вы можете уточнить, написав на:</div>
+                        <a href="mailto:hr@evers.ru" class="contract-request-contact__text">hr@evers.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contract-request-form form">
+                <div class="form-fields">
+                    <form action="/request.json">
+                        <div class="form-input-group">
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Ваше имя / название компании</div>
+                                <input type="text" name="name" required/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Контактный телефон</div>
+                                <input type="tel" name="phone" required/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">E-mail</div>
+                                <input type="email" name="email" required/>
+                            </div>
+                            <div class="labeled-input">
+                                <div class="labeled-input-label">Комментарий</div>
+                                <textarea name="comment"></textarea>
+                            </div>
+                            <label class="labeled-file">
+                                <input type="file" name="file"/>
+                                <svg height="22" width="20">
+                                    <use xlink:href="/assets/img/icons.svg#clip"/>
+                                </svg>
+                                <span class="labeled-file__text">Прикрепить резюме</span>
+                            </label>
+
+                            <label class="checkbox checkbox--white">
+                                <input type="checkbox" required/>
+                                <span class="checkbox__check"></span>
+                                <span>Я согласен на <a href="#">обработку персональных данных</a> и с условиями <a
+                                        href="#">политики конфиденциальности</a> *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-full">Отправить</button>
+                    </form>
+                </div>
+                <div class="form-success">
+                    <img src="/assets/img/icons/form-success.svg" alt="">
+                    <div class="form-success__title">Спасибо, заявка отправлена!</div>
+                    <div class="form-success__description">Менеджер свяжется с вами в ближайшее время. Режим работы:
+                        с 9 до 18 (ПН-ЧТ) и с 9 до 17 (ПТ) по московскому времени.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
