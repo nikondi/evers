@@ -145,3 +145,26 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         </div>
     </div>
 </section>
+
+<section class="career-specialists-section oversection">
+    <div class="container">
+        <div class="career-specialists">
+            <div class="career-specialists-image">
+                <img src="/assets/img/about/career-specialists.png" alt="">
+            </div>
+            <div class="career-specialists-text">
+                <div class="section-badge">молодым специалистам</div>
+                <div class="career-specialists__title section-h4">
+                    Мы приглашаем молодых специалистов самых разных специальностей. Собственная
+                    <a href="/about/develop">научно-производственная база</a>, лаборатория, 3 производственных площадки,
+                    офис управляющей компании открыты для соискателей.
+                </div>
+                <div class="career-specialists__description">
+                    Для экологичной и эффективной адаптации вновь принятому сотруднику составляется индивидуальный план
+                    вхождения в должность, за каждым закрепляется опытный куратор. Новичок всегда может рассчитывать на
+                    помощь коллег и всей команды.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -6663,3 +6663,79 @@ body.no-js .popup {
     padding-bottom: 60px;
   }
 }
+
+.career-specialists-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.career-specialists {
+  display: flex;
+  border-radius: 12px;
+  background-color: #F0EDE6;
+  height: 440px;
+
+  &__title {
+    margin-top: auto;
+    font-weight: 500;
+    line-height: 130%;
+
+    a {
+      color: inherit;
+      transition: .2s color;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 18px;
+  }
+}
+
+.career-specialists-image {
+  width: 50%;
+  max-width: 580px;
+  overflow: hidden;
+  border-radius: 12px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.career-specialists-text {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 1359px) {
+  .career-specialists-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .career-specialists {
+    flex-direction: column-reverse;
+    height: auto;
+    &__title {
+      margin-top: 20px;
+    }
+  }
+  .career-specialists-image {
+    height: 275px;
+    width: 100%;
+  }
+  .career-specialists-text {
+    padding: 20px;
+  }
+}
