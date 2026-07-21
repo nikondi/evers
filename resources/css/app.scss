@@ -6431,8 +6431,166 @@ body.no-js .popup {
 .catalog-favorites-section {
   padding-bottom: 120px;
 }
+
 @media (max-width: 1359px) {
   .catalog-favorites-section {
     padding-bottom: 80px;
+  }
+}
+
+.career-values-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.career-values {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .swiper-slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .career-value {
+      height: 100%;
+      margin-top: auto;
+    }
+  }
+}
+
+.career-value {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+  &__icon {
+    margin-bottom: auto;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 20px;
+
+    a {
+      color: inherit;
+    }
+
+    b {
+      font-weight: bold;
+    }
+  }
+
+  &--strategy {
+    background: linear-gradient(129.33deg, #568129 0%, #F0EDE6 276.53%);
+    color: #FFFFFF;
+    height: 315px !important;
+  }
+
+  &--image {
+    height: 282px !important;
+    margin-top: auto;
+    background: {
+      repeat: no-repeat;
+      image: url("/assets/img/about/career-slide-background.png");
+      size: cover;
+      position: top -40px center;
+    };
+  }
+
+  &--person {
+    background: #F0EDE6;
+    height: 300px !important;
+  }
+
+  &--elastic {
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: bottom center;
+      image: url("/assets/img/about/career-slide-3.png"), linear-gradient(129.33deg, #568129 0%, #F0EDE6 276.53%);
+    };
+    color: #FFFFFF;
+    height: 240px !important;
+  }
+
+  &--safety {
+    height: 280px !important;
+    background: {
+      repeat: no-repeat;
+      size: 280%;
+      position: bottom -30px right -250px;
+      image: url("/assets/img/about/career-slide-2.jpg");
+    };
+    color: #FFFFFF;
+  }
+
+  &--honest {
+    background: #F0EDE6;
+  }
+}
+
+@media (max-width: 1359px) {
+  .career-values {
+    .slider-arrows {
+      display: none;
+    }
+  }
+  .career-value {
+    &__icon {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      margin-top: 10px;
+    }
+
+    &--strategy {
+      min-height: 280px !important;
+    }
+
+    &--image {
+      min-height: 250px !important;
+    }
+
+    &--person {
+      min-height: 260px !important;
+    }
+
+    &--elastic {
+      min-height: 215px !important;
+    }
+
+    &--safety {
+      min-height: 242px !important;
+    }
+  }
+
+  .career-values-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
 }

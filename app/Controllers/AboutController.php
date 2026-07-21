@@ -52,4 +52,11 @@ class AboutController extends Controller
             'title' => 'Реквизиты'
         ]);
     }
+
+    public function career(): string
+    {
+        return $this->render("pages/about/career", [
+            'title' => 'Карьера'
+        ]);
+    }
 }

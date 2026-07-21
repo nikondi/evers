@@ -57,7 +57,7 @@ $alt_header ??= false;
                             <li><a href="/specialists/partners">Наши партнерские организации</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Карьера</a></li>
+                    <li><a href="/about/career">Карьера</a></li>
                     <li><a href="/contacts">Контакты</a></li>
                 </ul>
                 <div class="header-contacts header-contacts--mobile">

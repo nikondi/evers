@@ -2,7 +2,7 @@
 $breadcrumbs = [
     ['/', 'Главная'],
     ['/about/', 'О компании'],
-    ['Отдел исследований и разработок (R&D)iu ']
+    ['Отдел исследований и разработок (R&D)']
 ];
 include VIEW_PATH . 'partials/breadcrumbs.php';
 ?>

@@ -5,7 +5,7 @@
         <div class="welcome-first-content">
             <h1 class="welcome-first-subtitle">Эверс груп рус</h1>
             <h2 class="welcome-first-title">Медицинские изделия <span>российского</span> производства</h2>
-            <a href="#" class="btn">Узнать больше</a>
+            <a href="/about" class="btn">Узнать больше</a>
             <div class="welcome-first-description">Инновации и технологии с 2001 года</div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                 <p>Обеспечиваем специалистов и&nbsp;широкий круг потребителей современными, эффективными, безопасными
                     и&nbsp;доступными медицинскими изделиями.</p>
                 <div class="about-info-text__btn">
-                    <a href="#" class="btn">Узнать больше</a>
+                    <a href="/about" class="btn">Узнать больше</a>
                 </div>
                 <div class="about-info-text-years">
                     <div class="about-info-text-year"><b>С&nbsp;2017&nbsp;года&nbsp;—</b> представитель биомедицинского
@@ -133,7 +133,7 @@
             <div class="welcome-manufacture__title">В основе производственного процесса - <span>технологии высочайшего уровня</span>,
                 все предприятия оснащены современным высокотехнологичным оборудованием.
             </div>
-            <a href="#" class="btn btn-green">Узнать больше</a>
+            <a href="/about/manufacture" class="btn btn-green">Узнать больше</a>
 
             <div class="manufacture-metrics">
                 <div class="manufacture-metric">

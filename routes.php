@@ -20,6 +20,7 @@ Router::get('/about/sellers', [AboutController::class, 'sellers']);
 Router::get('/about/news', [AboutController::class, 'news']);
 Router::get('/about/smi', [AboutController::class, 'smi']);
 Router::get('/about/requisites', [AboutController::class, 'requisites']);
+Router::get('/about/career', [AboutController::class, 'career']);
 
 Router::get('/catalog/', [CatalogController::class, 'index']);
 Router::get('/catalog/trademarks', [CatalogController::class, 'trademarks']);
