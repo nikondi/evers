@@ -104,3 +104,44 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
 
     </div>
 </section>
+
+
+<section class="career-locations-section">
+    <div class="container">
+        <div class="section-badge">Наши локации</div>
+        <div class="career-locations">
+            <div class="career-location">
+                <div class="career-location__tags">
+                    <div class="career-location-tag">москва</div>
+                </div>
+                <div class="career-location__title">Офис управляющей компании</div>
+            </div>
+            <div class="career-location">
+                <div class="career-location__tags">
+                    <div class="career-location-tag">московская обл.</div>
+                    <div class="career-location-tag">Мытищи</div>
+                </div>
+                <div class="career-location__title">Складской комплекс</div>
+            </div>
+            <div class="career-location">
+                <div class="career-location__tags">
+                    <div class="career-location-tag">московская обл.</div>
+                    <div class="career-location-tag">дубна</div>
+                </div>
+                <div class="career-location__title">Офис и производственная площадка инновационных медицинских изделий,
+                    научно-исследовательская лаборатория
+                </div>
+            </div>
+            <div class="career-location">
+                <div class="career-location__tags">
+                    <div class="career-location-tag">ивановская обл.</div>
+                    <div class="career-location-tag">тейково</div>
+                    <div class="career-location-tag">воскресенское</div>
+                </div>
+                <div class="career-location__title">Офис и&nbsp;производственные площадки традиционных медицинских
+                    изделий
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
