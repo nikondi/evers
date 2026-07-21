@@ -15,14 +15,14 @@ $alt_header ??= false;
                     <li>
                         <span class="header-submenu-trigger">Каталог</span>
                         <ul class="header-submenu">
-                            <li><a href="#">Новинки и бестселлеры</a></li>
-                            <li><a href="#">Лечение ран, ожогов, пролежней</a></li>
-                            <li><a href="#">Оказание первой помощи</a></li>
-                            <li><a href="#">Средства для фиксации повязок, закрытия и защиты ран</a></li>
-                            <li><a href="#">Защита операционного поля</a></li>
-                            <li><a href="#">Средства индивидуальной защиты (СИЗ)</a></li>
-                            <li><a href="#">Средства экспресс-диагностики</a></li>
-                            <li><a href="#">Марлевые и нетканые медицинские изделия, вата</a></li>
+                            <li><a href="/catalog">Новинки и бестселлеры</a></li>
+                            <li><a href="/catalog">Лечение ран, ожогов, пролежней</a></li>
+                            <li><a href="/catalog">Оказание первой помощи</a></li>
+                            <li><a href="/catalog">Средства для фиксации повязок, закрытия и защиты ран</a></li>
+                            <li><a href="/catalog">Защита операционного поля</a></li>
+                            <li><a href="/catalog">Средства индивидуальной защиты (СИЗ)</a></li>
+                            <li><a href="/catalog">Средства экспресс-диагностики</a></li>
+                            <li><a href="/catalog">Марлевые и нетканые медицинские изделия, вата</a></li>
                             <li><a href="/catalog/trademarks">Наши торговые марки</a></li>
                         </ul>
                     </li>
@@ -53,7 +53,7 @@ $alt_header ??= false;
                         <span class="header-submenu-trigger">Специалистам</span>
                         <ul class="header-submenu">
                             <li><a href="/specialists/publications">Научные публикации</a></li>
-                            <li><a href="#">Полезные материалы о продуктах</a></li>
+                            <li><a href="/specialists/articles">Полезные материалы о продуктах</a></li>
                             <li><a href="/specialists/partners">Наши партнерские организации</a></li>
                         </ul>
                     </li>

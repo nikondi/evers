@@ -173,12 +173,16 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         <div class="contract-request career-request">
             <div class="contract-request-text">
                 <div class="section-badge section-badge--white">оставить заявку</div>
-                <div class="contract-request__text">Если вы хотите у нас работать, пожалуйста, заполните форму и приложите своё резюме. Если у нас появится подходящая вакансия, мы обязательно с вами свяжемся.
+                <div class="contract-request__text">Если&nbsp;вы&nbsp;хотите у&nbsp;нас&nbsp;работать,&nbsp;пожалуйста,
+                    заполните форму&nbsp;и&nbsp;приложите своё резюме. Если&nbsp;у&nbsp;нас появится подходящая
+                    вакансия, мы&nbsp;обязательно с&nbsp;вами свяжемся.
                 </div>
                 <div class="contract-request__note">Поля, отмеченные&nbsp;(*), обязательны для заполнения</div>
                 <div class="contract-request-contacts">
                     <div class="contract-request-contact" style="max-width: 260px">
-                        <div class="contract-request-contact__label">Об открытых вакансиях вы можете уточнить, написав на:</div>
+                        <div class="contract-request-contact__label">Об открытых вакансиях вы можете уточнить, написав
+                            на:
+                        </div>
                         <a href="mailto:hr@evers.ru" class="contract-request-contact__text">hr@evers.ru</a>
                     </div>
                 </div>
