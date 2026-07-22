@@ -3883,6 +3883,7 @@ body.no-js .popup {
 
 .about-mission-section {
   border-radius: 24px 24px 0 0;
+  overflow: hidden;
   padding-top: 80px;
   padding-bottom: 114px;
   margin-top: 80px;
@@ -4069,6 +4070,7 @@ body.no-js .popup {
   }
   .slider-top {
     margin-bottom: 30px;
+
     .slider-arrows {
       display: none;
     }
@@ -5364,6 +5366,10 @@ body.no-js .popup {
   font-size: 14px;
   line-height: 130%;
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-publications__title {
@@ -7202,5 +7208,52 @@ body.no-js .popup {
   .news-single-title {
     font-size: 28px;
     margin-bottom: 30px;
+  }
+}
+
+.smi-contacts-section {
+  padding-bottom: 120px;
+}
+
+.smi-contacts {
+  padding: 40px;
+  background: {
+    repeat: no-repeat;
+    image: url("/assets/img/smi-background.svg"), linear-gradient(129.33deg, #53722F 0%, #F0EDE6 276.53%);
+    position: bottom -31px right 70px, center center;
+  };
+  border-radius: 12px;
+  color: #fff;
+
+  &__title {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 100%;
+    margin-bottom: 50px;
+    padding-left: 11px;
+  }
+
+  .btn {
+    width: 240px;
+    --btn-color: #568129;
+  }
+}
+
+@media (max-width: 767px) {
+  .articles-grid-section {
+    padding-bottom: 60px;
+  }
+  .smi-contacts {
+    padding: 40px 30px 150px;
+    background: {
+      size: 200px, 100%;
+      position: bottom -18px center, center center;
+    };
+
+    &__title {
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 24px;
+    }
   }
 }

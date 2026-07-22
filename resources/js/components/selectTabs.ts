@@ -5,14 +5,14 @@ export default function selectTabs() {
     trigger.addEventListener('click', () => wrapper.classList.toggle('active'));
 
     const options = wrapper.querySelectorAll<HTMLElement>('.select-tab');
-    options.forEach((option) => {
+    options.forEach((option, i) => {
       option.addEventListener('click', () => {
         trigger.innerText = option.innerText;
-        options.forEach((o) => {
-          if (o === option)
-            option.classList.add('active');
+        options.forEach((o, index) => {
+          if (i === index)
+            o.classList.add('active');
           else
-            option.classList.remove('active');
+            o.classList.remove('active');
         })
 
       });
