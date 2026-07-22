@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Брендбук</title>
+    <title>Корзина</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -153,146 +153,275 @@
                                             <a href="index.html">Главная</a>
                                     </li>
                             <li>
-                                            <a href="/coop/">Сотрудничество</a>
-                                    </li>
-                            <li>
-                                            <span>Брендбук</span>
+                                            <span>Корзина</span>
                                     </li>
                     </ul>
     </div>
 </section>
 <section>
     <div class="container">
-        <h1 class="page-h1">Брендбук</h1>
+        <h1 class="page-h1">Корзина</h1>
     </div>
 </section>
 
-<section class="brandbook-section">
+<section class="cart-section">
     <div class="container">
-        <div class="section-h2">Логотип Эверс груп Рус</div>
-        <div class="brandbook-desktop">
-            <div class="brandbook-desktop__text">
-                <p><b>Основная версия логотипа</b> — комбинация символа и дескриптора (краткого текстового пояснения
-                    сути бренда). Это эталонный вариант для большинства каналов: цифровые платформы, печатные материалы,
-                    мерч, оформление пространств, транспорт, спецодежда, медиа и реклама.</p>
-                <p><b>Краткая версия логотипа</b> — символ, применяется как упрощённый вариант идентификации бренда в
-                    условиях ограниченного пространства или необходимости минималистичного визуального решения.</p>
-                <p>Символ используется для цифровых носителей (аватары соцсетей, фавиконки, водяной знак), мелких
-                    печатных элементов и макетов мерча.</p>
-                <p><b>Версии на латинице</b> предназначены для коммуникации с международной аудиторией и обеспечения
-                    единого фирменного стиля за пределами русскоязычного рынка. Обеспечение визуальной консистентности
-                    бренда на международном уровне требует соблюдения единых стандартов использования логотипа.</p>
-                <button type="button" class="btn btn-green popup-button" data-popup="brandbook-popup">Запросить брендбук
-                </button>
-            </div>
-            <div class="brandbook-desktop__logos">
-                                                    <div class="brandbook-card">
-                        <div class="brandbook-card__title">Основная версия</div>
-                        <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-rus.png" alt=""/></div>
-                        <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-rus.png" download>Скачать</a></div>
-                    </div>
-                                    <div class="brandbook-card">
-                        <div class="brandbook-card__title">краткая версия</div>
-                        <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-rus-short.png" alt=""/></div>
-                        <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-rus-short.png" download>Скачать</a></div>
-                    </div>
-                                    <div class="brandbook-card">
-                        <div class="brandbook-card__title">Основная версия (латиница)</div>
-                        <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-en.png" alt=""/></div>
-                        <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-en.png" download>Скачать</a></div>
-                    </div>
-                                    <div class="brandbook-card">
-                        <div class="brandbook-card__title">краткая версия (латиница)</div>
-                        <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-en-short.png" alt=""/></div>
-                        <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-en-short.png" download>Скачать</a></div>
-                    </div>
+        <div class="cart-wrapper">
+            <div class="cart-items-wrapper">
+                <div class="cart__order-title">Ваш заказ:</div>
+                <div class="cart-items-top">
+                    <button class="cart-delete">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.2286 2.7973H13.1143V1.21622C13.1143 0.535135 12.5486 0 11.8286 0H6.17143C5.45143 0 4.88571 0.535135 4.88571 1.21622V2.7973H0.771429C0.334286 2.7973 0 3.11351 0 3.52703C0 3.94054 0.334286 4.25676 0.771429 4.25676H1.87714L3.06 16.9054C3.13714 17.5135 3.67714 18 4.34571 18H13.7057C14.3486 18 14.9143 17.5135 14.9914 16.9054L16.1743 4.25676H17.2286C17.6657 4.25676 18 3.94054 18 3.52703C18 3.11351 17.6657 2.7973 17.2286 2.7973ZM6.42857 1.45946H11.5714V2.7973H6.42857V1.45946ZM13.4486 16.5405H4.55143L3.42 4.25676H14.6057L13.4486 16.5405Z"
+                                fill="#568129"/>
+                        </svg>
+                        <span>
+                            Удалить
+                            (<span class="cart-delete__count">0</span>)
+                        </span>
+                    </button>
+                    <label class="cart-check-all checkbox">
+                        Выбрать все
+                        <input type="checkbox" required/>
+                        <span class="checkbox__check"></span>
+                    </label>
+                </div>
+                <div class="cart-items">
+                                                                <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="assets/img/cart-product.png" alt=""/>
                             </div>
+                            <div class="cart-item-text">
+                                <div class="cart-item__title">Средство кровоостанавливающее «ЭверсЛайф-Гемо»</div>
+                                <div class="cart-item__chars">
+                                    <div class="cart-item__char">арт. 123456</div>
+                                    <div class="cart-item__char">Размер: 18 х 13 см</div>
+                                </div>
+                                <div class="product-quantity cart-quantity" data-min="20">
+                                    <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                                        <svg width="18" height="2">
+                                            <use xlink:href="assets/img/icons/counter.svg#minus"/>
+                                        </svg>
+                                    </button>
+                                    <div class="product-quantity__count">
+                                        <span class="product-quantity__display" contenteditable="true">1</span>
+                                        уп
+                                    </div>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="assets/img/icons/counter.svg#plus"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-favs">
+                                <button class="cart-item__favorite"></button>
+                                <label class="checkbox cart-check">
+                                    <input type="checkbox" required/>
+                                    <span class="checkbox__check"></span>
+                                </label>
+                            </div>
+                            <button type="button" class="cart-item-delete">Удалить</button>
+                        </div>
+                                            <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="assets/img/cart-product.png" alt=""/>
+                            </div>
+                            <div class="cart-item-text">
+                                <div class="cart-item__title">Повязки пластырного типа бактерицидные</div>
+                                <div class="cart-item__chars">
+                                    <div class="cart-item__char">арт. 123456</div>
+                                    <div class="cart-item__char">Размер: 80 х 60 мм</div>
+                                </div>
+                                <div class="product-quantity cart-quantity" data-min="20">
+                                    <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                                        <svg width="18" height="2">
+                                            <use xlink:href="assets/img/icons/counter.svg#minus"/>
+                                        </svg>
+                                    </button>
+                                    <div class="product-quantity__count">
+                                        <span class="product-quantity__display" contenteditable="true">1</span>
+                                        уп
+                                    </div>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="assets/img/icons/counter.svg#plus"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-favs">
+                                <button class="cart-item__favorite"></button>
+                                <label class="checkbox cart-check">
+                                    <input type="checkbox" required/>
+                                    <span class="checkbox__check"></span>
+                                </label>
+                            </div>
+                            <button type="button" class="cart-item-delete">Удалить</button>
+                        </div>
+                                            <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="assets/img/cart-product.png" alt=""/>
+                            </div>
+                            <div class="cart-item-text">
+                                <div class="cart-item__title">Повязки пластырного типа бактерицидные</div>
+                                <div class="cart-item__chars">
+                                    <div class="cart-item__char">арт. 123456</div>
+                                    <div class="cart-item__char">Размер: 80 х 60 мм</div>
+                                </div>
+                                <div class="product-quantity cart-quantity" data-min="20">
+                                    <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                                        <svg width="18" height="2">
+                                            <use xlink:href="assets/img/icons/counter.svg#minus"/>
+                                        </svg>
+                                    </button>
+                                    <div class="product-quantity__count">
+                                        <span class="product-quantity__display" contenteditable="true">1</span>
+                                        уп
+                                    </div>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="assets/img/icons/counter.svg#plus"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-favs">
+                                <button class="cart-item__favorite"></button>
+                                <label class="checkbox cart-check">
+                                    <input type="checkbox" required/>
+                                    <span class="checkbox__check"></span>
+                                </label>
+                            </div>
+                            <button type="button" class="cart-item-delete">Удалить</button>
+                        </div>
+                                            <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="assets/img/cart-product.png" alt=""/>
+                            </div>
+                            <div class="cart-item-text">
+                                <div class="cart-item__title">Салфетки медицинские сорбционные из нетканого материала ANGEL</div>
+                                <div class="cart-item__chars">
+                                    <div class="cart-item__char">арт. 123456</div>
+                                    <div class="cart-item__char">Размер: 16 x 14 см</div>
+                                </div>
+                                <div class="product-quantity cart-quantity" data-min="20">
+                                    <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                                        <svg width="18" height="2">
+                                            <use xlink:href="assets/img/icons/counter.svg#minus"/>
+                                        </svg>
+                                    </button>
+                                    <div class="product-quantity__count">
+                                        <span class="product-quantity__display" contenteditable="true">1</span>
+                                        уп
+                                    </div>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="assets/img/icons/counter.svg#plus"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-favs">
+                                <button class="cart-item__favorite"></button>
+                                <label class="checkbox cart-check">
+                                    <input type="checkbox" required/>
+                                    <span class="checkbox__check"></span>
+                                </label>
+                            </div>
+                            <button type="button" class="cart-item-delete">Удалить</button>
+                        </div>
+                                            <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="assets/img/cart-product.png" alt=""/>
+                            </div>
+                            <div class="cart-item-text">
+                                <div class="cart-item__title">Салфетки марлевые стерильные HELP</div>
+                                <div class="cart-item__chars">
+                                    <div class="cart-item__char">арт. 123456</div>
+                                    <div class="cart-item__char">Размер: 45 х 29 см</div>
+                                </div>
+                                <div class="product-quantity cart-quantity" data-min="20">
+                                    <input type="hidden" name="quantity" class="product-quantity__input" value="1"/>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-minus">
+                                        <svg width="18" height="2">
+                                            <use xlink:href="assets/img/icons/counter.svg#minus"/>
+                                        </svg>
+                                    </button>
+                                    <div class="product-quantity__count">
+                                        <span class="product-quantity__display" contenteditable="true">1</span>
+                                        уп
+                                    </div>
+                                    <button type="button" class="product-quantity__btn product-quantity__btn-plus">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="assets/img/icons/counter.svg#plus"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-favs">
+                                <button class="cart-item__favorite"></button>
+                                <label class="checkbox cart-check">
+                                    <input type="checkbox" required/>
+                                    <span class="checkbox__check"></span>
+                                </label>
+                            </div>
+                            <button type="button" class="cart-item-delete">Удалить</button>
+                        </div>
+                                    </div>
+            </div>
+            <div class="form cart-form">
+                <div class="form-fields">
+                    <div class="cart__order-title" style="margin-bottom: 10px;">Данные для оформления заказа:</div>
+                    <div class="popup-description">Поля, отмеченные (*), обязательны для оформления. После размещения
+                        заказа
+                        менеджер свяжется с вами для уточнения деталей.
+                    </div>
+                    <form action="/cart.json">
+                        <div class="form-input-group">
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Ваше имя</div>
+                                <input type="text" name="name" required/>
+                            </div>
+                            <div class="labeled-input">
+                                <div class="labeled-input-label">Компания</div>
+                                <input type="text" name="company"/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">Контактный телефон</div>
+                                <input type="tel" name="phone" required/>
+                            </div>
+                            <div class="labeled-input labeled-input--required">
+                                <div class="labeled-input-label">E-mail</div>
+                                <input type="email" name="email" required/>
+                            </div>
+                            <div class="labeled-input">
+                                <div class="labeled-input-label">Комментарий</div>
+                                <textarea name="comment"></textarea>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" required/>
+                                <span class="checkbox__check"></span>
+                                <span>Я согласен на <a href="#">обработку персональных данных</a> *</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" required/>
+                                <span class="checkbox__check"></span>
+                                <span>Я согласен с условиями <a href="#">политики конфиденциальности</a> *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-green btn-full">Оформить оптовый заказ</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
-<section class="brandbook-trademarks-section">
-    <div class="container brandbook-trademarks">
-        <div class="section-h3">Логотипы наших торговых марок</div>
-        <div class="brandbook-trademarks-list">
-                                        <div class="brandbook-card">
-                    <div class="brandbook-card__image"><img src="assets/img/coop/logos/help.png" alt=""/></div>
-                    <div class="brandbook-card__link"><a href="assets/img/coop/logos/help.png" download>Скачать</a></div>
-                </div>
-                            <div class="brandbook-card">
-                    <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-med.png" alt=""/></div>
-                    <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-med.png" download>Скачать</a></div>
-                </div>
-                            <div class="brandbook-card">
-                    <div class="brandbook-card__image"><img src="assets/img/coop/logos/angel.png" alt=""/></div>
-                    <div class="brandbook-card__link"><a href="assets/img/coop/logos/angel.png" download>Скачать</a></div>
-                </div>
-                            <div class="brandbook-card">
-                    <div class="brandbook-card__image"><img src="assets/img/coop/logos/evers-life.png" alt=""/></div>
-                    <div class="brandbook-card__link"><a href="assets/img/coop/logos/evers-life.png" download>Скачать</a></div>
-                </div>
-                    </div>
-    </div>
-</section>
-
-<div class="popup" id="brandbook-popup">
-    <button type="button" class="popup-close">
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-            <path d="M24.9922 1L1 25M25 25L1.00784 1.00003" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round"/>
-        </svg>
-    </button>
-    <div class="popup-content">
-        <div class="form">
-            <div class="form-fields">
-                <div class="popup-title">Запрос брендбука</div>
-                <div class="popup-description">Пожалуйста, заполните форму заявки и менеджер свяжется с вами в ближайшее
-                    время. Поля, отмеченные&nbsp;(*), обязательны для заполнения.
-                </div>
-                <form action="/request.json" class="popup-form">
-                    <div class="form-input-group">
-                        <div class="labeled-input labeled-input--required">
-                            <div class="labeled-input-label">Ваше имя</div>
-                            <input type="text" name="name" required/>
-                        </div>
-                        <div class="labeled-input">
-                            <div class="labeled-input-label">Компания</div>
-                            <input type="text" name="company"/>
-                        </div>
-                        <div class="labeled-input labeled-input--required">
-                            <div class="labeled-input-label">Контактный телефон</div>
-                            <input type="tel" name="phone" required/>
-                        </div>
-                        <div class="labeled-input labeled-input--required">
-                            <div class="labeled-input-label">E-mail</div>
-                            <input type="email" name="email" required/>
-                        </div>
-                        <label class="checkbox">
-                            <input type="checkbox" required/>
-                            <span class="checkbox__check"></span>
-                            <span>Я согласен на <a href="#">обработку персональных данных</a> *</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" required/>
-                            <span class="checkbox__check"></span>
-                            <span>Я согласен с условиями <a href="#">политики конфиденциальности</a> *</span>
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-green btn-full">Отправить запрос</button>
-                </form>
-            </div>
-            <div class="form-success">
-                <img src="assets/img/icons/form-success.svg" alt="">
-                <div class="form-success__title">Спасибо, заявка отправлена!</div>
-                <div class="form-success__description">Менеджер свяжется с вами в ближайшее время. Режим работы:
-                    с 9 до 18 (ПН-ЧТ) и с 9 до 17 (ПТ) по московскому времени.
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
