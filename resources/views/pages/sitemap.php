@@ -1,6 +1,8 @@
 <ul>
     <li><a href="/">Главная</a></li>
     <li><a href="/contacts">Контакты</a></li>
+    <li><a href="/cart">Корзина</a></li>
+    <li><a href="/cart/success">Заказ оформлен</a></li>
     <li>
         <a href="/about">О компании</a>
         <ul>
@@ -30,6 +32,7 @@
             <li><a href="/coop/brandbook">Брендбук</a></li>
             <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
             <li><a href="/coop/reviews">Отзывы партнеров</a></li>
+            <li><a href="/coop/request">Оставить заявку</a></li>
         </ul>
     </li>
     <li>

@@ -7,7 +7,7 @@ export default function initBurger() {
     unlockBody();
   });
   const burger = document.querySelector<HTMLElement>(".header-burger");
-  burger.addEventListener('click', (e) => {
+  burger.addEventListener('click', () => {
     const menu = document.querySelector<HTMLElement>('.header-menu');
 
     if (menu.classList.contains('active')) {

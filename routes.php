@@ -10,11 +10,13 @@ use App\Controllers\SpecialistsController;
 use App\Controllers\WelcomeController;
 use Engine\Router;
 
+Router::get('/sitemap', SitemapController::class);
+
 Router::get('/', WelcomeController::class);
 Router::get('/contacts', ContactsController::class);
-Router::get('/cart', CartController::class);
 
-Router::get('/sitemap', SitemapController::class);
+Router::get('/cart', CartController::class);
+Router::get('/cart/success', [CartController::class, 'success']);
 
 Router::get('/about', AboutController::class);
 Router::get('/about/manufacture', [AboutController::class, 'manufacture']);

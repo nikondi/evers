@@ -10,4 +10,11 @@ class CartController extends Controller
             'title' => 'Корзина'
         ]);
     }
+
+    public function success()
+    {
+        return $this->render("pages/cart_success", [
+            'title' => 'Спасибо за заказ!'
+        ]);
+    }
 }

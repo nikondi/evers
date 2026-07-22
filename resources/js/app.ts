@@ -6,10 +6,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import {aboutPage, careerPage, cartPage, manufacturePage, productPage, welcomePage} from "@/pages";
 import {initAssortmentSliders, initBurger, initForms, initNewsSliders, initPopups, initSelectTabs} from "@/components";
 import {Fancybox} from "@fancyapps/ui";
-import {lockBody, unlockBody} from "@/helpers/popups";
 import Cookies from 'js-cookie';
-import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
 
 document.addEventListener('DOMContentLoaded', function () {
   document.body.classList.remove("no-js");
