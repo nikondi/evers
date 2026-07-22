@@ -53,8 +53,9 @@
     <button class="politics-warn__btn" type="button">Принимаю</button>
 </div>
 
+<?php include VIEW_PATH . 'partials/search.php'; ?>
 
-<?php // TODO: Remove on production ?>
+
 <?php if (!defined('BUILD')): ?>
     <?= vite(['resources/js/app.ts', 'resources/css/app.scss']) ?>
     <!-- vite scripts for develop -->

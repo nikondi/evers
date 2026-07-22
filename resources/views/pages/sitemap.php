@@ -19,7 +19,7 @@
     <li>
         Каталог
         <ul>
-            <li><a href="/catalog/">Страница каталога (категория/бренд)</a></li>
+            <li><a href="/catalog">Страница каталога (категория/бренд)</a></li>
             <li><a href="/catalog/trademarks">Наши торговые марки</a></li>
             <li><a href="/catalog/product">Страница товара</a></li>
             <li><a href="/catalog/favorites">Избранное</a></li>
