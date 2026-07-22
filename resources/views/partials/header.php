@@ -40,7 +40,7 @@ $alt_header ??= false;
                     <li>
                         <span class="header-submenu-trigger">Сотрудничество</span>
                         <ul class="header-submenu">
-                            <li><a href="#">Оставить заявку</a></li>
+                            <li><a href="/coop/request">Оставить заявку</a></li>
                             <li><a href="/coop/contract">Контрактное производство</a></li>
                             <li><a href="/coop/education">Обучение для партнеров</a></li>
                             <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
@@ -104,7 +104,7 @@ $alt_header ??= false;
                     </svg>
                     <span>0</span>
                 </a>
-                <a href="#" class="header-action">
+                <a href="/cart" class="header-action">
                     <svg width="1em" height="1em">
                         <use xlink:href="/assets/img/icons.svg#cart"/>
                     </svg>

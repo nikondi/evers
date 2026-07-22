@@ -17,32 +17,38 @@ function initImages() {
 }
 
 function initCounter() {
-  const wrapper = document.querySelector(".product-quantity") as HTMLElement;
-  if (!wrapper)
-    return;
+  document.querySelectorAll<HTMLElement>(".product-quantity").forEach((wrapper) => {
+    const input = wrapper.querySelector(".product-quantity__input") as HTMLInputElement;
+    const plus = wrapper.querySelector(".product-quantity__btn-plus") as HTMLButtonElement;
+    const minus = wrapper.querySelector(".product-quantity__btn-minus") as HTMLButtonElement;
+    const display = wrapper.querySelector(".product-quantity__display") as HTMLSpanElement;
+    const count = wrapper.querySelector(".product-quantity__count") as HTMLDivElement;
 
-  const input = wrapper.querySelector(".product-quantity__input") as HTMLInputElement;
-  const plus = wrapper.querySelector(".product-quantity__btn-plus") as HTMLButtonElement;
-  const minus = wrapper.querySelector(".product-quantity__btn-minus") as HTMLButtonElement;
-  const display = wrapper.querySelector(".product-quantity__display") as HTMLSpanElement;
-  const count = wrapper.querySelector(".product-quantity__count") as HTMLDivElement;
+    const min = wrapper.dataset.min ? parseInt(wrapper.dataset.min) : 1;
+    const max = wrapper.dataset.max ? parseInt(wrapper.dataset.max) : Infinity;
 
-  const changeValue = (v: string) => {
-    v = v.trim() ? v.replace(/\D/, '') : '1';
-    input.value = v;
-    display.innerText = v;
-  }
+    const changeValue = (v: string) => {
+      if (parseInt(v) < min)
+        v = min + '';
+      if (parseInt(v) > max)
+        v = max + '';
 
-  display.addEventListener('input', () => changeValue(display.innerText));
-  display.addEventListener('focus', () => count.classList.add('focused'));
-  display.addEventListener('blur', () => count.classList.remove('focused'));
-  count.addEventListener('click', () => display.focus());
-  plus.addEventListener('click', () => {
-    changeValue((parseInt(input.value) || 1) + 1 + '')
-  });
-  minus.addEventListener('click', () => {
-    const newValue = parseInt(input.value) - 1;
-    changeValue((newValue > 0 ? newValue : 1) + '')
+      v = v.trim() ? v.replace(/\D/, '') : '1';
+      input.value = v;
+      display.innerText = v;
+    }
+
+    display.addEventListener('input', () => changeValue(display.innerText));
+    display.addEventListener('focus', () => count.classList.add('focused'));
+    display.addEventListener('blur', () => count.classList.remove('focused'));
+    count.addEventListener('click', () => display.focus());
+    plus.addEventListener('click', () => {
+      changeValue((parseInt(input.value) || 1) + 1 + '')
+    });
+    minus.addEventListener('click', () => {
+      const newValue = parseInt(input.value) - 1;
+      changeValue((newValue > 0 ? newValue : 1) + '')
+    });
   });
 }
 

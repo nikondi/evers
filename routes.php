@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\AboutController;
+use App\Controllers\CartController;
 use App\Controllers\CatalogController;
 use App\Controllers\ContactsController;
 use App\Controllers\CoopController;
@@ -11,6 +12,8 @@ use Engine\Router;
 
 Router::get('/', WelcomeController::class);
 Router::get('/contacts', ContactsController::class);
+Router::get('/cart', CartController::class);
+
 Router::get('/sitemap', SitemapController::class);
 
 Router::get('/about', AboutController::class);

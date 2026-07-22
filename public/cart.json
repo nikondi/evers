@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "action": "redirect",
+  "payload": {
+    "url": "/cart/success"
+  }
+}

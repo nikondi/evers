@@ -18,13 +18,21 @@ export default function initForms() {
         body: new FormData(form),
         method: 'POST',
       })
-        .then(() => {
+        .then((response) => response.json())
+        .then((data) => {
+          if (!data.success)
+            throw new Error(data.message || 'Что-то пошло не так');
+          if (data.action === 'redirect') {
+            document.location.href = data.payload.url;
+            return;
+          }
+
           formFields.style.display = 'none';
           formSuccess.style.display = 'block';
           if (!document.body.classList.contains('popup-opened'))
             window.scrollTo({top: formSuccess.offsetTop - 150, behavior: 'smooth'});
         })
-        .catch(() => alert('Что-то пошло не так'))
+        .catch((e) => alert(typeof e === 'string' ? e : 'Что-то пошло не так'))
         .finally(() => submits.forEach((s) => s.disabled = false))
     });
 

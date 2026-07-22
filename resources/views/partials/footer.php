@@ -24,7 +24,7 @@
             <div class="footer-menu footer-list">
                 <div class="footer-title">Сотрудничество</div>
                 <ul class="footer-menu__list">
-                    <li><a href="#">Оставить заявку</a></li>
+                    <li><a href="/coop/request">Оставить заявку</a></li>
                     <li><a href="/coop/contract">Контрактное производство</a></li>
                     <li><a href="/coop/education">Обучение для партнеров</a></li>
                     <li><a href="/coop/wholesale">Наши оптовые партнеры</a></li>
