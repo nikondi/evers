@@ -39,6 +39,13 @@ class AboutController extends Controller
         ]);
     }
 
+    public function news_single(): string
+    {
+        return $this->render("pages/about/news_single", [
+            'title' => '«Уральская ватная компания» примет участие в Региональном конгрессе медицинских сестёр в Тюмени'
+        ]);
+    }
+
     public function smi(): string
     {
         return $this->render("pages/about/smi", [

@@ -23,6 +23,7 @@ Router::get('/about/manufacture', [AboutController::class, 'manufacture']);
 Router::get('/about/develop', [AboutController::class, 'develop']);
 Router::get('/about/sellers', [AboutController::class, 'sellers']);
 Router::get('/about/news', [AboutController::class, 'news']);
+Router::get('/about/news/single', [AboutController::class, 'news_single']);
 Router::get('/about/smi', [AboutController::class, 'smi']);
 Router::get('/about/requisites', [AboutController::class, 'requisites']);
 Router::get('/about/career', [AboutController::class, 'career']);
