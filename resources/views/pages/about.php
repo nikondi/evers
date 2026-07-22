@@ -176,10 +176,10 @@ include VIEW_PATH . 'partials/breadcrumbs.php';
         <div class="brands-grid">
             <?php
             $brands = [
-                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/help.png'],
-                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/evers-med.png'],
-                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/angel.png'],
-                ['link' => '#', 'logo' => '/assets/img/catalog/trademarks/evers-life.png'],
+                ['link' => '/about/news/single', 'logo' => '/assets/img/catalog/trademarks/help.png'],
+                ['link' => '/about/news/single', 'logo' => '/assets/img/catalog/trademarks/evers-med.png'],
+                ['link' => '/about/news/single', 'logo' => '/assets/img/catalog/trademarks/angel.png'],
+                ['link' => '/about/news/single', 'logo' => '/assets/img/catalog/trademarks/evers-life.png'],
             ];
             ?>
             <?php foreach ($brands as $brand): ?>
